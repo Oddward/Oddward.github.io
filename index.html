@@ -4,10 +4,7 @@
 	<title>Greetings, Earth.</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	 
-	<!--style-->
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
 	<!--Optional JavaScript libraries - jQuery, Popper.js, Bootstrap.js-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
@@ -21,32 +18,153 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<!-- Plotly.js for some data plots -->
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+	<!--style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-	<div class="header">
-		
+	<div class="header navbar navbar-expand-lg ">
+		<a href="#" class="navbar-brand">{Mugtaba: G}</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-content="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navbarStuff" class="collapse navbar-collapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a href="resume.html" class="nav-link">Resume</a>
+				</li>
+			</ul>
+		</div>
 	</div>
+
 	<div class="container-fluid my-container">
 		<div class="row justify-content-center">
-			<div class="col-lg-3 offset-2">
-				<img src="img/IMG_20171106_143557.jpg" style="height:400px;" class="showcase zoom">
+			<div class="col-lg-4 profile-col">
+				<p class="notes animated slideInLeft justify-content-right col-xs-6">
+					Sudanese
+				
+					in Malaysia
+				
+					'94
+				
+					dev
+				
+					art
+				
+					science
+				</p>
+
+				<img src="img/IMG_20171106_143557.jpg" style="height:400px;float: right;" class="shadow zoom">
 			</div>
-			<div class="col-lg-5 describe inset-2">
-				<h1 class="h1-styled">Mugtaba Garoot</h1>
-				<h2>'G' as in 'Giraffe'</h2>
-				<p class="p-styled">A Sudanese rooted in Asia. A computer science grad with many areas of interest, I built a wide array of skills.</p>
+			<div class="col-lg-4 describe justify-content-left profile-col">
+				<div class="animated slideInRight" style="background-color: black;border-radius: 10px;">
+					<h1 class="h1-styled justify-content-center">Mugtaba Garoot</h1>
+				</div>
+				
+				<h2 class="animated fadeIn">'G' as in 'Giraffe'</h2>
+				<p class="p-styled animated fadeIn">A Sudanese rooted in Asia. A computer science grad with many areas of interest, I've built a wide array of skills and insight in multiple emerging fields.</p>
 			</div>
 		</div>
 		
-		<button id="floating-butt"><i id="floating-i" class="fas fa-plus"></i></button>
+		<!--Social links button-->
+		<div id="floating-container justify-content-center">
+			<div class="float-butt fbutt-2"><div class="fab fa-instagram"></div></div>
+			<div class="float-butt fbutt-1"><i class="fab fa-linkedin"></i></div>
+			<div id="floating-butt"><i id="floating-i" class="fas fa-plus align-self-center"></i></div>
+		</div>
 
 		<div class="row">
-			<div class="col">
-
+			<div class="col-12 justify-content-center">
+				<h1 class="h1-major">Preview Stuff</h1>
 			</div>
 		</div>
 
-		<p>Temp site for Mug</p>
+		<!--Slider for works - Carousel-->
+		<div class="row justify-content-center">
+			<div id="mahCarousel" class="carousel col-lg-8 col-md-10 col-xs-12" data-ride="carousel">
+				<!--Slide Indicators-->
+				<ol class="carousel-indicators">
+					<li data-target = "#mahCarousel" data-slide-to = "0" class = "active"></li>
+					<li data-target = "#mahCarousel" data-slide-to = "1"></li>
+					<li data-target = "#mahCarousel" data-slide-to = "2"></li>
+					<li data-target = "#mahCarousel" data-slide-to = "3"></li>
+				</ol>
+
+				<!--Slides-->
+				<div class="carousel-inner shadow mySlide clearfix">
+					
+					<!--<div class="col-3 alignt-items-center justify-content-right">
+						<i id="left-arrow" class="arrow fas fa-angle-left"></i>
+					</div>
+					<div class="col-6 justify-content-center shadow slide">-->
+							
+					<div class="carousel-item active">
+						<div class="row slide-content  justify-content-space-between">
+							<div class="col-xs-12 col-lg-5 slide-img">
+								<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548637333/Oscar_Wilde_codepen.png" alt="Oscar Wilde tribute webpage" class="myImg shadow .img-responsive">
+							</div>
+							<div class="d-block slide-text align-self-center col-xs-12 col-lg-5">
+								A small project to write a tribute page for an author, as part of the curriculum for freecodecamp. This is a tribute to Oscar Wilde hosted on <a href="https://codepen.io/Oddward/full/ENodLO">CodePen</a>.
+							</div>
+						</div>
+					</div>
+			
+					<div class="carousel-item">
+						<div class="row slide-content">
+							<div class="col-xs-12 col-lg-5 slide-img justify-content-center">
+								<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548711817/IT_islam_poster.jpg" alt="" class="myImg-tall shadow .img-responsive">
+							</div>
+							<div class="d-block slide-text align-self-center col-xs-12 col-lg-5">
+								An <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711817/IT_islam_poster.jpg">infographic poster</a> made for an IT awareness campaign - ours is the spreading of hoaxes/fake news.
+							</div>
+						</div>
+					</div>
+			
+					<div class="carousel-item">
+						<div class="row slide-content">
+							<div class="col-sx-12 col-lg-5 slide-img justify-content-center">
+								<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548711816/tambun_poster.jpg" alt="" class="myImg-tall shadow .img-responsive">
+							</div>
+							<div class="d-block slide-text align-self-center col-xs-12 col-lg-5">
+								A <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711816/tambun_poster.jpg">poster advertisement</a> made for a tourism job for an entrepreneurship challenge, I was in charge of marketing.
+							</div>
+						</div>
+					</div>
+			
+					<div class="carousel-item">
+						<div class="row slide-content">
+							<div class="col-xs-12 col-lg-5 slide-img">
+								<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548711816/Malacca_ad.jpg" alt="" class="myImg shadow .img-responsive">
+							</div>
+							<div class="d-block slide-text align-self-center col-xs-12 col-lg-5">
+								A <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711816/Malacca_ad.jpg">poster advertisement</a> made for a tourism job for an entrepreneurship challenge - I was in charge of marketing. Everyone was involved with acquiring customers and handling them.
+							</div>
+						</div>
+					</div>
+					
+					<!--Left and right slide navigation-->
+					<a href="#mahCarousel" class="carousel-control-prev" data-slide="prev" role="button">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a href="#mahCarousel" class="carousel-control-next" data-slide="next" role="button">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+					<!--</div>
+					<div class="col-3 alignt-items-center justify-content-left">
+						<i id="right-arrow" class="arrow fas fa-angle-right"></i>
+					</div>-->
+				</div>
+			</div>
+		</div>
+
+		<p>Temp site for Mug - WIP</p>
 	</div>
 
 	

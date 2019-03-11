@@ -1,0 +1,6 @@
+@mixins linearGradientBG($x, $y, $z, $color){
+    -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
+    -mo-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
+    -ms-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
+    linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
+}
