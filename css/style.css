@@ -2,11 +2,32 @@
 	font-family: mahFont;
 	src: url();
 }*/
+
+/*
+base color: #F76B1D;
+complementary blue: #0020B3;
+complementary light blue: #2E53FF;
+*/
+
 body{
 	background-color: #F76B1D;
 	background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
 	background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
 	text-align: center;	
+}
+#intropara{
+	height: 100%;
+	vertical-align: center;
+}
+#intropara h3{
+	padding: 0 10px;
+	color: black;
+}
+#sub{
+	background-color: white;
+	border-radius: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 p.p-styled{
 	font-family: 'Roboto', sans-serif;
@@ -27,7 +48,7 @@ span{
 	color: white;
 	white-space: pre-line;
 	position: absolute;
-	left: 90px;
+	left: 10px;
 	text-shadow: 1px 2px 3px rgba(0,0,0,.7);
 }
 h1.h1-styled{
@@ -41,6 +62,8 @@ h1.h1-styled{
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
+	font-size: 2.3em;
+	font-weight: bold;
 }
 .h1-major{
 	font-family: 'Major Mono Display', monospace;
@@ -48,8 +71,8 @@ h1.h1-styled{
 	margin-top: 30px;
 }
 div.header{
-	background-color:  #000;
-	height: 100px;
+	/*background-color:  #000;*/
+	height: 80px;
 	width: 100%;
 }
 div.header a{
@@ -69,6 +92,11 @@ div.my-container{
 	margin-bottom: 50px;
 	padding: 15px;
 	text-align: center;
+	color: #fff;
+}
+div.summary{
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .profile-col{
 	margin-top: 50px;
@@ -204,9 +232,9 @@ shadow{
 	background-color: black;
 	cursor: pointer;
 	z-index: 60;
-	transition: all 400ms;
+	transition: all 200ms;
 }
-#floating-butt:hover{
+#floating-container:hover #floating-butt{
 	background-color: white;
 	color: black;
 }
