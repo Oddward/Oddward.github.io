@@ -5,28 +5,32 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
+	<!--style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
 	<!--Optional JavaScript libraries - jQuery, Popper.js, Bootstrap.js-->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+	
 	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="icofont.min.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+	<link rel="stylesheet" href="css/icofont.min.css" type="text/css">
+
 	<!--SVG script-->
 	<!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
 	<!--animations-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 	<!-- Plotly.js for some data plots -->
 	<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
-
-	<!--style-->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
 <body>
-	<div class="header navbar navbar-expand-lg ">
+	<div class="header navbar navbar-expand-lg" style="background-color: black;">
 		<a href="#" class="navbar-brand">{Mugtaba: G}</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-content="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -45,9 +49,9 @@
 	</div>
 
 	<div class="container-fluid my-container">
-		<div class="row justify-content-center">
-			<div class="col-lg-4 profile-col">
-				<p class="notes animated slideInLeft justify-content-right col-xs-6">
+		<div id="profilesec" class="row justify-content-center">
+			<div class="col-lg-6 main-img-wrapper p-0">
+				<!-- <p class="notes animated slideInLeft justify-content-right position-absolute d-none">
 					Sudanese
 				
 					in Malaysia
@@ -59,54 +63,64 @@
 					art
 				
 					science
-				</p>
-
-				<img src="img/IMG_20171106_143557.jpg" style="height:400px;float: right;" class="shadow zoom">
+				</p> -->
+				<!-- <img src="img/IMG_20171106_143557.jpg" style="height:400px;float: right;" class="shadow zoom" alt="Portrait of Mugtaba Garoot"> -->
+				<!-- <img src="img/IMG_20171118_110634_HDR.jpg" class="mt-0" alt="Photo of Mugtaba in Melaka" id="main-img"> -->
 			</div>
-			<div class="col-lg-4 describe justify-content-left profile-col">
+			<div class="col-lg-6 describe justify-content-left">
 				<div class="animated slideInRight" style="background-color: black;border-radius: 10px;">
-					<h1 class="h1-styled justify-content-center">Mugtaba Garoot</h1>
+					<h1 class="h1-styled justify-content-center my-3">Mugtaba Garoot</h1>
 				</div>
 				
 				<div id="intropara">
-					<h3 class="animated fadeIn"><span id="sub">'G' as in 'Giraffe'</span></h3>
-					<p class="p-styled animated fadeIn">A Sudanese rooted in Asia. A computer science grad with many areas of interest, I've built a wide array of skills and insight into multiple emerging fields.</p>
+					<h3 class="animated fadeIn my-3"><span id="sub">'G' as in 'Giraffe'</span></h3>
+					<p class="p-styled animated fadeIn my-3">A Sudanese rooted in Asia. A computer science grad with many areas of interest, I've built a wide array of skills and insight into multiple emerging fields.</p>
+					<p class="p-styled animated fadeIn my-3">I want to combine my passion for tech, art & design, and building something progressive.</p>
 				</div>
 			</div>
 		</div>
 		
 		<!--Social links button-->
 		<div id="floating-container" class="justify-content-center">
-			<div class="float-butt fbutt-2"><div class="fab fa-instagram"></div></div>
-			<div class="float-butt fbutt-1"><i class="fab fa-linkedin"></i></div>
-			<div id="floating-butt"><i id="floating-i" class="fas fa-plus align-self-center"></i></div>
+			<a href="https://instagram.com/mugtaba.g" class="social-butt sbutt-2"><i class="icofont-instagram"></i></a>
+			<a href="https://linkedin.com/in/mugtabagaroot" class="social-butt sbutt-1"><i class="icofont-linkedin my-auto"></i></a>
+			<div id="floating-butt"><i id="floating-i" class="icofont-ui-social-link align-self-center"></i></div>
 		</div>
 
 		<!-- summary of skills -->
-		<div class="row bg-white pt-20 pb-20">
-			<div class="col-lg-2"></div>
-			<div class="col-lg-4 col-sm-12">
-				<div class="row">
-					<div class="row">
-						<h2><span><i class="icofont-web"></i></span>Web Dev</h2>
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<p></p>
-						</div>
-					</div>
+		<div id="summary" class="row bg-white">
+			<div class="row justify-content-center">
+				<!-- <div class="col-lg-2"></div> -->
+				<div class="col-lg-4 col-sm-12 my-3">	
+					<h2><i class="icofont-web"></i> Web Dev</h2>
+					<p>Pure HTML, CSS and JavaScript, JQuery, pure PHP, the Laravel PHP framework, and some MySQL. Technologies: Bootstrap 4, TailwindCSS.</p>
 				</div>
+
+				<div class="col-lg-4 col-sm-12 my-3">
+					<h2><i class="icofont-terminal"></i> Programming</h2>
+					<p>Python 3.6, Java, C++, R and Wolfram Language (Mathematica).</p>			
+				</div>
+				<!-- <div class="col-lg-2"></div> -->
 			</div>
 
-			<div class="col-lg-4 col-sm-12">
+			<div class="row">
+				<div class="col-lg-2"></div>
+				<div class="col-lg-4 col-sm-12 my-3">	
+					<h2><i class="icofont-multimedia"></i> Multimedia</h2>
+					<p>Adobe Illustrator, Adobe Photoshop, Davinci Resolve (video editing), Blender 3D.</p>
+				</div>
 
+				<div class="col-lg-4 col-sm-12 my-3">
+					<h2><i class="icofont-computer"></i> Other Productivity</h2>
+					<p>Microsoft Word, Excel & PowerPoint, Microsoft Azure, Solidworks (CAD), Wolfram Mathematica.</p>				
+				</div>
+				<div class="col-lg-2"></div>				
 			</div>
-			<div class="col-lg-2"></div>
 		</div>
 
 		<div class="row">
 			<div class="col-12 justify-content-center">
-				<h1 class="h1-major">Preview Stuff</h1>
+				<h1 class="h1-major mt-3">Preview Stuff</h1>
 			</div>
 		</div>
 
@@ -193,6 +207,9 @@
 		<p>Temp site for Mug - WIP</p>
 	</div>
 
-	
+	<!-- scripts to load after stuff -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+	<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

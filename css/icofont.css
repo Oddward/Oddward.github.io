@@ -12,8 +12,8 @@
   font-family: "IcoFont";
 font-weight: normal;
 font-style: "Regular";
-src: url("./fonts/icofont.woff2") format("woff2"),
-url("./fonts/icofont.woff") format("woff");
+src: url("../fonts/icofont.woff2") format("woff2"),
+url("../fonts/icofont.woff") format("woff");
 }
 
 [class^="icofont-"], [class*=" icofont-"]
@@ -61,6 +61,36 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-terminal:before
 {
   content: "\f00a";
+}
+
+.icofont-instagram:before
+{
+  content: "\ed46";
+}
+
+.icofont-linkedin:before
+{
+  content: "\ed4d";
+}
+
+.icofont-ui-social-link:before
+{
+  content: "\ec84";
+}
+
+.icofont-brand-youtube:before
+{
+  content: "\e95f";
+}
+
+.icofont-ui-theme:before
+{
+  content: "\ec88";
+}
+
+.icofont-plus:before
+{
+  content: "\efc2";
 }
 
 .icofont-xs
