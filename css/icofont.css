@@ -93,6 +93,121 @@ url("../fonts/icofont.woff") format("woff");
   content: "\efc2";
 }
 
+.icofont-download:before
+{
+  content: "\ef08";
+}
+
+.icofont-download-alt:before
+{
+  content: "\ef07";
+}
+
+.icofont-brand-whatsapp:before
+{
+  content: "\e957";
+}
+
+.icofont-brand-wordpress:before
+{
+  content: "\e95b";
+}
+
+.icofont-brand-steam:before
+{
+  content: "\e93e";
+}
+
+.icofont-email:before
+{
+  content: "\ef12";
+}
+
+.icofont-ui-cell-phone:before
+{
+  content: "\ec49";
+}
+
+.icofont-ui-close:before
+{
+  content: "\ec4f";
+}
+
+.icofont-ui-email:before
+{
+  content: "\ec56";
+}
+
+.icofont-ui-game:before
+{
+  content: "\ec5c";
+}
+
+.icofont-university:before
+{
+  content: "\eaf3";
+}
+
+.icofont-briefcase-2:before
+{
+  content: "\e967";
+}
+
+.icofont-hat-alt:before
+{
+  content: "\eade";
+}
+
+.icofont-certificate-alt-2:before
+{
+  content: "\ead5";
+}
+
+.icofont-game-controller:before
+{
+  content: "\ea30";
+}
+
+.icofont-android-tablet:before
+{
+  content: "\ea2a";
+}
+
+.icofont-whatsapp:before
+{
+  content: "\ed86";
+}
+
+.icofont-telegram:before
+{
+  content: "\ed75";
+}
+
+.icofont-trello:before
+{
+  content: "\ed77";
+}
+
+.icofont-twitch:before
+{
+  content: "\ed79";
+}
+
+.icofont-twitter:before
+{
+  content: "\ed7a";
+}
+
+.icofont-croissant:before
+{
+  content: "\eb5b";
+}
+
+.icofont-fast-food:before
+{
+  content: "\eb66";
+}
+
 .icofont-xs
 {
   font-size: .5em;

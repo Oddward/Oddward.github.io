@@ -28,21 +28,23 @@
 
 	<!-- Plotly.js for some data plots -->
 	<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+
+	<script src="js/jquery.min.js"></script>
 </head>
 <body>
-	<div class="header navbar navbar-expand-lg" style="background-color: black;">
+	<div class="navbar navbar-expand-sm navbar-dark" style="background-color: black;">
 		<a href="#" class="navbar-brand">{Mugtaba: G}</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-content="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div id="navbarStuff" class="collapse navbar-collapse">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
+			<ul class="navbar-nav justify-content-between w-100">
+				<li class="nav-item px-2 text-center active">
 					<a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item">
-					<a href="resume.html" class="nav-link">Resume</a>
+				<li class="nav-item px-2 text-center">
+					<a href="Mugtaba - colourful resume (cs).pdf" class="nav-link btn btn-outline-warning" download="Mugtaba Garoot - Resume">Resume <i class="icofont-download"></i></a>
 				</li>
 			</ul>
 		</div>
@@ -50,7 +52,7 @@
 
 	<div class="container-fluid my-container">
 		<div id="profilesec" class="row justify-content-center">
-			<div class="col-lg-6 main-img-wrapper p-0">
+			<div class="col-lg-6 main-img-wrapper p-0 h-sm-50">
 				<!-- <p class="notes animated slideInLeft justify-content-right position-absolute d-none">
 					Sudanese
 				
@@ -67,24 +69,26 @@
 				<!-- <img src="img/IMG_20171106_143557.jpg" style="height:400px;float: right;" class="shadow zoom" alt="Portrait of Mugtaba Garoot"> -->
 				<!-- <img src="img/IMG_20171118_110634_HDR.jpg" class="mt-0" alt="Photo of Mugtaba in Melaka" id="main-img"> -->
 			</div>
-			<div class="col-lg-6 describe justify-content-left">
+			<div class="col-lg-6 describe justify-content-left px-5">
 				<div class="animated slideInRight" style="background-color: black;border-radius: 10px;">
-					<h1 class="h1-styled justify-content-center my-3">Mugtaba Garoot</h1>
+					<h1 class="styled transparent justify-content-center my-4">Mugtaba Garoot</h1>
 				</div>
 				
 				<div id="intropara">
-					<h3 class="animated fadeIn my-3"><span id="sub">'G' as in 'Giraffe'</span></h3>
-					<p class="p-styled animated fadeIn my-3">A Sudanese rooted in Asia. A computer science grad with many areas of interest, I've built a wide array of skills and insight into multiple emerging fields.</p>
-					<p class="p-styled animated fadeIn my-3">I want to combine my passion for tech, art & design, and building something progressive.</p>
+					<h3 class="animated fadeIn mt-3 mb-5"><span id="sub">'G' as in 'Giraffe'</span></h3>
+					<p class="p-styled animated fadeIn my-3">A Sudanese rooted in Malaysia. A computer science grad with many areas of interest and the ability to quickly pick up new things, I've built a wide array of skills and insight into various emerging fields.</p>
+					<p class="p-styled animated fadeIn mt-3 mb-5">I want to combine my passion for tech, art & design, and building something progressive.</p>
 				</div>
 			</div>
 		</div>
 		
 		<!--Social links button-->
 		<div id="floating-container" class="justify-content-center">
-			<a href="https://instagram.com/mugtaba.g" class="social-butt sbutt-2"><i class="icofont-instagram"></i></a>
-			<a href="https://linkedin.com/in/mugtabagaroot" class="social-butt sbutt-1"><i class="icofont-linkedin my-auto"></i></a>
-			<div id="floating-butt"><i id="floating-i" class="icofont-ui-social-link align-self-center"></i></div>
+			<a id="codeplink" href="https://codepen.io/Oddward" class="social-butt sbutt-3" title="CodePen" data-toggle="tooltip" data-placement="left">
+				<img src="img/icons8-codepen-50.png" alt="" class="codepen-icon"></a>
+			<a id="instalink" href="https://instagram.com/mugtaba.g" class="social-butt sbutt-2" title="Instagram" data-toggle="tooltip" data-placement="left"><i class="icofont-instagram"></i></a>
+			<a id="linkedinlink" href="https://linkedin.com/in/mugtabagaroot" class="social-butt sbutt-1" title="LinkedIn" data-toggle="tooltip" data-placement="left"><i class="icofont-linkedin"></i></a>
+			<div id="floating-butt" class="justify-content-center"><i id="floating-i" class="icofont-ui-social-link align-self-center"></i></div>
 		</div>
 
 		<!-- summary of skills -->
@@ -93,7 +97,7 @@
 				<!-- <div class="col-lg-2"></div> -->
 				<div class="col-lg-4 col-sm-12 my-3">	
 					<h2><i class="icofont-web"></i> Web Dev</h2>
-					<p>Pure HTML, CSS and JavaScript, JQuery, pure PHP, the Laravel PHP framework, and some MySQL. Technologies: Bootstrap 4, TailwindCSS.</p>
+					<p>Pure HTML, CSS & JavaScript, JQuery, pure PHP, the Laravel PHP framework, React js and MySQL. Technologies: Bootstrap 4, TailwindCSS.</p>
 				</div>
 
 				<div class="col-lg-4 col-sm-12 my-3">
@@ -119,15 +123,15 @@
 		</div>
 
 		<div class="row">
-			<div class="col-12 justify-content-center">
+			<div class="col-12 justify-content-center my-3">
 				<h1 class="h1-major mt-3">Preview Stuff</h1>
 			</div>
 		</div>
 
-		<!--Slider for works - Carousel-->
-		<div class="row justify-content-center">
+		<!--Slider for works - Carousel
+		<div class="row justify-content-center d-none">
 			<div id="mahCarousel" class="carousel col-lg-8 col-md-10 col-xs-12" data-ride="carousel">
-				<!--Slide Indicators-->
+				<!- Slide Indicators ->
 				<ol class="carousel-indicators">
 					<li data-target = "#mahCarousel" data-slide-to = "0" class = "active"></li>
 					<li data-target = "#mahCarousel" data-slide-to = "1"></li>
@@ -135,13 +139,13 @@
 					<li data-target = "#mahCarousel" data-slide-to = "3"></li>
 				</ol>
 
-				<!--Slides-->
+				<!- Slides ->
 				<div class="carousel-inner shadow mySlide clearfix">
 					
-					<!--<div class="col-3 alignt-items-center justify-content-right">
+					<!- <div class="col-3 alignt-items-center justify-content-right">
 						<i id="left-arrow" class="arrow fas fa-angle-left"></i>
 					</div>
-					<div class="col-6 justify-content-center shadow slide">-->
+					<div class="col-6 justify-content-center shadow slide"> ->
 							
 					<div class="carousel-item active">
 						<div class="row slide-content  justify-content-space-between">
@@ -187,7 +191,7 @@
 						</div>
 					</div>
 					
-					<!--Left and right slide navigation-->
+					<!- Left and right slide navigation ->
 					<a href="#mahCarousel" class="carousel-control-prev" data-slide="prev" role="button">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 						<span class="sr-only">Previous</span>
@@ -196,20 +200,41 @@
 						<span class="carousel-control-next-icon" aria-hidden="true"></span>
 						<span class="sr-only">Next</span>
 					</a>
-					<!--</div>
+					<!- </div>
 					<div class="col-3 alignt-items-center justify-content-left">
 						<i id="right-arrow" class="arrow fas fa-angle-right"></i>
-					</div>-->
+					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 
-		<p>Temp site for Mug - WIP</p>
+		<!-- Alt project preview -->
+		<div id="projects" class="row">
+			<div class="card-columns text-dark px-3">	
+				<div class="card mx-3">
+					<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548637333/Oscar_Wilde_codepen.png" alt="Oscar Wilde tribute webpage" class="card-img-top">
+					<div class="card-body">
+						<h2 class="card-title">Tribute page</h2>
+						<p class="card-text">A small project to write a tribute page for an author, as part of the curriculum for freecodecamp. This is a tribute to Oscar Wilde, hosted on <a href="https://codepen.io/Oddward/full/ENodLO">CodePen</a>.</p>
+					</div>
+				</div>
+
+				<div class="card mx-3">
+					<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548711817/IT_islam_poster.jpg" alt="Awareness campaign poster" class="card-img-top">
+					<div class="card-body">
+						<h2 class="card-title">Awarenes campaign poster</h2>
+						<p class="card-text">An <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711817/IT_islam_poster.jpg">infographic poster</a> made for an IT awareness campaign on the topic of the spreading of hoaxes/fake news.</p>
+					</div>
+				</div>
+			</div>	
+		</div>
 	</div>
 
 	<!-- scripts to load after stuff -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
 	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+	<!-- <script src="js/popper.min.js"></script> -->
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
