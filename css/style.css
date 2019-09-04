@@ -9,6 +9,8 @@ body{
 	background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
 	background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
 	text-align: center;	
+	min-height: 100vh;
+	height: auto;
 }
 #intropara{
 	height: 100%;
@@ -242,4 +244,26 @@ h1.styled{
 	-webkit-box-shadow: 1px 5px 20px 1px rgba(0,0,0,.5);
 	-moz-box-shadow: 1px 5px 20px 1px rgba(0,0,0,.5);
 	box-shadow: 1px 5px 20px 1px rgba(0,0,0,.5);
+}
+#prof-img{
+	background-image: url('../img/UIA_1206a sq.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	border: solid 1px black;
+}
+.main-quote{
+	font-family: serif;
+	position: relative;
+}
+.main-quote:before{
+	content: '\201C'; /*\201C*/
+	color: #6c757d; /*bootstrap blockquote-footer color*/
+	position: relative;
+	top: 0.40em;
+	left: 0.15em;
+	font-size: 5em;
+	z-index: -1;
+	line-height: 0.8em;
 }
