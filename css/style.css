@@ -3,7 +3,6 @@ base color: #F76B1D;
 complementary blue: #0020B3;
 complementary light blue: #2E53FF;
 */
-
 body{
 	background-color: #F76B1D;
 	background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
@@ -182,9 +181,18 @@ h1.styled{
 	transition: all 300ms ease;
 	padding-top: 5px;
 }
+.bg-linkedin{
+	background-color: #0077B5; /*LinkedIn blue*/
+}
+.bg-insta{ /*background - Instagram*/
+	background: #f09433; 
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
 .sbutt-1{
 	bottom: 30px;
-	background-color: #0077B5; /*LinkedIn blue*/
 	z-index: 40;
 }
 #floating-container:hover .sbutt-1{
@@ -192,12 +200,6 @@ h1.styled{
 }
 .sbutt-2{
 	bottom: 30px;
-	/*background - Instagram*/
-	background: #f09433; 
-	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 	z-index: 30;
 }
 #floating-container:hover .sbutt-2{
@@ -224,6 +226,23 @@ h1.styled{
 }
 #floating-container:hover .sbutt-4{
 	bottom: 280px;
+}
+
+.footer-butt{
+	width: 50px;
+	height: 50px;
+	color: white;
+	font-size: 25px;
+	line-height: 50px;
+	box-shadow: 3px 5px 5px rgba(0,0,0,.3), -1px 1px 5px rgba(0,0,0,.3);
+	margin-left: 10px;
+	margin-right: 10px;
+	/*padding-top: 5px;*/
+	display: inline-block;
+}
+a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
+	text-decoration: none;
+	color: white;
 }
 
 /*projects*/
