@@ -21,13 +21,32 @@ $(window).on('load', function() {
     	try{
     		$(this).siblings('input.toCopy').select();      
     		document.execCommand("copy");
-    		$(this).attr('data-original-title','Email successfullly copied!').tooltip('show');
+    		$(this).attr('data-original-title','Email successfullly copied!').hover().tooltip('show');
     	}
     	catch(e){
     		// alert(e);
     		alert('Failed to copy email. Browser not properly supported.')
     	}
     	
+	});
+
+	//Form subject
+	var $namedsub;
+	var $prefix;
+	var $name;
+	$('#sender').blur(function(){
+		$name = $('#sender').val();
+		if ($prefix == null) {
+			$prefix = 'Github page message - '
+		}
+		$namedsub = $prefix + $name;
+		$('#form-subject').attr('value',$namedsub);
+	})
+	
+	$('#subject').change(function() {
+		prefix = $('#subject').find(":selected").val();
+		$namedsub = prefix + $name;
+		$('#form-subject').attr('value',$namedsub);
 	});
     
 }
