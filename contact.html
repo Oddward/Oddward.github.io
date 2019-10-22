@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>About Mug</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="web dev, web developer, computer science, graduate, programmer, html, css, javascript, graphic designer, profile, personal website, github pages, mohammed almugtaba garoot, mugtaba garoot">
+	<meta name="description" content="The profile of Mohammed Almugtaba Garoot - computer science grad, web developer, programmer, graphic designer">
+	<meta name="author" content="Mohammed Almugtaba Garoot">
+	
+	<!--style-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!--Optional JavaScript libraries - jQuery, Popper.js, Bootstrap.js-->
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Alex+Brush|Montserrat:200,400,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/icofont.min.css" type="text/css">
+
+	<!--animations-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+	<script src="js/jquery.min.js"></script>
+</head>
+<body class="orange-grad">
+	<div class="navbar navbar-expand-sm navbar-dark" style="background-color: black;">
+		<a href="#" class="navbar-brand montserrat font-weight-light">MUGTABA<b class="alex">G</b></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div id="navbarStuff" class="collapse navbar-collapse">
+			<ul class="navbar-nav w-100">
+				<li class="nav-item px-2 text-center">
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item px-2 text-center active">
+					<a href="about.html" class="nav-link">About</a>
+				</li>
+				<li class="nav-item px-2 text-center">
+					<a href="#" class="btn btn-outline-light w-100" id="contact-butt">Contact<span class="sr-only">(open contacts form)</span></a>
+				</li>
+				<li class="nav-item px-2 text-center ml-sm-auto">
+					<a href="Mugtaba - cust resume cs.pdf" class="btn btn-outline-warning w-100" download="Mohammed AlMugtaba Garoot (Mugtaba) - Resume" target="_blank">Resume <i class="icofont-download"></i><span class="sr-only">(download resume)</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<main role="main">
+	<div class="container-fluid text-light my-0 p-0 w-100">
+		
+		<!--Social links button-->
+		<!--<div id="floating-container" class="justify-content-center text-center">
+			<a id="codeplink" href="https://codepen.io/Oddward" class="social-butt sbutt-3" title="CodePen" data-toggle="tooltip" data-placement="left">
+				<img src="img/icons8-codepen-50.png" alt="" class="codepen-icon"></a>
+			<a id="instalink" href="https://instagram.com/mugtaba.g" class="social-butt sbutt-2 bg-insta" title="Instagram" data-toggle="tooltip" data-placement="left"><i class="icofont-instagram"></i></a>
+			<a id="linkedinlink" href="https://linkedin.com/in/mugtabagaroot" class="social-butt sbutt-1 bg-linkedin" title="LinkedIn" data-toggle="tooltip" data-placement="left"><i class="icofont-linkedin"></i></a>
+			<div id="floating-butt" class="justify-content-center"><i id="floating-i" class="icofont-ui-social-link align-self-center"></i></div>
+		</div>-->
+		<div id="test" style="background-color: blue;height: 100px;width: 50%;cursor: pointer;display: none;" class="m-3"></div>
+		
+		<div id="fullscreen-overlay" class="orange-grad">
+		<div class="contact-area mx-auto pt-3 pb-5 text-dark text-center bg-light col-12 col-md-8">
+			<div><button id="close-butt" class="text-center p-0 bg-white" aria-label="close"><span class="icofont-ui-close transparent"></span></button></div>
+			<h1 class="transparent">Get in touch.</h1>
+			<p>How would you like to contact me?</p>
+			  
+			<!-- CONTACT CONTENT -->
+			<div class="accordion" id="accordion">
+			    
+				<!--Option 1-->
+			    <div class="card bg-info text-light">
+			      	<div class="card-header col-12 border-0 text-center" type="" data-toggle="collapse" data-target="#collapseOne" aria-controls="#collapseOne">  
+			        	<h2>Fill contact form</h2>
+			      	</div>
+			      	<div class="collapse" id="collapseOne" data-parent="#accordion">
+			        	<div class="card card-body bg-info">
+			          		<!-- form start -->
+			          		<form id="contact-form" action="" class="justify-content-center row">
+								<div class="col-md-6 col-12 text-left">
+									<div class="form-group">
+										<label for="sender">Name</label><br>
+										<input type="text" class="form-control" id="sender" placeholder="Enter your name" aria-describedby="emailHelp">
+									</div>
+									<div class="form-group">
+										<label for="email-ad">Email</label><br>
+										<input type="email" class="form-control" id="email-ad" placeholder="Enter email address" aria-describedby="emailHelp" required>
+									</div>
+									<div class="form-group">
+										<label for="subject">Subject</label><br>
+										<select id="subject" class="form-control">
+	  										<option>-- Select subject --</option>
+	  										<option value="Professional enquiry - ">Professional enquiry</option>
+	  										<option value="Casual talk - ">Casual talk</option>
+										</select>
+									</div>
+								</div>
+							
+								<div class="col-md-6 col-sm-12 text-left">
+									<div class="form-group">
+										<label for="mail-msg">Message</label><br>
+										<textarea name="message" id="#mail-msg" class="form-control" cols="30" rows="10" placeholder="Please enter your message here" required></textarea>
+									</div>
+								</div>
+								<div>
+									<input type="submit" name="" class="btn btn-dark btn-outline-warning">
+								</div>
+							</form><!-- form end -->
+			        	</div>
+			      	</div>
+			    </div> 
+
+			    <!--Option 2-->
+			    <div class="card bg-info text-light">
+			      	<div class="card-header col-12 border-0 text-center animated" type="" data-toggle="collapse" data-target="#collapseTwo">
+			        	<h2>Your web client</h2>
+			      	</div>
+			      	<div class="collapse" id="collapseTwo" data-parent="#accordion">
+			        	<div class="card card-body bg-info">
+			          		<p>If you want to send an email with your favourite web client, click the button to copy the email address to your clipboard.</p>
+			          		<button class="copyButt btn btn-dark btn-outline-light" title="Click to copy email." data-toggle="tooltip" data-placement="top">COPY email <i class="icofont-copy"></i></button>
+			          		<input value="mugtaba.ga.su@gmail.com" class="toCopy" style="position: absolute; z-index: -99; opacity: 0;" />
+			        	</div>
+			      	</div>
+			    </div>
+			    
+			    <!--Option 3-->
+			    <div class="card bg-info text-light d-none d-sm-block">
+			      	<div class="card-header col-12 border-0 text-center animated" type="" data-toggle="collapse" data-target="#collapseThree">
+			        	<h2>Your desktop client</h2>
+			      	</div>
+			      	<div class="collapse" id="collapseThree" data-parent="#accordion">
+			        	<div class="card card-body bg-info">
+			          		<p>If you want to send an email with your local desktop client, click the appropriate link for your subject below:</p>
+			          		<div class="row">
+			          			<a href="mailto:mugtaba.ga.su@gmail.com?subject=Professional enquiry -" class="btn btn-dark btn-outline-light col light m-2">Professional enquiry <i class="icofont-external-link"></i></a>
+			          			<a href="mailto:mugtaba.ga.su@gmail.com?subject=Casual talk -" class="btn btn-dark btn-outline-light col m-2">Casual talk <i class="icofont-external-link"></i></a>
+			          		</div>
+			        	</div>
+			      	</div>
+			    </div>
+
+			    <!-- Option 4 -->
+			    <div class="card bg-light">
+			      	<div class="card-header col-12 border-0 text-center animated" type="" data-toggle="collapse" data-target="#collapseFour">
+			        	<h2 class="transparent">Socials</h2>
+			      	</div>
+			      	<div class="collapse" id="collapseFour" data-parent="#accordion">
+			        	<div class="card-body my-2">
+			        		<a id="" href="https://instagram.com/mugtaba.g" class="footer-butt rounded-circle align-middle text-center bg-insta" title="Instagram" data-toggle="tooltip" data-placement="top"><i class="icofont-instagram"></i></a>
+							<a id="" href="https://codepen.io/Oddward" class="footer-butt rounded-circle align-middle text-center bg-dark" title="CodePen" data-toggle="tooltip" data-placement="top">
+								<img src="img/icons8-codepen-50.png" alt="" class="codepen-icon"></a>
+							<a id="" href="https://linkedin.com/in/mugtabagaroot" class="footer-butt rounded-circle align-middle text-center bg-linkedin" title="LinkedIn" data-toggle="tooltip" data-placement="top"><i class="icofont-linkedin"></i></a>
+					</div>
+			      	</div>
+			    </div>
+		  	</div>
+		</div>
+		</div>
+		
+	</div>
+	</main>
+
+	<footer class="bg-dark text-light text-center mx-0 mb-0 py-1">
+			<div class="my-2">
+				<a id="" href="https://instagram.com/mugtaba.g" class="footer-butt rounded-circle align-middle text-center bg-insta" title="Instagram" data-toggle="tooltip" data-placement="top"><i class="icofont-instagram"></i></a>
+				<a id="" href="https://codepen.io/Oddward" class="footer-butt rounded-circle align-middle text-center" title="CodePen" data-toggle="tooltip" data-placement="top">
+					<img src="img/icons8-codepen-50.png" alt="" class="codepen-icon"></a>
+				<a id="" href="https://linkedin.com/in/mugtabagaroot" class="footer-butt rounded-circle align-middle text-center bg-linkedin" title="LinkedIn" data-toggle="tooltip" data-placement="top"><i class="icofont-linkedin"></i></a>
+			</div>
+		<p class="my-1"><small>© 2019 - Mohammed AlMugtaba Garoot</small></p>
+	</footer>
+
+	<!-- scripts to load after stuff -->	
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

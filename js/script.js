@@ -1,21 +1,34 @@
 $(window).on('load', function() {
-    
+
     //Popper
     $('[data-toggle="tooltip"]').tooltip();
 
-    //detect scroll to bottom (migt make heavier)
-    /*function getDocHeight() {
-    	var d = document;
-    	return Math.max(
-    		d.body.scrollHeight, d.documentElement.scrollHeight,
-    		d.body.offsetHeight, d.documentElement.offsetHeight,
-    		d.body.clientHeight, d.documentElement.clientHeight
-    	);
-    }
-    $(window).scroll(function() {
-    	if($(window).scrollTop() + $(window).height() > (getDocHeight() - 100)){
-    		$('#floating-container').hide(3000);
+    //CONTACT
+    $('#contact-butt').click(function() {
+    	$('#accordion').css({'opacity':0,'display':'none'});
+    	$('#fullscreen-overlay').fadeIn('fast', 'linear');
+    	$('#accordion').delay(300).slideDown('normal', 'linear').animate(
+    		{opacity: 1}, {queue: false, duration: 'normal'})
+    });
+    $('#close-butt').click(function(){
+    	$('#accordion').slideUp('normal', 'linear').animate(
+    		{opacity: 0}, {queue: false, duration: 'normal'});
+    	$('#fullscreen-overlay').delay(300).fadeOut('fast', 'linear')
+    });
+
+    //COPY butt
+    $('button.copyButt').click(function(){
+    	try{
+    		$(this).siblings('input.toCopy').select();      
+    		document.execCommand("copy");
+    		$(this).attr('data-original-title','Email successfullly copied!').tooltip('show');
     	}
-    })*/
+    	catch(e){
+    		// alert(e);
+    		alert('Failed to copy email. Browser not properly supported.')
+    	}
+    	
+	});
+    
 }
 )
