@@ -32,12 +32,12 @@ $(window).on('load', function() {
 
 	//Form subject
 	var $namedsub;
-	var $prefix;
+	var $prefix = 'Message through github page';
 	var $name;
 	$('#sender').blur(function(){
 		$name = $('#sender').val();
-		if ($prefix == null) {
-			$prefix = 'Github page message - '
+		if ($('#sender').val()) {
+			$name = ' - ' + $name;
 		}
 		$namedsub = $prefix + $name;
 		$('#form-subject').attr('value',$namedsub);
@@ -46,7 +46,10 @@ $(window).on('load', function() {
 	
 	$('#subject').change(function() {
 		$prefix = $('#subject').find(":selected").val();
-		$namedsub = $prefix + $name;
+		$namedsub = $prefix;
+		if ($name != null) {
+			$namedsub += $name;
+		}
 		$('#form-subject').attr('value',$namedsub);
 		$('#subtext').text($namedsub);
 	});
