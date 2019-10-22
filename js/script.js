@@ -41,12 +41,14 @@ $(window).on('load', function() {
 		}
 		$namedsub = $prefix + $name;
 		$('#form-subject').attr('value',$namedsub);
+		$('#subtext').text($namedsub);
 	})
 	
 	$('#subject').change(function() {
-		prefix = $('#subject').find(":selected").val();
-		$namedsub = prefix + $name;
+		$prefix = $('#subject').find(":selected").val();
+		$namedsub = $prefix + $name;
 		$('#form-subject').attr('value',$namedsub);
+		$('#subtext').text($namedsub);
 	});
     
 }
