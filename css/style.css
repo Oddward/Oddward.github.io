@@ -12,10 +12,11 @@ body{
 }
 .orange-grad{
 	background: rgb(247,107,29);
-background: -moz-linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
-background: -webkit-linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
-background: linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f76b1d",endColorstr="#ffb631",GradientType=1);
+	background: -moz-linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
+	background: -webkit-linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
+	background: linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f76b1d",endColorstr="#ffb631",GradientType=1);
+	background-attachment: fixed;
 }
 .montserrat{
 	font-family: 'Montserrat', sans-serif;
