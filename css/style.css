@@ -43,7 +43,7 @@ main .alex{
 	min-height: calc(100vh - 68px);
 }
 #title-name{
-	margin-top: auto;
+	/* margin-top: auto; */
 }
 #intropara{
 	/* height: 100%; */
