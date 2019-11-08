@@ -20,10 +20,10 @@ body{
 	background-attachment: fixed;
 }
 .bg-blue{
-	background: #155177;
+	background-color: #155177 !important;
 }
 .txt-blue{
-	color: #155177;
+	color: #155177 !important;
 }
 .montserrat{
 	font-family: 'Montserrat', sans-serif;
@@ -38,6 +38,9 @@ main .alex{
 	text-shadow: 2px 2px white;
 	position: relative;
 	z-index: 30;
+}
+#description{
+	min-height: calc(100vh - 68px);
 }
 #title-name{
 	margin-top: auto;
@@ -57,6 +60,12 @@ main .alex{
 	border-radius: 10px;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+#details-section{
+	font-size: 1.25em;
+}
+#details-section .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background-color: #155177;
 }
 .p-styled{
 	font-family: 'Roboto', sans-serif;
@@ -98,7 +107,7 @@ h1.styled{
 	-webkit-text-fill-color: transparent;
 }
 h1.major{
-	font-size: 3.5rem;
+	font-size: 4rem;
 }
 .main-img-wrapper{
 	/*background-image: url("../img/IMG_20171118_110634_HDR.jpg");*/
@@ -207,14 +216,16 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 .main-quote{
 	font-family: serif;
 	position: relative;
+	z-index: 1;
+	font-size: 2rem;
 }
 .main-quote:before{
 	content: '\201C'; /*\201C*/
 	color: #336699; /*bootstrap blockquote-footer color #6c757d*/
 	position: relative;
 	top: 0.40em;
-	left: 0.15em;
-	font-size: 5em;
+	left: 0.35em;
+	font-size: 5.5em;
 	z-index: -1;
 	line-height: 0.8em;
 }
