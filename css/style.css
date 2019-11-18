@@ -9,7 +9,7 @@ body{
 	height: auto;
 	position: relative;
 	padding-bottom: 100px;
-	background: #f7f7f7;
+	background: #cacaca;
 }
 .orange-grad{
 	background: rgb(247,107,29);
@@ -46,7 +46,7 @@ main .alex{
 	/* height: 100%; */
 	vertical-align: center;
 	background: #f7f7f7;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 #intropara h3{
 	padding: 0;
@@ -66,7 +66,7 @@ main .alex{
 .p-styled{
 	font-family: 'Roboto', sans-serif;
 	margin-top: 20px;
-	font-size: 18pt;
+	font-size: calc(1rem + 1vmin);
 }
 .describe{
 	text-align: left;
@@ -105,8 +105,22 @@ h1.major{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+#summary h2{
+	padding-bottom: 1em;
+	/* border-bottom: 1px solid white;; */
+}
 #summary i{
-	color: rgb(255, 145, 0);
+	font-size: 4rem;
+	margin: 0.4em;
+	display: inline-block;
+}
+#summary div.icon{
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	font-size: 4rem;
+	margin: 0.4em 0.4em 0em 0.4em;
+	line-height: 1;
 }
 #summary p{
 	font-family: 'Roboto', sans-serif;
@@ -142,6 +156,7 @@ h1.major{
 	width: auto;
 	position: relative;
 	top: -3px;
+	background-color: black;
 }
 .footer-butt{
 	width: 50px;
