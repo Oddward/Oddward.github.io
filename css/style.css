@@ -9,7 +9,7 @@ body{
 	height: auto;
 	position: relative;
 	padding-bottom: 100px;
-	background: #f7f7f7;
+	background: #cacaca;
 }
 .orange-grad{
 	background: rgb(247,107,29);
@@ -33,7 +33,7 @@ body{
 	font-size: 1.5em;
 	margin-left: -5px;
 }
-main .alex{
+.alexbig{
 	color: #155177;
 	text-shadow: 2px 2px white;
 	position: relative;
@@ -46,7 +46,7 @@ main .alex{
 	/* height: 100%; */
 	vertical-align: center;
 	background: #f7f7f7;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 #intropara h3{
 	padding: 0;
@@ -66,7 +66,7 @@ main .alex{
 .p-styled{
 	font-family: 'Roboto', sans-serif;
 	margin-top: 20px;
-	font-size: 18pt;
+	font-size: calc(1rem + 1vmin);
 }
 .describe{
 	text-align: left;
@@ -105,8 +105,22 @@ h1.major{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+#summary h2{
+	padding-bottom: 1em;
+	/* border-bottom: 1px solid white;; */
+}
 #summary i{
-	color: rgb(255, 145, 0);
+	font-size: 4rem;
+	margin: 0.4em;
+	display: inline-block;
+}
+#summary div.icon{
+	display: inline-block;
+	width: 4rem;
+	height: 4rem;
+	font-size: 4rem;
+	margin: 0.4em 0.4em 0em 0.4em;
+	line-height: 1;
 }
 #summary p{
 	font-family: 'Roboto', sans-serif;
@@ -136,6 +150,9 @@ h1.major{
 	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.bg-black{
+	background-color: black;
 }
 .codepen-icon{
 	height: 30px;
@@ -184,6 +201,7 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_crop,g_face,x_413,y_413/v1570761994/mug_portrait1.jpg');
 	background-size: cover;
 	background-position: center;
+	background-position: 50% calc(50% + 10px);
 	width: 200px;
 	height: 200px;
 	border: solid 1px black;
@@ -235,4 +253,8 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+#my-foot a{
+	color: white;
+	font-weight: bold;
 }
