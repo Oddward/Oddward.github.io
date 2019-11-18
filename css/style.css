@@ -33,7 +33,7 @@ body{
 	font-size: 1.5em;
 	margin-left: -5px;
 }
-main .alex{
+.alexbig{
 	color: #155177;
 	text-shadow: 2px 2px white;
 	position: relative;
@@ -151,12 +151,14 @@ h1.major{
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
+.bg-black{
+	background-color: black;
+}
 .codepen-icon{
 	height: 30px;
 	width: auto;
 	position: relative;
 	top: -3px;
-	background-color: black;
 }
 .footer-butt{
 	width: 50px;
@@ -199,6 +201,7 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_crop,g_face,x_413,y_413/v1570761994/mug_portrait1.jpg');
 	background-size: cover;
 	background-position: center;
+	background-position: 50% calc(50% + 10px);
 	width: 200px;
 	height: 200px;
 	border: solid 1px black;
@@ -250,4 +253,8 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+#my-foot a{
+	color: white;
+	font-weight: bold;
 }
