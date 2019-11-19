@@ -9,21 +9,41 @@ body{
 	height: auto;
 	position: relative;
 	padding-bottom: 100px;
-	background: #cacaca;
+	background: #eeeeee;
 }
 .orange-grad{
 	background: rgb(247,107,29);
-	background: -moz-linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
-	background: -webkit-linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
-	background: linear-gradient(135deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
+	background: -moz-linear-gradient(-45deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
+	background: linear-gradient(-45deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f76b1d",endColorstr="#ffb631",GradientType=1);
 	background-attachment: fixed;
 }
 .bg-blue{
 	background-color: #155177 !important;
 }
+.bg-linkedin{
+	background-color: #0077B5; /*LinkedIn blue*/
+}
+.bg-insta{ /*background - Instagram*/
+	background: #f09433; 
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.bg-black{
+	background-color: black;
+}
 .txt-blue{
 	color: #155177 !important;
+}
+.transparent{
+	background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
+	background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .montserrat{
 	font-family: 'Montserrat', sans-serif;
@@ -63,7 +83,7 @@ body{
 #details-section .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
 	background-color: #155177;
 }
-.p-styled{
+p.styled{
 	font-family: 'Roboto', sans-serif;
 	margin-top: 20px;
 	font-size: calc(1rem + 1vmin);
@@ -74,22 +94,15 @@ body{
 span{
 	font-variant-caps: small-caps;
 }
-h1.styled{
-	/*font-family: 'Major Mono Display', monospace;*/
+/* h1.styled{
+	font-family: 'Major Mono Display', monospace;
 	border-radius: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
 	font-size: 2.3em;
 	font-weight: bold;
-}
-.transparent{
-	background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
-	background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
+} */
 h1.major{
 	font-size: 4rem;
 }
@@ -140,19 +153,6 @@ h1.major{
 	box-shadow: 3px 5px 5px rgba(0,0,0,.3), -1px 1px 5px rgba(0,0,0,.3);
 	transition: all 300ms ease;
 	padding-top: 5px;
-}
-.bg-linkedin{
-	background-color: #0077B5; /*LinkedIn blue*/
-}
-.bg-insta{ /*background - Instagram*/
-	background: #f09433; 
-	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-.bg-black{
-	background-color: black;
 }
 .codepen-icon{
 	height: 30px;
