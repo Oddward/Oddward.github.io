@@ -108,14 +108,17 @@ h1.major{
 }
 .main-img-wrapper{
 	/* background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_1671/a_90/v1570762003/mug_at_malacca_HDR.jpg'); */
-	background-image: url('../img/mug port edit 2.png');
-	background-size: contain; /*for transparent png*/
+	/* background-image: url('../img/mug port edit 2.png'); */
+	/* background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center; */
 	/*min-height: 400px;*/
 	min-height: calc(100vh - 71px);
+	max-height: 100vh;
+	/* display: flex;
+	flex-direction: column; */
 	overflow: hidden;
-	position: absolute;
+	position: relative;
 	z-index: 100;
 }
 #summary{
