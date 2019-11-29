@@ -4,21 +4,21 @@
     width: 100%;
     display: inline-block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 180px;
+    right: 50px;
     /* margin-top: -100%;
     margin-right: -50px; */
     z-index: 90;
-    -webkit-transform: rotateZ(135deg);
-            transform: rotateZ(135deg);
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
 }
 .raindrop {
     position: absolute;
     left: 50%;
     top: 50%;
     background: white;
-    -webkit-animation: tail 2000ms ease-in-out infinite, drop 2000ms ease-in-out infinite;
-            animation: tail 2000ms ease-in-out infinite, drop 2000ms ease-in-out infinite;
+    -webkit-animation: tail 3000ms ease-in-out infinite, drop 3000ms ease-in-out infinite;
+            animation: tail 3000ms ease-in-out infinite, drop 3000ms ease-in-out infinite;
 }
 .raindrop::after {
     -webkit-transform: translateX(50%) rotateZ(-45deg);
@@ -69,8 +69,8 @@
             animation-delay: 2967ms;
 }
 .raindrop:nth-child(5) {
-    top: calc(50% - -199px);
-    left: calc(50% - 118px);
+    top: calc(50% - 199px);
+    left: calc(50% - 218px);
     height: 3px;
     -webkit-animation-delay: 6111ms;
             animation-delay: 6111ms;
@@ -135,7 +135,7 @@
             animation-delay: 9107ms;
 }
 .raindrop:nth-child(11) {
-    top: calc(50% - 8px);
+    top: calc(50% - 108px);
     left: calc(50% - 220px);
     height: 2px;
     -webkit-animation-delay: 2808ms;
