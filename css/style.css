@@ -233,7 +233,7 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 #fullscreen-overlay{
 	position: fixed;
 	top: 0;
-	z-index: 30;
+	z-index: 230;
 	height: 100%;
 	width: 100%;
 	overflow-y: auto;
@@ -248,7 +248,7 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	position: absolute;
 	top: 10px;
 	right: 10px;
-	z-index: 30;
+	z-index: 230;
 }
 .contact-area{
 	position: absolute;
