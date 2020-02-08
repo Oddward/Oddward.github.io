@@ -5,7 +5,7 @@ complementary light blue: #2E53FF;
 */
 body{
 	text-align: center;	
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	height: auto;
 	position: relative;
 	padding-bottom: 100px;
@@ -37,6 +37,10 @@ body{
 }
 .txt-blue{
 	color: #155177 !important;
+}
+.text-dark-ish{ /* replace bootstrap text-dark */
+	color: #636f7b;
+	line-height: 1.7;
 }
 .transparent{
 	background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
@@ -115,6 +119,7 @@ h1.major{
 	/*min-height: 400px;*/
 	min-height: calc(100vh - 71px);
 	max-height: 100vh;
+	max-width: 800px !important;
 	/* display: flex;
 	flex-direction: column; */
 	overflow: hidden;
