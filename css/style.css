@@ -3,6 +3,21 @@ base color: #F76B1D;
 complementary blue: #0020B3;
 complementary light blue: #2E53FF;
 */
+@font-face{
+	font-family: 'my-Raleway-logomark';
+	src: url('../fonts/my-Raleway-logomark.woff') format('woff'),
+		 url('../fonts/my-Raleway-logomark.ttf') format('truetype'),
+		 url('../fonts/my-Raleway-logomark.eot') format('eot') /*IE-8 support*/;
+}
+@font-face{
+	font-family: 'myAlexCursives';
+	src: url('../fonts/myAlexCursives.woff') format('woff'),
+		 url('../fonts/myAlexCursives.ttf') format('truetype'),
+		 url('../fonts/myAlexCursives.eot') format('eot') /*IE-8 support*/;
+}
+button:focused{
+	outline-color: transparent;
+}
 body{
 	text-align: center;	
 	/* min-height: 100vh; */
@@ -53,7 +68,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 .alex{
-	font-family: 'Alex Brush', cursive;
+	font-family: 'myAlexCursives', 'Brush Script MT', Fallback, cursive;
 	font-size: 1.5em;
 	margin-left: -5px;
 }
@@ -62,6 +77,33 @@ body{
 	text-shadow: 2px 2px white;
 	position: relative;
 	z-index: 30;
+}
+.logomark{
+	font-family: 'my-Raleway-logomark', Fallback, sans-serif;
+	font-size: 1.7em;
+	transition: text-shadow 500ms ease;
+}
+.logomark:hover{
+	color: white;
+	text-shadow: 2px 2px 2px orange;
+}
+.navbar{
+	background-color: #222 !important;
+}
+.navbar-brand{
+	width: 85.5px;
+	overflow: hidden;
+	transition: width 500ms ease-in-out;
+}
+.navbar-dark .navbar-toggler{
+	bottom: 20px;
+	right: 20px;
+	left: auto;
+	border-color: rgba(0,0,0,.5) !important;
+	color: rgba(0,0,0,.5)  !important;
+	border-radius: 50%;
+	height: 56px;
+	widows: 56px;
 }
 #description{
 	min-height: calc(100vh - 71px);
@@ -98,17 +140,9 @@ p.styled{
 span{
 	font-variant-caps: small-caps;
 }
-/* h1.styled{
-	font-family: 'Major Mono Display', monospace;
-	border-radius: 10px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: center;
-	font-size: 2.3em;
-	font-weight: bold;
-} */
 h1.major{
-	font-size: 4rem;
+	font-size: calc(3rem + 1vw);
+	font-size: 3.4rem;
 }
 .main-img-wrapper{
 	/* background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_1671/a_90/v1570762003/mug_at_malacca_HDR.jpg'); */
@@ -124,6 +158,21 @@ h1.major{
 	flex-direction: column; */
 	overflow: hidden;
 	position: relative;
+	z-index: 100;
+}
+.main-img{
+    background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_500/v1581197762/mug_stylish_port.png');
+    background-size: contain; /*for transparent png*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    background-position-y: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 94%;
+    vertical-align: -webkit-baseline-middle;
+    vertical-align: middle;
 	z-index: 100;
 }
 #summary{
