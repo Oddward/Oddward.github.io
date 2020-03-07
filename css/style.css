@@ -57,6 +57,12 @@ body{
 	color: #636f7b;
 	line-height: 1.7;
 }
+.border-primary-ish{ /* replace bootstrap primary border*/
+	border-color: #155177;
+}
+card .nav-link{
+	color: #155177;
+}
 .transparent{
 	background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
 	background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
@@ -85,7 +91,7 @@ body{
 }
 .logomark:hover{
 	color: white;
-	text-shadow: 2px 2px 2px orange;
+	text-shadow: 1px 2px 1px orange, 1px 2px 2px orange;
 }
 .navbar{
 	background-color: #222 !important;
@@ -100,10 +106,13 @@ body{
 	right: 20px;
 	left: auto;
 	border-color: rgba(0,0,0,.5) !important;
-	color: rgba(0,0,0,.5)  !important;
+	color: rgba(0,0,0,.5) !important;
 	border-radius: 50%;
 	height: 56px;
 	widows: 56px;
+}
+.navbar-dark .navbar-toggler-icon{
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 #description{
 	min-height: calc(100vh - 71px);
@@ -201,7 +210,7 @@ h1.major{
 	font-size: 16pt;
 }
 
-/*Floating social menu - changed*/
+/* SOCIAL MENU - changed*/
 .social-butt{
 	width: 50px;
 	height: 50px;
@@ -226,8 +235,10 @@ h1.major{
     filter: invert(95%);
 }
 .footer-butt{
-	width: 50px;
-	height: 50px;
+	position: relative;
+	width: 45px;
+	height: 45px;
+	/*padding-bottom: 50%;*/
 	color: white;
 	font-size: 25px;
 	line-height: 50px;
@@ -236,6 +247,13 @@ h1.major{
 	margin-right: 10px;
 	/*padding-top: 5px;*/
 	display: inline-block;
+}
+.footer-butt img, .footer-butt i{
+	position: absolute;
+	top: 50%; left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
 }
 a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	text-decoration: none;
@@ -290,7 +308,7 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 /*Contact*/
 #fullscreen-overlay{
 	position: fixed;
-	top: 0;
+	top: 77px;
 	z-index: 230;
 	height: 100%;
 	width: 100%;
@@ -313,7 +331,7 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	min-height: 100vh;
 	overflow-y: auto;
 }
-/*Footer*/
+/*FOOTER*/
 #my-foot{
 	position: absolute;
 	bottom: 0;
