@@ -23,7 +23,7 @@ body{
 	/* min-height: 100vh; */
 	height: auto;
 	position: relative;
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 	background: #eeeeee;
 }
 .orange-grad{
@@ -333,8 +333,8 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 }
 /*FOOTER*/
 #my-foot{
-	position: absolute;
-	bottom: 0;
+	/*position: absolute;*/
+	/*bottom: 0;*/
 	width: 100%;
 }
 #my-foot a{
