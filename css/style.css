@@ -50,6 +50,9 @@ body{
 .bg-black{
 	background-color: black;
 }
+.bg-darker{
+	background-color: #232323;
+}
 .txt-blue{
 	color: #155177 !important;
 }
@@ -79,8 +82,8 @@ card .nav-link{
 	margin-left: -5px;
 }
 .alexbig{
-	color: #155177;
-	text-shadow: 2px 2px white;
+	/* color: #155177; */
+	/* text-shadow: 2px 2px white; */
 	position: relative;
 	z-index: 30;
 }
@@ -114,19 +117,29 @@ card .nav-link{
 .navbar-dark .navbar-toggler-icon{
 	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
+#title-name{
+	z-index: 101;
+	top: 65%;
+}
+#title-name h1{
+	border-radius: 2rem;
+	display: inline-block;
+	font-size: calc(2rem + .5vw);
+	line-height: 1.4;
+}
 #description{
 	min-height: calc(100vh - 71px);
 }
-#intropara{
-	/* height: 100%; */
+/* #intropara{
+	height: 100%;
 	vertical-align: center;
-	background: #f7f7f7;
+	background: #f7f7f700;
 	border-radius: 10px;
-}
-#intropara h3{
+} */
+/* #intropara h3{
 	padding: 0;
 	color: black;
-}
+} */
 #sub{
 	border-radius: 10px;
 	padding-left: 5px;
@@ -141,7 +154,7 @@ card .nav-link{
 p.styled{
 	font-family: 'Roboto', sans-serif;
 	margin-top: 20px;
-	font-size: calc(1rem + 1vmin);
+	font-size: calc(1rem + 1vw);
 }
 .describe{
 	text-align: left;
@@ -149,10 +162,10 @@ p.styled{
 span{
 	font-variant-caps: small-caps;
 }
-h1.major{
+/* h1.major{
 	font-size: calc(3rem + 1vw);
 	font-size: 3.4rem;
-}
+} */
 .main-img-wrapper{
 	/* background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_1671/a_90/v1570762003/mug_at_malacca_HDR.jpg'); */
 	/* background-image: url('../img/mug port edit 2.png'); */
@@ -261,10 +274,10 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 }
 
 /*projects*/
-.card-columns a{
+.card-columns a, #intropara a{
 	color: #F76B1D;
 }
-.card-columns a:hover{
+.card-columns a:hover, #intropara a:hover{
 	background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
 	background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
 	-webkit-background-clip: text;
