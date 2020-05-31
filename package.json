@@ -1,0 +1,33 @@
+{
+  "name": "oddward.github.io",
+  "version": "1.0.0",
+  "description": "Mugtaba G's website",
+  "main": "index.js",
+  "dependencies": {
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oddward/Oddward.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "portfolio",
+    "oddward",
+    "mugtaba",
+    ".g",
+    "garoot",
+    "oddward.io",
+    "mugtaba.g"
+  ],
+  "author": "Mugtaba Garoot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oddward/Oddward.github.io/issues"
+  },
+  "homepage": "https://github.com/Oddward/Oddward.github.io#readme"
+}
