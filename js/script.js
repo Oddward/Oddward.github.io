@@ -4,7 +4,7 @@ $(window).on('load', function() {
     $('[data-toggle="tooltip"]').tooltip();
 
     //CONTACT
-    $('#contact-butt').click(function() {
+    $('#contact-butt, #call-to-action').click(function() {
     	$('#accordion').css({'opacity':0,'display':'none'});
     	$('#fullscreen-overlay').fadeIn('fast', 'linear');
     	$('#accordion').delay(300).slideDown('normal', 'linear').animate(

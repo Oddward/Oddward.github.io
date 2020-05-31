@@ -7,11 +7,11 @@
 	<meta name="keywords" content="web dev, web developer, computer science, graduate, IIUM alumni, UIA alumni, programmer, html, css, javascript, frontend, full-stack, graphic designer, profile, personal website, github pages, mohammed almugtaba garoot, mugtaba garoot, mugtaba g, oddward, tech stack, sudanese">
 	<meta name="description" content="The website of Mohammed Almugtaba Garoot - computer science grad, web developer, programmer, graphic designer etc.">
 	<meta name="author" content="Mohammed Almugtaba Garoot">
-	<!--[if IE]><link rel="shortcut icon" href="favicon-32.ico"><![endif]-->
+	<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
 	<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-	<link rel="icon" href="favicon-196.png">
+	<link rel="icon" href="favicon_196.png">
 	<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-	<link rel="apple-touch-icon" href="favicon-180.png">
+	<link rel="apple-touch-icon" href="favicon_180.png">
 	
 	<!--STYLE-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -46,7 +46,7 @@
 					<a href="about.html" class="nav-link">About </a>
 				</li>
 				<li class="nav-item px-2 text-center ml-sm-auto">
-					<a href="#" class="btn btn-light btn-outline-dark w-100" id="contact-butt">Contact<span class="sr-only">(open contacts form)</span></a>
+					<a href="#" class="btn btn-light btn-outline-dark w-100" id="contact-butt">Contact<span class="sr-only">(open contacts overlay)</span></a>
 				</li>
 			</ul>
 		</div>
@@ -84,18 +84,19 @@
 					<div class="raindrop"></div>
 					<div class="raindrop"></div>
 				</div>
-				
+				<div id="title-name" class="text-center w-100 justify-content-center position-absolute text-dark">
+					<h1 class="montserrat bg-light font-weight-bold px-4 shadow">MUGTABA <b class="alex alexbig mx-1">G</b>AROOT</h1>
+				</div>
 			</div>
 			<div class="col-lg-6 d-flex justify-content-around" id="description" style="flex-direction: column;">
 				<!-- px-md-2 px-sm-2 px-lg-3  -->
-				<div id="title-name" class="text-center pt-5 mx-5 d-flex justify-content-center align-middle">
-					<h1 class="major montserrat text-light">MUGTABA <b class="alex alexbig">G</b>AROOT</h1>
-				</div>
+				
 				<div>
 					<h3 class="mb-3 p-3 text-center txt-blue d-none"><span id="sub">'G' as in 'Giraffe'</span></h3>
-					<div id="intropara" class="m-md-4 m-sm-3 m-3 txt-blue px-3 py-1 p-md-3 shadow">
-						<p class="styled px-3 py-0">A Sudanese rooted in Malaysia. A passion for all things art had lead me to the digital world of entertainment and productivity at an early age and eventually I found myself here.</p>
-						<p class="styled px-3 py-0">I want to combine my passion for tech, visual arts & design and entrepreneurship to build  something progressive~</p>
+					<div id="intropara" class="text-dark bg-light rounded m-md-4 m-sm-3 m-3 px-3 py-1 p-md-3 shadow">
+						<p class="styled px-3 py-0">A Sudanese rooted in Malaysia. I design websites, interfaces, user experiences, graphics & motion. I want to combine my passion for tech, visual arts & design and entrepreneurship to build something progressive & help people achieve more~</p>
+						<!-- A passion for all things art had lead me to the digital world of entertainment and productivity at an early age and eventually I found myself here. -->
+						<a href="#" id="call-to-action" class="styled px-3 py-0">Lets Talk</a>
 					</div>
 				</div>
 			</div>
@@ -104,7 +105,7 @@
 		<!--button-->
 
 		<!-- summary of skills -->
-		<div id="summary" class="row bg-blue no-gutters text-center text-light py-2">
+		<div id="summary" class="row bg-darker no-gutters text-center text-light py-2">
 			<div class="col-12 py-5">
 				<div class="row no-gutters justify-content-around">
 					<div class="col-sm-12 col-md-10 align-content-center align-items-center">
