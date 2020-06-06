@@ -15,6 +15,12 @@ complementary light blue: #2E53FF;
 		 url('../fonts/myAlexCursives.ttf') format('truetype'),
 		 url('../fonts/myAlexCursives.eot') format('eot') /*IE-8 support*/;
 }
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
 button:focused{
 	outline-color: transparent;
 }
@@ -26,6 +32,10 @@ body{
 	/*padding-bottom: 100px;*/
 	background: #eeeeee;
 }
+/* Tailwind CSS extracted components */
+/* .btn-CTA{
+	
+} */
 .orange-grad{
 	background: rgb(247,107,29);
 	background: -moz-linear-gradient(-45deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
@@ -75,17 +85,6 @@ card .nav-link{
 }
 .montserrat{
 	font-family: 'Montserrat', sans-serif;
-}
-.alex{
-	font-family: 'myAlexCursives', 'Brush Script MT', Fallback, cursive;
-	font-size: 1.5em;
-	margin-left: -5px;
-}
-.alexbig{
-	/* color: #155177; */
-	/* text-shadow: 2px 2px white; */
-	position: relative;
-	z-index: 30;
 }
 .logomark{
 	font-family: 'my-Raleway-logomark', Fallback, sans-serif;

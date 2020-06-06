@@ -15,12 +15,13 @@
 	
 	<!--STYLE-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="dist/output.css">
 
 	<!--FONTS-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:wght@400,700,900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet"> -->
 	<link rel="stylesheet" href="css/icofont.min.css" type="text/css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" crossorigin>
@@ -28,79 +29,53 @@
 	<!-- <script src="js/jquery.min.js"></script> -->
 </head>
 <body>
-	<div class="navbar navbar-expand-sm navbar-dark fixed-top">
-		<a href="#" class="navbar-brand montserrat font-weight-light mx-auto">
-			<span class="logomark"> </span>
+	<nav class="fixed inset-x-0 top-0">
+		<a href="#" class="navbar-brand float-left mx-auto">
+			<span class="logomark mt-4"> </span>
 			<!-- MUGTABA<b class="alex">G</b> -->
 		</a>
-		<button class="navbar-toggler fixed-bottom" type="button" data-toggle="collapse" data-target="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
 
-		<div id="navbarStuff" class="collapse navbar-collapse">
-			<ul class="navbar-nav w-100">
-				<li class="nav-item px-2 text-center active">
+		<div id="navbarStuff" class="flex justify-around">
+			<!-- <ul class="navbar-nav w-100">
+				<li class="">
 					<a href="index.html" class="nav-link">Home <span class="sr-only">(current)</span></a>
 				</li>
-				<li class="nav-item px-2 text-center">
+				<li class="">
 					<a href="about.html" class="nav-link">About </a>
 				</li>
-				<li class="nav-item px-2 text-center ml-sm-auto">
-					<a href="#" class="btn btn-light btn-outline-dark w-100" id="contact-butt">Contact<span class="sr-only">(open contacts overlay)</span></a>
+				<li class="">
+					<a href="#" class="" id="contact-butt">Contact<span class="sr-only">(open contacts overlay)</span></a>
 				</li>
+			</ul> -->
+			
+				<a href="#hero" class="nav-link">Home <span class="sr-only">(current)</span></a>
+				<a href="#" class="nav-link">About </a>
+				<a href="#" class="" id="contact-butt">Contact</a>
 			</ul>
 		</div>
-	</div>
+	</nav>
 	<!-- fab -->
 	<!-- <button id="fab-navbar-toggler" class="" type="button" data-toggle="collapse" data-target="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button> -->
 
-	<main class="container-fluid my-0 p-0 col-12 orange-grad shadow">
-		<div id="profilesec" class="row justify-content-center no-gutters" style="margin-top: 77px;">
-			<div class="col-lg-6 p-0 main-img-wrapper justify-content-center">
+	<main class="container">
+		<section id="hero" class="container bg-gray-800 pt-20 w-screen h-full align-middle">
+			<div class="grid grid-cols-2">
 				<!-- Main front page image -->
 				<div class="main-img"></div>
 
-				<div class="rain">
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-					<div class="raindrop"></div>
-				</div>
-				<div id="title-name" class="text-center w-100 justify-content-center position-absolute text-dark">
-					<h1 class="montserrat bg-light font-weight-bold px-4 shadow">MUGTABA <b class="alex alexbig mx-1">G</b>AROOT</h1>
-				</div>
+				<article class="text-left">
+					<h1 class="font-display text-6xl font-black transparent mt-1/5">
+						Mugtaba <br>Garoot
+					</h1>
+					<p class="text-2xl text-white">
+						Passionately designing code, websites, interfaces, experiences, graphics and motion. I’d like to get opportunities to work with forward-thinking people and build something progressive.
+					</p>
+					<a href="#contact" role="button" class="font-bold text-center border-2 border-white rounded-full text-2xl my-4 mx-3 px-6 py-2">Let's talk</a>
+				</article>
 			</div>
-			<div class="col-lg-6 d-flex justify-content-around" id="description" style="flex-direction: column;">
-				<!-- px-md-2 px-sm-2 px-lg-3  -->
-				
-				<div>
-					<h3 class="mb-3 p-3 text-center txt-blue d-none"><span id="sub">'G' as in 'Giraffe'</span></h3>
-					<div id="intropara" class="text-dark bg-light rounded m-md-4 m-sm-3 m-3 px-3 py-1 p-md-3 shadow">
-						<p class="styled px-3 py-0">A Sudanese rooted in Malaysia. I design websites, interfaces, user experiences, graphics & motion. I want to combine my passion for tech, visual arts & design and entrepreneurship to build something progressive & help people achieve more~</p>
-						<!-- A passion for all things art had lead me to the digital world of entertainment and productivity at an early age and eventually I found myself here. -->
-						<a href="#" id="call-to-action" class="styled px-3 py-0">Lets Talk</a>
-					</div>
-				</div>
-			</div>
-		</div>
+		</section>
 		
 		<!--button-->
 
@@ -339,9 +314,9 @@
 	</div>
 
 	<!-- scripts to load after stuff -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 	<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
 	<script src="js/script.js"></script>
 </body>
