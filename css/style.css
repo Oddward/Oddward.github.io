@@ -3,18 +3,6 @@ base color: #F76B1D;
 complementary blue: #0020B3;
 complementary light blue: #2E53FF;
 */
-@font-face{
-	font-family: 'my-Raleway-logomark';
-	src: url('../fonts/my-Raleway-logomark.woff') format('woff'),
-		 url('../fonts/my-Raleway-logomark.ttf') format('truetype'),
-		 url('../fonts/my-Raleway-logomark.eot') format('eot') /*IE-8 support*/;
-}
-@font-face{
-	font-family: 'myAlexCursives';
-	src: url('../fonts/myAlexCursives.woff') format('woff'),
-		 url('../fonts/myAlexCursives.ttf') format('truetype'),
-		 url('../fonts/myAlexCursives.eot') format('eot') /*IE-8 support*/;
-}
 @tailwind base;
 
 @tailwind components;
@@ -30,22 +18,19 @@ body{
 	height: auto;
 	position: relative;
 	/*padding-bottom: 100px;*/
-	background: #eeeeee;
+	scroll-behavior: smooth;
 }
 /* Tailwind CSS extracted components */
-/* .btn-CTA{
-	
-} */
-.orange-grad{
-	background: rgb(247,107,29);
-	background: -moz-linear-gradient(-45deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
-	background: linear-gradient(-45deg, rgba(247,107,29,1) 0%, rgba(255,182,49,1) 100%);
+.form-textbox{
+	@apply rounded-md bg-gray-200 mt-2 px-3 py-2 text-gray-700
+}
+.blue-grad{
+	background: rgb(0, 255, 149);
+	background: -moz-linear-gradient(-45deg, rgb(208, 255, 0) 0%, rgb(2, 247, 255) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(208, 255, 0) 0%, rgba(2, 247, 255,1) 100%);
+	background: linear-gradient(-45deg, rgba(208, 255, 0) 0%, rgba(2, 247, 255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f76b1d",endColorstr="#ffb631",GradientType=1);
 	background-attachment: fixed;
-}
-.bg-blue{
-	background-color: #155177 !important;
 }
 .bg-linkedin{
 	background-color: #0077B5; /*LinkedIn blue*/
@@ -57,28 +42,15 @@ body{
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
-.bg-black{
-	background-color: black;
-}
-.bg-darker{
-	background-color: #232323;
-}
-.txt-blue{
-	color: #155177 !important;
-}
-.text-dark-ish{ /* replace bootstrap text-dark */
-	color: #636f7b;
-	line-height: 1.7;
-}
 .border-primary-ish{ /* replace bootstrap primary border*/
 	border-color: #155177;
 }
 card .nav-link{
 	color: #155177;
 }
-.transparent{
-	background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
-	background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
+.text-blue-grad{
+	background: linear-gradient(135deg, rgb(208, 255, 0) 0%, rgb(2, 247, 255) 100%) fixed;
+	background: -webkit-linear-gradient(315deg, rgb(208, 255, 0) 0%, rgb(2, 247, 255) 100%) fixed;
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -101,23 +73,16 @@ card .nav-link{
 	color: white;
 	text-shadow: 1px 2px 1px orange, 1px 2px 2px orange;
 }
-.navbar{
-	background-color: #222 !important;
-}
-.navbar-brand{
-	width: 85.5px;
-	overflow: hidden;
-	transition: width 500ms ease-in-out;
-}
-.navbar-dark .navbar-toggler{
-	bottom: 20px;
-	right: 20px;
-	left: auto;
-	border-color: rgba(0,0,0,.5) !important;
-	color: rgba(0,0,0,.5) !important;
-	border-radius: 50%;
-	height: 56px;
-	widows: 56px;
+nav a:hover span::before{
+	content: '';
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	position: absolute;
+	bottom: 10px;
+	transform: translateX(200%);
+	/* left: 50% */
+	background-color: white;
 }
 .navbar-dark .navbar-toggler-icon{
 	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
@@ -156,14 +121,6 @@ card .nav-link{
 #details-section .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
 	background-color: #155177;
 }
-p.styled{
-	font-family: 'Roboto', sans-serif;
-	margin-top: 20px;
-	font-size: calc(1rem + 1vw);
-}
-.describe{
-	text-align: left;
-}
 span{
 	font-variant-caps: small-caps;
 }
@@ -197,18 +154,10 @@ span{
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 94%;
+    height: 100%;
     vertical-align: -webkit-baseline-middle;
     vertical-align: middle;
 	z-index: 100;
-}
-#summary{
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-#summary h2{
-	padding-bottom: 1em;
-	/* border-bottom: 1px solid white;; */
 }
 #summary i{
 	font-size: 4rem;
@@ -303,8 +252,8 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	background-size: cover;
 	background-position: center;
 	background-position: 50% calc(50% + 10px);
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 	border: solid 1px black;
 }
 .main-quote{
@@ -324,31 +273,7 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 	line-height: 0.8em;
 }
 /*Contact*/
-#fullscreen-overlay{
-	position: fixed;
-	top: 77px;
-	z-index: 230;
-	height: 100%;
-	width: 100%;
-	overflow-y: auto;
-	display: none;
-}
-#close-butt{
-	width: 20px;
-	height: 20px;
-	font-size: 18px;
-	border: none;
-	border-radius: 50%;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	z-index: 230;
-}
-.contact-area{
-	position: absolute;
-	min-height: 100vh;
-	overflow-y: auto;
-}
+
 /*FOOTER*/
 #my-foot{
 	/*position: absolute;*/
