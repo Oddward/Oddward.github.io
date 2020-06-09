@@ -23,7 +23,7 @@ $(window).on('load', function() {
     		document.execCommand("copy");
     		$(this).attr('data-original-title','Email successfullly copied!').hover().tooltip('show');
     	}
-    	catch(e){
+    	catch(err){
     		// alert(e);
     		alert('Failed to copy email. Browser not properly supported.')
     	}
@@ -55,22 +55,26 @@ $(window).on('load', function() {
 	});
 
 	// owl carousel
-	$('.owl-carousel').owlCarousel({
-		loop: true,
-		margin: 10,
-		nav: true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 3,
-			},
-			1000: {
-				items: 5
-			}
-		}
-	});
+	// $('.owl-carousel').owlCarousel({
+	// 	loop: true,
+	// 	margin: 10,
+	// 	nav: true,
+	// 	responsive: {
+	// 		0: {
+	// 			items: 1
+	// 		},
+	// 		600: {
+	// 			items: 3,
+	// 		},
+	// 		1000: {
+	// 			items: 5
+	// 		}
+	// 	}
+	// });
     
 }
 )
+
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel();
+  });

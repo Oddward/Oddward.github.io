@@ -20,7 +20,7 @@
 	<!-- <link rel="stylesheet" href="css/animation.css"> -->
 	<link rel="stylesheet" href="dist/output.css">
 	<link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-
+	<link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
 
 	<!--FONTS-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:wght@400,700,900&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
@@ -134,55 +134,79 @@
 		</div>
 
 		<!-- Alt project preview -->
-		<section id="projects" class="py-6 px-20">
-			<div class="container mx-auto">
-				<h2 class="font-bold text-4xl text-left text-gray-600 py-4">Preview.</h2>
-				<div class="owl-carousel">
-					<div class="card item m-3">
+		<section id="projects" class="px-20">
+			<div class="container mx-auto pt-32 pb-10">
+				<h2 class="font-bold text-4xl text-left text-gray-800 pb-6">Preview.</h2>
+
+				<div class="owl-carousel owl-theme w-full h-auto">
+					<!-- START OF PROJECTS -->
+					<div class="inline-block bg-gray-200 text-gray-800 border-2 border-gray-800 flex flex-col justify-center w-full h-auto item rounded-md">
 						<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_500,q_70/v1548637333/Oscar_Wilde_codepen.png" alt="Oscar Wilde tribute webpage" class="card-img-top">
-						<div class="card-body card-dark">
+					</div>
+
+					<div class="inline-block bg-gray-200 text-gray-800 border-2 border-gray-800 flex flex-col justify-center w-full h-auto item rounded-md">
+						<h2 class="card-title">MES & Enterprise system | Web app dev</h2>
+						<p class="card-text">I worked with a team that was developing a (discreet) complex system for a big client, mainly a Manufacturing Execution System for an industrial complex - built with Laravel (PHP) - and helped deploy the system on site. I helped senior devs with research & documentation, diagrams, bug testing and quality assurance. I also implemented RTL language support for Arabic and fixed layout issues.</p>
+					</div>
+
+					<div class="inline-block bg-gray-200 text-gray-800 border-2 border-gray-800 flex flex-col justify-center w-full h-auto item rounded-md">
+						<h2 class="card-title">Kiva Crowdfunding Analysis | Data Sci</h2>
+						<p class="card-text">Participated in a data science challenge on Kaggle, the data science challenge platform using real datasets - we used R to clean and analyze the <a href="https://www.kaggle.com/kiva/data-science-for-good-kiva-crowdfunding">"Kiva - Crowdfunding for good"</a> dataset.</p>
+					</div>
+
+					<div class="inline-block bg-gray-200 text-gray-800 border-2 border-gray-800 flex flex-col justify-center w-full h-auto item rounded-md">
+						<h2 class="card-title">Malacca tourism | Entrepreneurship</h2>
+						<p class="card-text">Designed and marketed <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711816/Malacca_ad.jpg" target="_blank">poster ads</a> for a tourism trip as chief of marketing of the organizing committee in an entrepreneurship program. It was a successful trip.</p>
+					</div>
+					<div class="inline-block bg-gray-200 text-gray-800 border-2 border-gray-800 flex flex-col justify-center w-full h-auto item rounded-md"></div>
+					<div class="inline-block bg-gray-200 text-gray-800 border-2 border-gray-800 flex flex-col justify-center w-full h-auto item rounded-md"></div>
+					<div class="inline-block bg-gray-200 text-gray-800 border-2 border-gray-800 flex flex-col justify-center w-full h-auto item rounded-md"></div>
+
+					<!-- <div class="inline-block bg-gray-900 w-full h-auto item">
+						<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_500,q_70/v1548637333/Oscar_Wilde_codepen.png" alt="Oscar Wilde tribute webpage" class="card-img-top">
+						<div class="">
 							<h2 class="card-title">Tribute page | Web design</h2>
 							<p class="card-text">A small project to write a tribute page for an author as part of the curriculum for freecodecamp.com. This is a tribute page for Oscar Wilde, <a href="https://codepen.io/Oddward/full/ENodLO">hosted on CodePen</a>.</p>
 						</div>
 					</div>
 					
-					<div class="card item m-3">
+					<div class="inline-block bg-gray-900 w-full h-auto item">
 						<div class="card-body">
 							<h2 class="card-title">Kiva Crowdfunding Analysis | Data Sci</h2>
 							<p class="card-text">Participated in a data science challenge on Kaggle, the data science challenge platform using real datasets - we used R to clean and analyze the <a href="https://www.kaggle.com/kiva/data-science-for-good-kiva-crowdfunding">"Kiva - Crowdfunding for good"</a> dataset.</p>
 						</div>
 					</div>
 
-					<div class="card item m-3 border-primary">
+					<div class="inline-block bg-gray-900 w-full h-auto item">
 						<div class="card-body card-light">
 							<h2 class="card-title">MES & Enterprise system | Web app dev</h2>
 							<p class="card-text">I worked with a team that was developing a (discreet) complex system for a big client, mainly a Manufacturing Execution System for an industrial complex - built with Laravel (PHP) - and helped deploy the system on site. I helped senior devs with research & documentation, diagrams, bug testing and quality assurance. I also implemented RTL language support for Arabic and fixed layout issues.</p>
 						</div>
 					</div>
 
-					<div class="card item m-3">
-						<!-- <img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_500,q_70/v1548711816/tambunposterad.png" alt="" class="card-img-top"> -->
+					<div class="inline-block bg-gray-900 w-full h-auto item">
+						<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_500,q_70/v1548711816/tambunposterad.png" alt="" class="card-img-top">
 						<div class="card-body">
 							<h2 class="card-title">Tambun trip poster ad</h2>
 							<p class="card-text">An <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711816/tambunposterad.png" target="_blank">advertisement poster design</a> for a potential destination for a tourism trip for entrepreneurship that was later changed.</p>
 						</div>
 					</div>
 
-					<div class="card item m-3">
-						<!-- <img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548711816/Malacca_ad.jpg" alt="Malacca trip poster ad" class="card-img-top"> -->
+					<div class="inline-block bg-gray-900 w-full h-auto item">
+						<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548711816/Malacca_ad.jpg" alt="Malacca trip poster ad" class="card-img-top">
 						<div class="card-body">
 							<h2 class="card-title">Malacca tourism | Entrepreneurship</h2>
 							<p class="card-text">Designed and marketed <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711816/Malacca_ad.jpg" target="_blank">poster ads</a> for a tourism trip as chief of marketing of the organizing committee in an entrepreneurship program. It was a successful trip.</p>
 						</div>
 					</div>
 
-					<div class="card item m-3">
-						<!-- <img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,h_500,q_70/v1548711817/IT_islam_poster.jpg" alt="Awareness campaign poster" class="card-img-top"> -->
+					<div class="inline-block bg-gray-900 w-full h-auto item">
 						<div class="card-body">
 							<h2 class="card-title">Awareness campaign poster</h2>
 							<p class="card-text">An <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711817/IT_islam_poster.jpg">infographic poster</a> made for an IT awareness campaign on the topic of the spreading of hoaxes/fake news.</p>
 						</div>
-					</div>
+					</div> -->
+					<!-- END OF PROJECTS --> -->
 				</div>
 			</div>	
 		</section>
@@ -308,7 +332,7 @@
 
 		<!-- FOOTER -->
 		<hr class="bg-light">
-		<footer id="my-foot" class="text-light text-center m-0 py-1">
+		<footer id="my-foot" class="text-center m-0 py-1">
 		<div class="my-2">
 			<a href="https://github.com/Oddward" class="footer-butt rounded-circle align-middle text-center bg-black" title="GitHub" data-toggle="tooltip" data-placement="top"><i class="devicon-github-plain"></i></a>
 			<a href="https://instagram.com/mugtaba.g" class="footer-butt rounded-circle align-middle text-center bg-insta" title="Instagram" data-toggle="tooltip" data-placement="top"><i class="icofont-instagram"></i></a>
@@ -330,12 +354,11 @@
 	</div> -->
 
 	<!-- scripts to load after stuff -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-	<!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+	<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+	<script src="js\jquery.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 	<script src="js/script.js"></script>
 </body>
 </html>
