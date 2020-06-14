@@ -91,6 +91,12 @@ card .nav-link{
 	font-family: 'my-Raleway-logomark', Fallback, sans-serif;
 	font-size: 1.7em;
 	transition: text-shadow 500ms ease;
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background-image: url('../img/logomark_white_o.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .logomark:hover{
 	color: white;
