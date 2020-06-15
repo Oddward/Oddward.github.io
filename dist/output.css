@@ -19044,6 +19044,10 @@ video {
   transition-delay: 1000ms;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 button:focused{
   outline-color: transparent;
 }
@@ -19054,8 +19058,12 @@ body{
   height: auto;
   position: relative;
   /*padding-bottom: 100px;*/
-  background: #eeeeee;
-  scroll-behavior: smooth;
+  overflow: scroll;
+}
+
+section{
+  -ms-scroll-snap-type: start;
+      scroll-snap-type: start;
 }
 
 /* Tailwind CSS extracted components */
@@ -19119,7 +19127,7 @@ card .nav-link{
   display: inline-block;
   width: 45px;
   height: 45px;
-  background-image: url('../img/logomark_white_o.svg');
+  background-image: url('../img/logomark_G_light-01.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -19129,71 +19137,20 @@ card .nav-link{
   text-shadow: 1px 2px 1px orange, 1px 2px 2px orange;
 }
 
-.navbar{
-  background-color: #222 !important;
-}
-
-.navbar-brand{
-  width: 85.5px;
-  overflow: hidden;
-  transition: width 500ms ease-in-out;
-}
-
-.navbar-dark .navbar-toggler{
-  bottom: 20px;
-  right: 20px;
-  left: auto;
-  border-color: rgba(0,0,0,.5) !important;
-  color: rgba(0,0,0,.5) !important;
-  border-radius: 50%;
-  height: 56px;
-  widows: 56px;
+nav a:hover span::before{
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 10px;
+  transform: translateX(200%);
+  /* left: 50% */
+  background-color: white;
 }
 
 .navbar-dark .navbar-toggler-icon{
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-#title-name{
-  z-index: 101;
-  top: 65%;
-}
-
-#title-name h1{
-  border-radius: 2rem;
-  display: inline-block;
-  font-size: calc(2rem + .5vw);
-  line-height: 1.4;
-}
-
-#description{
-  min-height: calc(100vh - 71px);
-}
-
-/* #intropara{
-	height: 100%;
-	vertical-align: center;
-	background: #f7f7f700;
-	border-radius: 10px;
-} */
-
-/* #intropara h3{
-	padding: 0;
-	color: black;
-} */
-
-#sub{
-  border-radius: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#details-section{
-  font-size: 1.25em;
-}
-
-#details-section .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background-color: #155177;
 }
 
 span{
@@ -19237,6 +19194,8 @@ span{
   vertical-align: middle;
   z-index: 100;
 }
+
+/* Tech Stack */
 
 #summary i{
   font-size: 4rem;
@@ -19314,27 +19273,17 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 
 /*projects*/
 
-.card-columns a, #intropara a{
-  color: #F76B1D;
+.slider a{
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.card-columns a:hover, #intropara a:hover{
-  background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
-  background: -webkit-linear-gradient(315deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.slider div{
+  max-width: 500px;
 }
 
-#projects .card{
-  transition: all 100ms;
-}
-
-#projects .card:hover{
-  margin-top: .75rem !important;
-  margin-bottom: 1.25rem !important;
-  box-shadow: 1px 5px 20px 1px rgba(0,0,0,.5);
-}
+/* ABOUT */
 
 #prof-img{
   /*background-image: url('../img/UIA_1206a sq.jpg');*/
@@ -19366,14 +19315,6 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 }
 
 /*Contact*/
-
-#close-butt{
-  width: 20px;
-  height: 20px;
-  font-size: 18px;
-  border: none;
-  border-radius: 50%;
-}
 
 /*FOOTER*/
 

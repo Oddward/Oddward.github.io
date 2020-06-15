@@ -4,8 +4,8 @@
   "description": "Mugtaba G's website",
   "main": "index.js",
   "dependencies": {
-    "owl.carousel": "^2.3.4",
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "tiny-slider": "^2.9.2"
   },
   "devDependencies": {},
   "scripts": {
