@@ -61,9 +61,9 @@ card .nav-link{
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-.montserrat{
+/* .montserrat{
 	font-family: 'Montserrat', sans-serif;
-}
+} */
 .logomark{
 	font-family: 'my-Raleway-logomark', Fallback, sans-serif;
 	font-size: 1.7em;

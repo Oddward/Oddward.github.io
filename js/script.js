@@ -2,11 +2,8 @@ $(window).on('load', function() {
 
     //Popper
     // $('[data-toggle="tooltip"]').tooltip();
-
-    //CONTACT
-
 	//COPY butt - vanilla js
-	let copyTxt = document.getElementsByClassName('button.copyButt');
+	let copyTxt = document.getElementsByClassName('.copyButt');
 	copyTxt.select();
 	copyTxt.setSelectionRange(0, 9999);
 	document.execCommand("copy");
@@ -39,15 +36,6 @@ $(window).on('load', function() {
 		document.getElementById('form-subject').getAttribute('value', namedsub);
 		document.getElementById('subtext').text;
 	})
-	// $('#sender').blur(function(){
-	// 	$name = $('#sender').val();
-	// 	if ($('#sender').val()) {
-	// 		$name = ' - ' + $name;
-	// 	}
-	// 	$namedsub = $prefix + $name;
-	// 	$('#form-subject').attr('value',$namedsub);
-	// 	$('#subtext').text($namedsub);
-	// })
 	let subject = document.getElementById('subject');
 	subject.change(function(){
 		prefix = subject.options[subject.selectedIndex].text;
@@ -58,15 +46,6 @@ $(window).on('load', function() {
 		document.getElementById('form-subject').setAttribute('value', namedsub);
 		document.getElementById('subtext').text(namedsub);
 	})
-	// $('#subject').change(function() {
-	// 	$prefix = $('#subject').find(":selected").val();
-	// 	$namedsub = $prefix;
-	// 	if ($name != null) {
-	// 		$namedsub += $name;
-	// 	}
-	// 	$('#form-subject').attr('value',$namedsub);
-	// 	$('#subtext').text($namedsub);
-	// });
-    window.instgrm.Embeds.process();
+    // window.instgrm.Embeds.process();
 }
 )
