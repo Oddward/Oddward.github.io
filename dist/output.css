@@ -19116,9 +19116,9 @@ card .nav-link{
   -webkit-text-fill-color: transparent;
 }
 
-.montserrat{
-  font-family: 'Montserrat', sans-serif;
-}
+/* .montserrat{
+	font-family: 'Montserrat', sans-serif;
+} */
 
 .logomark{
   font-family: 'my-Raleway-logomark', Fallback, sans-serif;
@@ -19143,24 +19143,19 @@ nav a:hover span::before{
   height: 8px;
   border-radius: 100%;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   transform: translateX(200%);
   /* left: 50% */
   background-color: white;
 }
 
 .navbar-dark .navbar-toggler-icon{
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 span{
   font-variant-caps: small-caps;
 }
-
-/* h1.major{
-	font-size: calc(3rem + 1vw);
-	font-size: 3.4rem;
-} */
 
 .main-img-wrapper{
   /* background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_1671/a_90/v1570762003/mug_at_malacca_HDR.jpg'); */
@@ -19281,6 +19276,15 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 
 .slider div{
   max-width: 500px;
+}
+
+.slider h2:hover{
+  background-size: 550px;
+}
+
+.tns-outer .tns-nav button{
+  width: 10px;
+  height: 10px;
 }
 
 /* ABOUT */

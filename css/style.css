@@ -85,7 +85,7 @@ nav a:hover span::before{
 	height: 8px;
 	border-radius: 100%;
 	position: absolute;
-	bottom: 10px;
+	bottom: 0px;
 	transform: translateX(200%);
 	/* left: 50% */
 	background-color: white;
@@ -204,6 +204,9 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
 }
 .slider div{
 	max-width: 500px;
+}
+.slider h2:hover{
+	background-size: 550px;
 }
 .tns-outer .tns-nav button{
 	width: 10px;
