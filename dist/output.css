@@ -19153,9 +19153,9 @@ nav a:hover span::before{
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-span{
-  font-variant-caps: small-caps;
-}
+/* span{
+	font-variant-caps: small-caps;
+} */
 
 .main-img-wrapper{
   /* background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_1671/a_90/v1570762003/mug_at_malacca_HDR.jpg'); */
@@ -19316,6 +19316,16 @@ a.footer-butt, a.footer-butt:hover, a.footer-butt:active, a.footer-butt:visited{
   font-size: 5.5em;
   z-index: -1;
   line-height: 0.8em;
+}
+
+.pin{
+  top: -2.5rem;
+  left: -2.5rem;
+  box-shadow: -10px 10px 20px #0003, 10px -10px 20px #ecc940;
+}
+
+.paper{
+  box-shadow: -1px 1px 3px #0004;
 }
 
 /*Contact*/
