@@ -19233,14 +19233,14 @@ nav a:hover span::before{
   color: darkgray;
   padding-left: 3rem;
   padding-right: 2rem;
-  width: 15rem;
+  width: 13rem;
 }
 
-@supports (width: 15ch){
-  .social-butt:hover .tag{
-    width: 15ch;
-  }
-}
+/* @supports (width: 15ch){
+	.social-butt:hover .tag{
+		width: 15ch;
+	}
+} */
 
 .svg-icon{
   height: 30px;

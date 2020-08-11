@@ -167,13 +167,13 @@ nav a:hover span::before{
 	color: darkgray;
 	padding-left: 3rem;
 	padding-right: 2rem;
-	width: 15rem;
+	width: 13rem;
 }
-@supports (width: 15ch){
+/* @supports (width: 15ch){
 	.social-butt:hover .tag{
 		width: 15ch;
 	}
-}
+} */
 .svg-icon{
 	height: 30px;
 	width: auto;
@@ -246,7 +246,7 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
 #my-foot{
 	/*position: absolute;*/
 	/*bottom: 0;*/
-	width: 100%;
+	/* width: 100%; */
 }
 #my-foot a{
 	color: white;
