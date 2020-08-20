@@ -34,11 +34,16 @@
 			<!-- MUGTABA<b class="alex">G</b> -->
 		</div>
 		<div class="block sm:hidden">
-			<button class="flex items-center px-3 py-2 mt-4 border rounded text-teal-200 border-black border-opacity-25 hover:text-white hover:border-black hover:border-opacity-50">
-			  <svg class="fill-current h-8 w-8" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+			<button id="menu-butt" class="flex items-center px-3 py-2 mt-4 border rounded border-black border-opacity-25 hover:border-black hover:border-opacity-50 fixed z-20">
+			  	<svg id="menu-icon" class="fill-current h-8 w-8" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+					<title>Menu</title>
+					<path stroke="orange" stroke-width="3" d="M8 9l24 0"/>
+					<path stroke="orange" stroke-width="3"  d="M0 9m0 10l40 0"/>
+					<path stroke="orange" stroke-width="3"  d="M8 9m0 20l24 0"/>
+				</svg>
 			</button>
 		</div>
-		<div id="navbarStuff" class="fixed text-white flex-grow flex sm:w-auto bg-black bg-opacity-75 sm:bg-transparent w-screen h-screen flex-col justify-center top-0 left-0 sm:block sm:w-full sm:flex-row sm:relative sm:h-auto">
+		<div id="navbarStuff" class="fixed text-white flex-grow hidden sm:flex sm:w-auto bg-black bg-opacity-75 sm:bg-transparent w-screen h-screen flex-col justify-start top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto">
 				<a href="#hero" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Home</span></a>
 				<a href="#summary" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Skills</span></a>
 				<a href="#projects" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Stuff</span></a>
@@ -68,7 +73,7 @@
 						Passionately designing code, websites, interfaces, experiences, graphics and motion. I’d like to get opportunities to work with forward-thinking people and build something progressive.
 					</p>
 					<a href="#contact" role="button" class="inline-block border-2 border-white py-2 px-6 text-center font-bold my-6 mx-3 rounded-full text-blue-200 text-blue-200 hover:bg-white hover:text-gray-800 transition-all duration-300">Let's talk</a>
-					<a href="#about.html" class="mx-4 text-gray-200 hover:underline hover:text-gray-100">Learn more</a>
+					<a href="about.html" class="mx-4 text-gray-200 hover:underline hover:text-gray-100">Learn more</a>
 				</article>
 			</div>
 		</section>
@@ -76,13 +81,13 @@
 		<!--button-->
 
 		<!-- summary of skills -->
-		<section id="summary" class="row bg-blue-900 no-gutters text-left text-white pb-20 px-20">
-			<div class="sticky top-0 w-full h-20 bg-blue-900"></div>
+		<section id="summary" class="row bg-blue-900 no-gutters text-left text-white pb-20 px-4 md:px-20">
+			<div class="sticky top-0 w-full h-20 bg-blue-900 z-10"></div>
 			<div class="container pt-16 mx-auto">
 
 				<h2 class="font-bold text-4xl mb-6">Tech Stack.</h2>
 
-				<div class="justify-around">
+				<div class="justify-around text-center">
 						<i class="devicon-html5-plain-wordmark"></i>
 						<i class="devicon-css3-plain-wordmark"></i>
 						<i class="devicon-javascript-plain"></i>
@@ -118,7 +123,7 @@
 						<i class="devicon-photoshop-line"></i>
 						<i class="devicon-illustrator-line"></i>
 						<div class="icon" style="background: url(img/adobe-premiere-pro.svg);"></div>
-						<div class="icon" style="background: url(img/adobe-after-effects.svg);"></div>
+						<!-- <div class="icon" style="background: url(img/adobe-after-effects.svg);"></div> -->
 						<div class="icon" style="background: url(img/davinci-resolve.svg);"></div>
 						<div class="icon" style="background: url(img/blender-3d.svg);"></div>
 				</div>
@@ -128,10 +133,10 @@
 		<!-- Alt project preview -->
 		<section id="projects" class="">
 			<div class="sticky top-0 w-full h-20 bg-blue-900 z-10"></div>
-			<div class="container mx-auto pt-16 pb-10 mx-6 lg:mx-20">
+			<div class="container mx-auto pt-16 pb-10 px-8 md:mx-6 lg:mx-20">
 				<h2 class="font-bold text-4xl text-left text-gray-800 pb-6">Preview.</h2>
 
-				<div class="slider text-left mb-3 font-body font-medium" style="height: 400px;">
+				<div class="slider text-left mb-3 font-body font-medium w-full" style="height: 400px;">
 					<!-- START OF PROJECTS -->
 					<div class="text-gray-800 item w-auto h-full">
 						<div class="border-l-2 border-gray-400 px-2">
@@ -237,9 +242,10 @@
 			
 		</section>
 
+		<!-- CONTACT SECTION -->
 		<section id="contact" class="bg-gray-900 font-body">
-			<div class="sticky top-0 w-full h-20 bg-gray-900"></div>
-			<div class="block mx-24 lg:mx-32 pt-16 text-gray-100">
+			<div class="sticky top-0 w-full h-20 bg-gray-900 z-10"></div>
+			<div class="block mx-4 md:mx-24 lg:mx-32 pt-16 text-gray-100">
 				<!-- <h1 class="transparent">Get in touch.</h1> -->
 				<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/w_400,c_fill,ar_1:1,g_auto/v1594598066/get_in_touch.svg" alt="Get in Touch. (heading)" class="w-full h-auto" style="max-width: 500px;">
 					
@@ -248,10 +254,18 @@
 				<!-- CONTACT CONTENT -->
 				<div id="" class="my-6">
 					<div id="contact-tabs" class="block flex justify-around my-4" role="radio">
-						<label class="inline-block text-xl py-2 px-4 rounded-full text-gray-100 hover:bg-gray-600 active:bg-gray-400 focused:bg-gray-200 focused:text-gray-800" role="button">Fill form <i class="fas fa-pen-alt"></i></label>
-						<label class="inline-block text-xl py-2 px-4 rounded-full text-gray-100 hover:bg-gray-600 active:bg-gray-400 focused:bg-gray-200 focused:text-gray-800" role="button">Get my email <i class="fas fa-envelope"></i></label>
-						<label class="inline-block text-xl py-2 px-4 rounded-full text-gray-100 hover:bg-gray-600 active:bg-gray-400 focused:bg-gray-200 focused:text-gray-800" role="button">Launch app <i class="far fa-external-link-alt"></i></label>
-						<label class="inline-block text-xl py-2 px-4 rounded-full text-gray-100 hover:bg-gray-600 active:bg-gray-400 focused:bg-gray-200 focused:text-gray-800" role="button">Socials <i class="far fa-social"></i></label>
+						<label class="inline-block text-xl py-2 px-4 rounded-full text-gray-100 hover:bg-gray-600 active:bg-gray-400 focused:bg-gray-200 focused:text-gray-800" role="button">
+							<span class="hidden md:inline mr-2">Fill form</span> <i class="fas fa-pen-alt"></i>
+						</label>
+						<label class="inline-block text-xl py-2 px-4 rounded-full text-gray-100 hover:bg-gray-600 active:bg-gray-400 focused:bg-gray-200 focused:text-gray-800" role="button">
+							<span class="hidden md:inline mr-2">Get my email</span> <i class="fas fa-envelope"></i>
+						</label>
+						<label class="inline-block text-xl py-2 px-4 rounded-full text-gray-100 hover:bg-gray-600 active:bg-gray-400 focused:bg-gray-200 focused:text-gray-800" role="button">
+							<span class="hidden md:inline mr-2">Launch app</span> <i class="fas fa-external-link-alt"></i>
+						</label>
+						<label class="inline-block text-xl py-2 px-4 rounded-full text-gray-100 hover:bg-gray-600 active:bg-gray-400 focused:bg-gray-200 focused:text-gray-800" role="button">
+							<span class="hidden md:inline mr-2">Socials</span> <i class="fas fa-paper-plane"></i>
+						</label>
 					</div>
 
 					<div class="sliderFull w-full pb-4">
@@ -280,14 +294,14 @@
 													<option value="Professional enquiry (ghub)">Professional enquiry</option>
 													<option value="Casual talk (ghub)">Casual talk</option>
 												</select>
-												<input type="hidden" id="form-subject" name="_subject" value="Message through github page">
+												<input type="hidden" id="form-subject" name="_subject" value="Via github page">
 											</div>
 										</div>
 									
 										<div class="text-left px-4 mt-8">
 											<div class="form-group">
 												<label for="mail-msg">Message:*</label><br>
-												<textarea name="message" id="#mail-msg" class="form-textbox hover:bg-gray-100" cols="30" rows="10" placeholder="Please enter your message here" required></textarea>
+												<textarea name="message" id="#mail-msg" class="form-textbox hover:bg-gray-100 w-full" cols="30" rows="10" placeholder="Please enter your message here" required></textarea>
 											</div>
 										</div>
 									</div>

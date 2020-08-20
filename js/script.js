@@ -1,51 +1,52 @@
-$(window).on('load', function() {
+document.onload = function() {
 
     //Popper
     // $('[data-toggle="tooltip"]').tooltip();
 	//COPY butt - vanilla js
-	let copyTxt = document.getElementsByClassName('.copyButt');
+	let copyTxt = document.getElementsByClassName('copyButt');
+	copyTxt.focus();
 	copyTxt.select();
 	copyTxt.setSelectionRange(0, 9999);
-	document.execCommand("copy");
+	try {
+		document.execCommand("copy");
+	} catch (error) {
+		'It looks like the email could not be copied properly. You can still try to paste it somewhere though.'
+	}
 
-	// copyTxt = (click(function(){
-    // 	try{
-
-    // 		this.siblings('input.toCopy').select();      
-    // 		document.execCommand("copy");
-    // 		this.attr('data-original-title','Email successfullly copied!').hover().tooltip('show');
-    // 	}
-    // 	catch(err){
-    // 		// alert(e);
-    // 		alert('Failed to copy email. Browser not properly supported.')
-    // 	}
-    	
-	// }));
+	// Menu butt
+	menu = document.getElementById('menu-butt');
+	icon = document/getElementById('menu-icon')
+	overlay = document.getElementById('navbarstuff');
+	menu.onclick = function(){
+		icon.classList.toggle('opened');
+		overlay.classList.toggle('block');
+	}
 
 	//Form subject
 	var namedsub;
 	var prefix = 'Via github pages';
 	var name;
 	let sender = document.getElementById('sender');
-	sender.blur(function(){
+	sender.onblur = function(){
 		name = sender.value;
-		if (sender.value) {
+		console.log(name);
+		if (name) {
 			name = ' - ' + name;
+			console.log(name);
 		}
 		namedsub = prefix + name;
-		document.getElementById('form-subject').getAttribute('value', namedsub);
-		document.getElementById('subtext').text;
-	})
+		document.getElementById('form-subject').setAttribute('value', namedsub);
+		document.getElementById('subtext').textContent = namedsub;
+	}
 	let subject = document.getElementById('subject');
-	subject.change(function(){
-		prefix = subject.options[subject.selectedIndex].text;
+	subject.onchange = function(){
+		prefix = subject.options[subject.selectedIndex].textContent;
 		namedsub = prefix;
-		if (name != null) {
+		if (name) {
 			namedsub += name;
 		}
 		document.getElementById('form-subject').setAttribute('value', namedsub);
-		document.getElementById('subtext').text(namedsub);
-	})
+		document.getElementById('subtext').textContent = namedsub;
+	}
     // window.instgrm.Embeds.process();
 }
-)
