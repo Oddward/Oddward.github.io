@@ -33,16 +33,16 @@
 			<span class="logomark"> </span>
 			<!-- MUGTABA<b class="alex">G</b> -->
 		</div>
-		<div class="block sm:hidden">
-			<button id="menu-butt" class="flex items-center px-3 py-2 mt-4 border rounded border-black border-opacity-25 hover:border-black hover:border-opacity-50 fixed z-20">
-			  	<svg id="menu-icon" class="fill-current h-8 w-8" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-					<title>Menu</title>
-					<path stroke="orange" stroke-width="3" d="M8 9l24 0"/>
-					<path stroke="orange" stroke-width="3"  d="M0 9m0 10l40 0"/>
-					<path stroke="orange" stroke-width="3"  d="M8 9m0 20l24 0"/>
-				</svg>
-			</button>
-		</div>
+		<!-- <div class="block "> -->
+		<button id="menu-butt" class="flex sm:hidden items-center px-3 py-2 mt-4 border rounded border-black border-opacity-25 hover:border-opacity-50 fixed z-20">
+			<svg id="menu-icon" class="h-8 w-8" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+				<title>Menu</title>
+				<path stroke="orange" stroke-width="3" d="M8 9l24 0"/>
+				<path stroke="orange" stroke-width="3"  d="M0 9m0 10l40 0"/>
+				<path stroke="orange" stroke-width="3"  d="M8 9m0 20l24 0"/>
+			</svg>
+		</button>
+		<!-- </div> -->
 		<div id="navbarStuff" class="fixed text-white flex-grow hidden sm:flex sm:w-auto bg-black bg-opacity-75 sm:bg-transparent w-screen h-screen flex-col justify-start top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto">
 				<a href="#hero" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Home</span></a>
 				<a href="#summary" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Skills</span></a>
@@ -200,7 +200,7 @@
 					<div class="inline-block p-1 rounded-sm m-2 text-2xl" role="button"><i class="fas fa-chevron-circle-right"></i></div>
 				</div>
 				<!-- START OF SOCIAL PREVIEW -->
-				<div class="slider2 text-left" style="height: 400px;">
+				<div class="slider2 hidden text-left" style="height: 400px;">
 					
 					<div class="item w-auto h-full">
 						<a class="" href="https://instagram.com/p/CBkwJConahQ/" target="_blank">
@@ -354,7 +354,7 @@
 											><a href="https://twitter.com/oddward_io" class="tag inline-block h-12 rounded-r-full text-gray-700 text-lg italic bg-white overflow-hidden" target="_blank">@oddward_io</a>
 										</div>
 										<!-- PLACEHOLDER -->
-										<div class="social-butt inline-block text-center relative h-16 w-auto my-4 mx-auto rounded-full">
+										<div class="social-butt hidden md:inline-block text-center relative h-16 w-auto my-4 mx-auto rounded-full">
 											<div class="circle inline-block rounded-full absolute w-16 h-16 bg-black text-2xl z-10 text-gray-400"><i class="fas fa-ellipsis-h"></i></div
 											><a href="#" class="tag inline-block h-12 rounded-r-full text-gray-400 text-lg italic bg-white overflow-hidden">coming soon...</a>
 										</div>

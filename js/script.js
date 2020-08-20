@@ -14,12 +14,11 @@ document.onload = function() {
 	}
 
 	// Menu butt
-	menu = document.getElementById('menu-butt');
-	icon = document/getElementById('menu-icon')
-	overlay = document.getElementById('navbarstuff');
-	menu.onclick = function(){
-		icon.classList.toggle('opened');
-		overlay.classList.toggle('block');
+	// menu = document.getElementById('menu-butt');
+	// overlay = document.getElementById('navbarStuff');
+	document.getElementById('menu-butt').onclick = function() {
+		this.classList.toggle('opened');
+		document.getElementById('navbarStuff').classList.toggle('block');
 	}
 
 	//Form subject
