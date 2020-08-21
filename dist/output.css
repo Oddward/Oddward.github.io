@@ -729,6 +729,14 @@ tailwind end components
   --bg-opacity: 0.75;
 }
 
+.bg-opacity-90 {
+  --bg-opacity: 0.90;
+}
+
+.bg-top {
+  background-position: top;
+}
+
 .border-black {
   --border-opacity: 1;
   border-color: #000;
@@ -834,6 +842,10 @@ tailwind end components
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -964,10 +976,6 @@ tailwind end components
   margin: 0.5rem;
 }
 
-.m-3 {
-  margin: 0.75rem;
-}
-
 .m-4 {
   margin: 1rem;
 }
@@ -1094,12 +1102,20 @@ tailwind end components
   margin-top: 2rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
 
 .mt-auto {
   margin-top: auto;
+}
+
+.-mr-10 {
+  margin-right: -2.5rem;
 }
 
 .min-h-screen {
@@ -1575,18 +1591,18 @@ path{
 
 .main-img{
   background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_500/v1581197762/mug_stylish_port.png');
-  background-size: contain; /*for transparent png*/
+  background-size: cover; /*for transparent png*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position-x: center;
-  background-position-y: center;
-  overflow: hidden;
+  background-position-y: top;
+  overflow: visible;
   position: relative;
   width: 100%;
   height: 100%;
   vertical-align: -webkit-baseline-middle;
   vertical-align: middle;
-  z-index: 100;
+  z-index: 10;
 }
 
 /* Tech Stack */
@@ -1785,6 +1801,10 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -1795,6 +1815,10 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:flex-row {
@@ -1811,6 +1835,10 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
 
   .md\:leading-normal {
     line-height: 1.5;
+  }
+
+  .md\:m-3 {
+    margin: 0.75rem;
   }
 
   .md\:mx-6 {

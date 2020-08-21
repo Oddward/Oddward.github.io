@@ -12,6 +12,9 @@ module.exports = {
         transparent: 'transparent',
         black: '#000',
         white: '#fff',
+      },
+      opacity: {
+        '90': '0.90',
       }
     },
   },
