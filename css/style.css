@@ -66,38 +66,42 @@ card .nav-link{
 	display: inline-block;
 	width: 45px;
 	height: 45px;
-	background-image: url('../img/logomark_G_light-01.svg');
+	background-image: url('../img/odd_G.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-.logomark:hover{
-	color: white;
-	text-shadow: 1px 2px 1px orange, 1px 2px 2px orange;
-}
-nav a:hover span::before{
+nav a span{ position: relative; }
+nav a span::after{
+	transition: width 200ms ease;
 	content: '';
-	width: 8px;
-	height: 8px;
-	border-radius: 100%;
+	width: 0;
+	height: 3px;
 	position: absolute;
-	bottom: 0px;
-	transform: translateX(200%);
-	background-color: white;
+	bottom: -4px;
+	left: 0;
+	border-radius: 2px;;
+	background: linear-gradient(0deg, orange 0%, orangered 100%);
+	background: -moz-linear-gradient(0deg, orange 0%, orangered 100%);
+	background: -webkit-linear-gradient(0deg, orange 0%, orangered 100%);
+}
+nav a:hover span::after{
+	width: 100%;
 }
 /* MOBILE NAV BUTTON */
 path{
+	stroke: orange;
 	transition: all 300ms cubic-bezier(0.7, 0, 0.3, 1);
 }
-#menu-butt.opened svg path:nth-child(2){
+#menu-icon.opened path:nth-child(2){
 	d: path('M32 9l-24 20');
 }
-#menu-butt.opened svg path:nth-child(3){
+#menu-icon.opened path:nth-child(3){
 	d: path('M20 9m0 10l0 0');
 }
-#menu-butt.opened svg path:nth-child(4){
+#menu-icon.opened path:nth-child(4){
 	d: path('M32 9m0 20l-24 -20');
 }
-#menu-butt.opened svg path{
+#menu-icon.opened path{
 	stroke: crimson;
 }
 #menu-butt{
@@ -232,8 +236,15 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
 	left: -2.5rem;
 	box-shadow: -10px 10px 20px #0003, 10px -10px 20px #ecc940;
 }
-.paper{
+/* .paper{
 	box-shadow: -1px 1px 3px #0004;
+} */
+.paperslider .tns-item{
+	opacity: 0;
+	transition: opacity 300ms ease;
+}
+.paperslider .tns-item.tns-slide-active:nth-child(1){
+	opacity: 1;
 }
 /*Contact*/
 

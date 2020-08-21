@@ -1,24 +1,32 @@
-document.onload = function() {
-
-    //Popper
-    // $('[data-toggle="tooltip"]').tooltip();
+// CREATE CHECK FOR READY STATE
+function ready(fn){
+	if (document.readyState === 'complete' || document.readyState === 'interactive') {
+		setTimeout(fn, 1);
+	} else {
+		document.addEventListener("DOMContentLoaded", fn);
+	}
+}
+ready(function() {
+	console.log('hello');
 	//COPY butt - vanilla js
-	let copyTxt = document.getElementsByClassName('copyButt');
-	copyTxt.focus();
-	copyTxt.select();
-	copyTxt.setSelectionRange(0, 9999);
-	try {
-		document.execCommand("copy");
-	} catch (error) {
-		'It looks like the email could not be copied properly. You can still try to paste it somewhere though.'
+	let copyTxt = document.getElementById('copyE');
+	let txt = document.getElementById('toCopy');
+	copyTxt.onclick = function(){
+		txt.focus();
+		txt.select();
+		txt.setSelectionRange(0, 9999);
+		try {
+			document.execCommand("copy");
+		} catch (error) {
+			'It looks like the email address could not be copied properly. You can still try to paste it somewhere.'
+		}
 	}
 
 	// Menu butt
-	// menu = document.getElementById('menu-butt');
-	// overlay = document.getElementById('navbarStuff');
 	document.getElementById('menu-butt').onclick = function() {
-		this.classList.toggle('opened');
-		document.getElementById('navbarStuff').classList.toggle('block');
+		toggleRes = document.getElementById('menu-icon').classList.toggle('opened');
+		document.getElementById('navbarStuff').classList.toggle('hidden', toggleRes);
+		console.log(document.getElementById('navbarStuff').classList.toggle('hidden'));
 	}
 
 	//Form subject
@@ -48,4 +56,4 @@ document.onload = function() {
 		document.getElementById('subtext').textContent = namedsub;
 	}
     // window.instgrm.Embeds.process();
-}
+})

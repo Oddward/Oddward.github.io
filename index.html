@@ -25,29 +25,31 @@
 	<script src="https://kit.fontawesome.com/07941692cd.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" crossorigin>
 
-	<!-- <script async defer src="//platform.instagram.com/en_US/embeds.js"></script> -->
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<nav class="fixed inset-x-0 top-0 p-6 flex justify-between z-20">
-		<div href="#" class="flex items-center flex-shrink-0 text-white mr-6">
+		<div href="#" class="flex items-center flex-shrink-0 text-white mr-6 mb-4">
 			<span class="logomark"> </span>
 			<!-- MUGTABA<b class="alex">G</b> -->
 		</div>
-		<!-- <div class="block "> -->
-		<button id="menu-butt" class="flex sm:hidden items-center px-3 py-2 mt-4 border rounded border-black border-opacity-25 hover:border-opacity-50 fixed z-20">
+		<button id="menu-butt" class="flex sm:hidden items-center px-3 py-2 mt-4 border rounded border-black border-opacity-25 hover:border-opacity-50 fixed z-40">
 			<svg id="menu-icon" class="h-8 w-8" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
 				<title>Menu</title>
-				<path stroke="orange" stroke-width="3" d="M8 9l24 0"/>
-				<path stroke="orange" stroke-width="3"  d="M0 9m0 10l40 0"/>
-				<path stroke="orange" stroke-width="3"  d="M8 9m0 20l24 0"/>
+				<path stroke-width="3" d="M8 9l24 0"/>
+				<path stroke-width="3"  d="M0 9m0 10l40 0"/>
+				<path stroke-width="3"  d="M8 9m0 20l24 0"/>
 			</svg>
 		</button>
-		<!-- </div> -->
-		<div id="navbarStuff" class="fixed text-white flex-grow hidden sm:flex sm:w-auto bg-black bg-opacity-75 sm:bg-transparent w-screen h-screen flex-col justify-start top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto">
-				<a href="#hero" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Home</span></a>
-				<a href="#summary" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Skills</span></a>
-				<a href="#projects" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Stuff</span></a>
-				<a href="#contact" class="block sm:inline-block text-center hover:font-bold pr-10 pt-3"><span>Contact</span></a>
+		<div id="navbarStuff" class="fixed z-30 text-white flex-grow md:flex sm:w-auto bg-black bg-opacity-75 sm:bg-transparent w-screen h-screen flex-col justify-around top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto pt-auto hidden">
+				<a href="#hero" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
+					<span>Home</span></a>
+				<a href="#summary" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
+					<span>Skills</span></a>
+				<a href="#projects" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
+					<span>Stuff</span></a>
+				<a href="#contact" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
+					<span>Contact</span></a>
 		</div>
 	</nav>
 	<!-- fab -->
@@ -55,9 +57,9 @@
 		<span class="navbar-toggler-icon"></span>
 	</button> -->
 
-	<main class="">
+	<main class="m-0">
 		<section id="hero" class="block bg-gray-900 w-full h-screen align-middle mx-0 overflow-hidden relative pt-20">
-			<div class="sticky top-0 w-full h-20 bg-gray-900 z-10"></div>
+			<div class="sticky top-0 w-full h-24 bg-gray-900 z-10"></div>
 			<div class="container flex grid sm:grid-cols-2 mx-auto">
 				<!-- Main front page image -->
 				<div class="main-img text-right absolute bottom-0"></div>
@@ -82,7 +84,7 @@
 
 		<!-- summary of skills -->
 		<section id="summary" class="row bg-blue-900 no-gutters text-left text-white pb-20 px-4 md:px-20">
-			<div class="sticky top-0 w-full h-20 bg-blue-900 z-10"></div>
+			<div class="sticky top-0 w-full h-24 bg-blue-900 z-10"></div>
 			<div class="container pt-16 mx-auto">
 
 				<h2 class="font-bold text-4xl mb-6">Tech Stack.</h2>
@@ -132,7 +134,7 @@
 
 		<!-- Alt project preview -->
 		<section id="projects" class="">
-			<div class="sticky top-0 w-full h-20 bg-blue-900 z-10"></div>
+			<div class="sticky top-0 w-full h-24 bg-blue-900 z-10"></div>
 			<div class="container mx-auto pt-16 pb-10 px-8 md:mx-6 lg:mx-20">
 				<h2 class="font-bold text-4xl text-left text-gray-800 pb-6">Preview.</h2>
 
@@ -141,28 +143,28 @@
 					<div class="text-gray-800 item w-auto h-full">
 						<div class="border-l-2 border-gray-400 px-2">
 							<h2 style="background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/c_scale,w_500,q_70/v1548637333/Oscar_Wilde_codepen.png'); background-size: cover;" class="h-40 w-full rounded-lg shadow-inner"></h2>
-							<h2 class="p-5 text-3xl font-black font-display">Tribute web page | Web Design</h2>
+							<h2 class="p-5 text-xl md:text-3xl leading-tight md:leading-normal font-black font-display">Tribute web page | Web Design</h2>
 							<p class="px-5 pb-6 text-xl mb-2">A tribute page made a while back as a mini project for freecodecamp of the writer Oscar Wilde, hosted on <a href="https://codepen.io/Oddward/full/ENodLO" class="font-bold underline italic">CodePen</a> - WEB DESIGN</p>
 						</div>
 					</div>
 
 					<div class="text-gray-800 item w-auto h-full">
 						<div class="border-l-2 border-gray-400 px-2">
-							<h2 class="p-5 text-3xl font-black font-display">MES & Enterprise system | Web App</h2>
+							<h2 class="p-5 text-xl md:text-3xl leading-tight md:leading-normal font-black font-display">MES & Enterprise system | Web App</h2>
 							<p class="px-5 pb-6 text-xl mb-2">Interned with a team that was developing a (discreet) Manufacturing Execution System for an industrial complex - built with Laravel (PHP) - and helped deploy the system on site. Helped senior devs with research & documentation, diagrams, bug testing and quality assurance. Implemented RTL language support for Arabic</p>
 						</div>
 					</div>
 
 					<div class="text-gray-800 item w-auto h-full">
 						<div class="border-l-2 border-gray-400 px-2">
-							<h2 class="p-5 text-3xl font-black font-display">Kiva Crowdfunding Analysis | Data Sci</h2>
+							<h2 class="p-5 text-xl md:text-3xl leading-tight md:leading-normal font-black font-display">Kiva Crowdfunding Analysis | Data Sci</h2>
 							<p class="px-5 pb-6 text-xl">Participated in a data science challenge on Kaggle, the data science challenge platform using real datasets - we used R to clean and analyze the <a href="https://www.kaggle.com/kiva/data-science-for-good-kiva-crowdfunding">"Kiva - Crowdfunding for good"</a> dataset.</p>
 						</div>
 					</div>
 
 					<div class="text-gray-800 item w-auto h-full">
 						<div class="border-l-2 border-gray-400 px-2">
-							<h2 class="p-5 text-3xl font-black font-display">Malacca tourism | Entrepreneurship</h2>
+							<h2 class="p-5 text-xl md:text-3xl leading-tight md:leading-normal font-black font-display">Malacca tourism | Entrepreneurship</h2>
 							<p class="px-5 pb-6 text-xl mb-2">Designed and marketed poster ads for a tourism trip as chief of marketing of the organizing committee in an entrepreneurship program. It was a successful trip.</p>
 						</div>
 					</div>
@@ -176,21 +178,15 @@
 					<div class="text-gray-800 item w-auto h-full">
 						<div class="border-l-2 border-gray-400 px-2">
 							<h2 style="background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711817/IT_islam_poster.jpg'); background-size: cover; background-position: -60%;" class="h-40 w-full rounded-lg"></h2>
-							<h2 class="p-5 text-3xl font-black font-display">Awareness campaign</h2>
+							<h2 class="p-5 text-xl md:text-3xl leading-tight md:leading-normal font-black font-display">Awareness campaign</h2>
 							<p class="px-5 pb-6 text-xl mb-2">Designed & printed an <a href="https://res.cloudinary.com/dvh3tbhmd/image/upload/v1548711817/IT_islam_poster.jpg">infographic poster</a> made for an IT awareness campaign on the topic of the spreading of hoaxes/fake news.</p>
 						</div>
 					</div>
 
 					<div class="text-gray-800 item w-auto h-full">
 						<div class="border-l-2 border-gray-400 px-2">
-							<h2 class="p-5 text-3xl font-black font-display">Social Media content</h2>
+							<h2 class="p-5 text-xl md:text-3xl leading-tight md:leading-normal font-black font-display">Social Media content</h2>
 							<p class="px-5 pb-6 text-xl mb-2">Designing helpful/educational content on Instagram; development on <a href="https://instagram.com/oddward.io">@oddward.io</a> and personal development on <a href="https://instagram.com/mugtaba.g">@mugtaba.g</a>.</p>
-						</div>
-					</div>
-
-					<div class="text-gray-800 item w-auto h-full">
-						<div class="border-l-2 border-gray-400 px-2">
-							<img src="https://instagram.com/p/CAN3AqyHQ3m/media/?size=m">
 						</div>
 					</div>
 					<!-- END OF PROJECTS -->
@@ -200,7 +196,7 @@
 					<div class="inline-block p-1 rounded-sm m-2 text-2xl" role="button"><i class="fas fa-chevron-circle-right"></i></div>
 				</div>
 				<!-- START OF SOCIAL PREVIEW -->
-				<div class="slider2 hidden text-left" style="height: 400px;">
+				<div class="slider2 text-left" style="height: 400px;">
 					
 					<div class="item w-auto h-full">
 						<a class="" href="https://instagram.com/p/CBkwJConahQ/" target="_blank">
@@ -233,7 +229,8 @@
 						</a>
 					</div>
 					
-				</div><!-- END OF SOCIAL PREVIEW -->
+				</div>
+				<!-- END OF SOCIAL PREVIEW -->
 				<div id="slide-butt2">
 					<div class="inline-block p-1 rounded-sm m-2 text-2xl" role="button"><i class="fas fa-chevron-circle-left"></i></div>
 					<div class="inline-block p-1 rounded-sm m-2 text-2xl" role="button"><i class="fas fa-chevron-circle-right"></i></div>
@@ -244,7 +241,7 @@
 
 		<!-- CONTACT SECTION -->
 		<section id="contact" class="bg-gray-900 font-body">
-			<div class="sticky top-0 w-full h-20 bg-gray-900 z-10"></div>
+			<div class="sticky top-0 w-full h-24 bg-gray-900 z-10"></div>
 			<div class="block mx-4 md:mx-24 lg:mx-32 pt-16 text-gray-100">
 				<!-- <h1 class="transparent">Get in touch.</h1> -->
 				<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/w_400,c_fill,ar_1:1,g_auto/v1594598066/get_in_touch.svg" alt="Get in Touch. (heading)" class="w-full h-auto" style="max-width: 500px;">
@@ -316,8 +313,8 @@
 						<div class="inline-block h-full">
 							<div class="h-full mx-auto flex flex-col justify-center" style="max-width:650px;">
 								<p class="m-4 text-xl text-left font-light italic">If you want to send an email with your favourite web client, click the button to copy the email address to your clipboard.</p>
-								<button class="copyButt rounded-full px-4 py-2 border-2 border-orange-400 my-10 hover:bg-white hover:text-gray-800 transition-all duration-300" title="Click to copy email." data-toggle="tooltip" data-placement="top">COPY email <i class="icofont-copy"></i></button>
-								<input value="mugtaba.ga.su@gmail.com" class="toCopy" style="position: absolute; z-index: -99; opacity: 0;" />
+								<button id="copyE" class="rounded-full px-4 py-2 border-2 border-orange-400 my-10 hover:bg-white hover:text-gray-800 transition-all duration-300" title="Click to copy email." data-toggle="tooltip" data-placement="top">COPY email <i class="icofont-copy"></i></button>
+								<input value="mugtaba.ga.su@gmail.com" id="toCopy" style="position: absolute; z-index: -99; opacity: 0;" />
 							</div>
 						</div>
 						
@@ -393,7 +390,6 @@
 		</section>
 	</main>
 	<!-- FOOTER -->
-	<!-- <hr class="border-orange-400"> -->
 	<footer id="my-foot" class="text-center m-0 py-1 bg-black text-gray-400 w-full">
 		<p class="my-2"><small>© 2019-2020 - Mohammed AlMugtaba Garoot | Additional Icons thanks to <a href="https://icons8.com" target="_blank">icons8.com</a>.</small></p>
 	</footer>
@@ -401,7 +397,6 @@
 	<!-- scripts to load after stuff -->
 	<script src="node_modules/tiny-slider/dist/tiny-slider.js"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
-	<script src="js/script.js"></script>
 	<script>
 		var slider = tns({
 			container: '.slider',
