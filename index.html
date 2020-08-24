@@ -41,15 +41,15 @@
 				<path stroke-width="3"  d="M8 9m0 20l24 0"/>
 			</svg>
 		</button>
-		<div id="navbarStuff" class="fixed z-30 text-white flex-grow flex sm:w-auto bg-black bg-opacity-90 sm:bg-transparent w-screen h-screen flex-col justify-end top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto pt-auto hidden">
-				<a href="#hero" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
-					<span>Home</span></a>
-				<a href="#summary" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
-					<span>Skills</span></a>
-				<a href="#projects" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
-					<span>Stuff</span></a>
-				<a href="#contact" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
-					<span>Contact</span></a>
+		<div id="navbarStuff" class="fixed z-30 text-white flex-grow flex md:flex sm:w-auto bg-black bg-opacity-90 sm:bg-transparent w-screen h-screen flex-col justify-end top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto pt-auto hidden">
+			<a href="#hero" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
+				<span>Home</span></a>
+			<a href="#summary" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
+				<span>Skills</span></a>
+			<a href="#projects" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
+				<span>Stuff</span></a>
+			<a href="#contact" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
+				<span>Contact</span></a>
 		</div>
 	</nav>
 	<!-- fab -->
@@ -68,14 +68,14 @@
 					<!-- <h1 class="font-display text-orange-grad text-6xl font-black mt-1/5 leading-tight">
 						Mugtaba <br>Garoot
 					</h1> -->
-					<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/w_400,c_fill,ar_1:1,g_auto/v1594598066/MUGTABA_GAROOT.svg" alt="the name 'Mugtaba Garoot' in thick orange gradient" title="MUGTABA GAROOT" class="w-full h-auto hidden md:block" style="max-width: 400px;">
+					<img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/w_400,c_fill,ar_1:1,g_auto/v1594598066/MUGTABA_GAROOT.svg" alt="'Mugtaba Garoot' in thick orange gradient" title="MUGTABA GAROOT" class="w-full h-auto hidden md:block" style="max-width: 400px;">
 					<img src="img/mugtaba g autography.svg" alt="'Mugtaba Garoot' in handwriting" title="MUGTABA GAROOT" class="w-full h-auto md:hidden" style="max-width: 400px;">
 
 					<p class="text-2xl text-white pt-6">
 						Passionately designing code, websites, interfaces, experiences, graphics and motion. I’d like to get opportunities to work with forward-thinking people and build something progressive.
 					</p>
-					<a href="#contact" role="button" class="inline-block border-2 border-white py-2 px-6 text-center font-bold my-6 mx-3 rounded-full text-blue-200 text-blue-200 hover:bg-white hover:text-gray-800 transition-all duration-300">Let's talk</a>
-					<a href="about.html" class="mx-4 text-gray-200 hover:underline hover:text-gray-100">Learn more</a>
+					<a href="#contact" role="button" class="inline-block border-2 border-white py-2 px-6 text-center font-black my-6 mx-3 rounded-full transition-all duration-300 bg-white hover:bg-black"><span class="text-orange-grad">Let's talk</span></a>
+					<a href="about.html" class="page-link mx-4 text-gray-200 hover:text-gray-100">Learn more</a>
 				</article>
 			</div>
 		</section>
@@ -83,7 +83,7 @@
 		<!--button-->
 
 		<!-- summary of skills -->
-		<section id="summary" class="row bg-blue-900 no-gutters text-left text-white pb-20 px-4 md:px-20">
+		<section id="summary" class="row bg-blue-900 no-gutters text-left text-white pb-20 px-8 md:px-20">
 			<div class="sticky top-0 w-full h-24 bg-blue-900 z-10"></div>
 			<div class="container pt-16 mx-auto">
 
@@ -303,7 +303,9 @@
 										</div>
 									</div>
 									<div>
-										<input type="submit" value="Send" class="py-2 px-4 my-4 rounded-full border-2 border-orange-400 text-center bg-transparent hover:bg-white hover:text-gray-800 transition-all duration-300">
+										<div class="inline-block my-4 rounded-full border-2 border-orange-400 text-center bg-transparent hover:bg-white transition-all duration-300">
+											<input type="submit" value="Send" class="text-orange-grad font-black py-2 px-4 cursor-pointer">
+										</div>
 									</div>
 								</form><!-- form end -->
 							</div>
@@ -322,7 +324,7 @@
 						<div class="inline-block h-full">
 								<div class="h-full mx-auto flex flex-col justify-center" style="max-width:650px;">
 									<p class="m-4 text-xl text-left font-light italic">If you want to send an email with your local email app, click an appropriate link below.</p>
-									<div class="my-10">
+									<div class="my-10 flex justify-around">
 										<a href="mailto:mugtaba.ga.su@gmail.com?subject=Professional enquiry -" class=" rounded-full px-4 py-2 border-2 border-orange-400 mx-6 hover:bg-white hover:text-gray-800 transition-all duration-300">Professional enquiry <i class="icofont-external-link"></i></a>
 										<a href="mailto:mugtaba.ga.su@gmail.com?subject=Casual talk -" class=" rounded-full px-4 py-2 border-2 border-orange-400 mx-6 hover:bg-white hover:text-gray-800 transition-all duration-300">Casual talk <i class="icofont-external-link"></i></a>
 									</div>
@@ -365,7 +367,7 @@
 										</div>
 										<!-- LINKEDIN -->
 										<div class="social-butt inline-block text-center relative h-16 w-auto my-4 mx-auto rounded-full">
-											<div class="circle inline-block rounded-full absolute w-16 h-16 bg-blue-600 text-2xl z-10"><i class="fab fa-linkedin-in"></i></div
+											<div class="circle inline-block rounded-full absolute w-16 h-16 bg-linkedin text-2xl z-10"><i class="fab fa-linkedin-in"></i></div
 											><a href="https://linkedin.com/in/mugtabagaroot" class="tag inline-block h-12 rounded-r-full text-gray-700 text-lg italic bg-white overflow-hidden" target="_blank">mugtabagaroot</a>
 										</div>
 										<!-- DEV -->

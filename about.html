@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="css/icofont.min.css" type="text/css">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" crossorigin>
 
-	<!-- <script async defer src="//platform.instagram.com/en_US/embeds.js"></script> -->
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<nav class="fixed inset-x-0 top-0 p-6 flex justify-between z-20">
@@ -39,7 +39,7 @@
 				<path stroke-width="3"  d="M8 9m0 20l24 0"/>
 			</svg>
 		</button>
-		<div id="navbarStuff" class="fixed z-30 text-white flex-grow md:flex sm:w-auto bg-black bg-opacity-75 sm:bg-transparent w-screen h-screen flex-col justify-around top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto pt-auto hidden">
+		<div id="navbarStuff" class="fixed z-30 text-white flex-grow flex md:flex sm:w-auto bg-black bg-opacity-90 sm:bg-transparent w-screen h-screen flex-col justify-end top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto pt-auto hidden">
 			<a href="index.html" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
 				<span>Home</span></a>
 			<a href="#hero" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
@@ -48,7 +48,7 @@
 				<span>Learn more</span></a>
 			<a href="#contact" class="flex sm:inline-block justify-center text-2xl hover:font-bold w-full py-8 md:pr-10 md:pt-3">
 				<span>Contact</span></a>
-	</div>
+		</div>
 	</nav>
 	<!-- fab -->
 	<!-- <button id="fab-navbar-toggler" class="" type="button" data-toggle="collapse" data-target="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
@@ -77,7 +77,7 @@
 						A multifaceted and open-minded dude looking to gain experience and build a promising career. With a background in engineering and computer science, and a passion in visual arts and design, I want to apply myself to building something progressive.
 					</p>
 					<a href="#contact" role="button" class="inline-block border-2 border-white py-2 px-6 text-center font-bold my-6 mx-3 rounded-full text-blue-200 text-blue-200 hover:bg-white hover:text-gray-800 transition-all duration-300">Let's talk</a>
-					<a href="#more" class="mx-4 text-gray-200 hover:underline hover:text-gray-100">Learn more</a>
+					<a href="#more" class="page-link mx-4 text-gray-200 hover:text-gray-100">Learn more</a>
 				</article>
 			</div>
 		</section>
@@ -89,9 +89,12 @@
 				<h2 class="font-bold text-4xl mb-20">Learn more.</h2>
 
 				<div class="more relative">
-                    <div id="pinwheel" class="pin w-20 h-20 rounded-full bg-yellow-500 absolute" style="top: -40px;left: -20px;"></div>
-                    <div class="paperslider paper bg-white py-10 px-6 lg:px-20 text-gray-700 text-xl w-full">
-						<div class="inline-block w-full">
+					<div id="pinwheel" class="pin w-20 h-20 rounded-full bg-yellow-500 text-gray-800 absolute flex justify-around items-center" style="top: -40px;left: -20px;">
+						<i class="inline-block fas fa-chevron-circle-left"></i>
+						<i class="inline-block fas fa-chevron-circle-right"></i>
+					</div>
+                    <div class="paperslider paper bg-white py-10 text-gray-700 text-xl w-75">
+						<div class="inline-block w-full px-8 md:px-12">
 							<h1 class="font-black font-display text-gray-900 text-3xl my-3">Experience</h1>
 							<p class="italic bold">
 								During my bachelor's, I was involved with 2 committees that carried out <span class="text-orange-900">entrepreneural projects in tourism</span>, taking care of the graphics production, marketing as well as acquiring and handling some customers. It was very hands on with no assisstance from the university. Both trips were successful and taught us quite a bit.
@@ -106,7 +109,7 @@
 							</p>
 						</div>
 						
-						<div class="inline-block w-full">
+						<div class="inline-block w-full px-8 md:px-12">
 							<h1 class="font-black font-display text-gray-900 text-3xl my-3">Education</h1>
 							<p class="italic bold">
 								I studied in <span class="text-orange-900">international institutes</span> since childhood & built up my written and verbal communication skills, along with lots of presentations and reports during higher education. The diversity helped develop an open mind and global as well as local (Malaysian) thinking. I was usually comfortable with project and team leadership.
@@ -121,18 +124,18 @@
 							</p>
 						</div>
 
-						<div class="inline-block w-full">
+						<div class="inline-block w-full px-8 md:px-12">
 							<h1 class="font-black font-display text-gray-900 text-3xl my-3">Extra</h1>
 							<p class="italic bold mb-1">
-								I always had a passion for art which gravitated towards digital art and the environment in which it thrives. From there, many software skills were self-taught including various graphic design and productivity software. Projects got me further exposed to software like Solidworks for CAD and Wolfram Mathematica for mathematical programs.
+								I always had a passion for art which gravitated towards digital art and the environment in which it thrives. From there, <span class="text-orange-900">many software skills were self-taught</span> including various graphic design and productivity software. Projects got me further exposed to software like Solidworks for CAD and Wolfram Mathematica for mathematical programs.
 							</p>
 							...
 							<p class="italic bold mb-1">
-								Entering the world of highly interactive software grew my interest in software development and UI/UX design and their impact.
+								Entering the world of highly interactive software grew my <span class="text-orange-900">interest in software development and UI/UX design</span> and their impact.
 							</p>
 							...
 							<p class="italic bold mb-1">
-								Outside of professional work & practice, I'm currently trying to make educational and expressive social media content when and however I can.
+								Outside of professional work & practice, I'm currently trying to make <span class="text-orange-900">educational and expressive social media content</span> when and however I can.
 							</p>
 						</div>
 					</div>
@@ -204,7 +207,9 @@
 										</div>
 									</div>
 									<div>
-										<input type="submit" value="Send" class="py-2 px-4 my-4 rounded-full border-2 border-orange-400 text-center bg-transparent hover:bg-white hover:text-gray-800 transition-all duration-300">
+										<div class="inline-block my-4 rounded-full border-2 border-orange-400 text-center bg-transparent hover:bg-white transition-all duration-300">
+											<input type="submit" value="Send" class="text-orange-grad font-black py-2 px-4 cursor-pointer">
+										</div>
 									</div>
 								</form><!-- form end -->
 							</div>
@@ -223,7 +228,7 @@
 						<div class="inline-block h-full">
 								<div class="h-full mx-auto flex flex-col justify-center" style="max-width:650px;">
 									<p class="m-4 text-xl text-left font-light italic">If you want to send an email with your local email app, click an appropriate link below.</p>
-									<div class="my-10">
+									<div class="my-10 flex justify-around">
 										<a href="mailto:mugtaba.ga.su@gmail.com?subject=Professional enquiry -" class=" rounded-full px-4 py-2 border-2 border-orange-400 mx-6 hover:bg-white hover:text-gray-800 transition-all duration-300">Professional enquiry <i class="icofont-external-link"></i></a>
 										<a href="mailto:mugtaba.ga.su@gmail.com?subject=Casual talk -" class=" rounded-full px-4 py-2 border-2 border-orange-400 mx-6 hover:bg-white hover:text-gray-800 transition-all duration-300">Casual talk <i class="icofont-external-link"></i></a>
 									</div>
@@ -266,7 +271,7 @@
 										</div>
 										<!-- LINKEDIN -->
 										<div class="social-butt inline-block text-center relative h-16 w-auto my-4 mx-auto rounded-full">
-											<div class="circle inline-block rounded-full absolute w-16 h-16 bg-blue-600 text-2xl z-10"><i class="fab fa-linkedin-in"></i></div
+											<div class="circle inline-block rounded-full absolute w-16 h-16 bg-linkedin text-2xl z-10"><i class="fab fa-linkedin-in"></i></div
 											><a href="https://linkedin.com/in/mugtabagaroot" class="tag inline-block h-12 rounded-r-full text-gray-700 text-lg italic bg-white overflow-hidden" target="_blank">mugtabagaroot</a>
 										</div>
 										<!-- DEV -->
@@ -289,29 +294,26 @@
 				</div>
 			</div>
 		</section>
-		<!-- FOOTER -->
-		<hr class="border-orange-400">
-		<footer id="my-foot" class="text-center m-0 py-1 bg-black text-gray-400 w-full">
-			<p class="my-2"><small>© 2019-2020 - Mohammed AlMugtaba Garoot | Additional Icons thanks to <a href="https://icons8.com" target="_blank">icons8.com</a>.</small></p>
-		</footer>
-    </main>
-    
+	</main>
+	<!-- FOOTER -->
+	<footer id="my-foot" class="text-center m-0 py-1 bg-black text-gray-400 w-full">
+		<p class="my-2"><small>© 2019-2020 - Mohammed AlMugtaba Garoot | Additional Icons thanks to <a href="https://icons8.com" target="_blank">icons8.com</a>.</small></p>
+	</footer>
+	
+	<!-- scripts to load after stuff -->
 	<script src="node_modules/tiny-slider/dist/tiny-slider.js"></script>
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
-	<script src="js/script.js"></script>
 	<script>
 		var paperslider = tns({
 			container: '.paperslider',
 			slideBy: 1,
 			items: 1,
-			autoWidth: true,
-			// gutter: 10,
-			loop: true,
+			center: true,
+			loop: false,
 			mouseDrag: true,
 			swipeAngle: false,
-			// navContainer: '#pinwheel',
+			controlsContainer: '#pinwheel',
 		});
-		// window.instgrm.Embeds.process();
 		var sliderFull = tns({
 			container: '.sliderFull',
 			items: 1,

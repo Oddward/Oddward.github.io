@@ -28,14 +28,6 @@ section{
 .form-textbox{
 	@apply rounded-md bg-gray-200 mt-2 px-3 py-2 text-gray-700
 }
-.blue-grad{
-	background: rgb(0, 255, 149);
-	background: -moz-linear-gradient(-45deg, rgb(208, 255, 0) 0%, rgb(2, 247, 255) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(208, 255, 0) 0%, rgba(2, 247, 255,1) 100%);
-	background: linear-gradient(-45deg, rgba(208, 255, 0) 0%, rgba(2, 247, 255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f76b1d",endColorstr="#ffb631",GradientType=1);
-	background-attachment: fixed;
-}
 .bg-linkedin{
 	background-color: #0077B5; /*LinkedIn blue*/
 }
@@ -46,18 +38,15 @@ section{
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
 }
-.border-primary-ish{ /* replace bootstrap primary border*/
-	border-color: #155177;
-}
-card .nav-link{
-	color: #155177;
-}
-.text-blue-grad{
-	background: linear-gradient(135deg, rgb(208, 255, 0) 0%, rgb(2, 247, 255) 100%) fixed;
-	background: -webkit-linear-gradient(315deg, rgb(208, 255, 0) 0%, rgb(2, 247, 255) 100%) fixed;
+.text-orange-grad{
+	background: linear-gradient(135deg, orange 0%, crimson);
+	background: -o-linear-gradient(135deg, orange 0%, crimson);
+	background: -moz-linear-gradient(135deg, orange 0%, crimson);
+	background: -webkit-linear-gradient(315deg, orange 0%, crimson);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	-webkit-box-decoration-break: clone;
 }
 .logomark{
 	font-family: 'my-Raleway-logomark', Fallback, sans-serif;
@@ -66,12 +55,12 @@ card .nav-link{
 	display: inline-block;
 	width: 45px;
 	height: 45px;
-	background-image: url('../img/odd_G.svg');
+	background-image: url('https://res.cloudinary.com/dvh3tbhmd/image/upload/v1598269156/odd_G.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-nav a span{ position: relative; }
-nav a span::after{
+nav a span, .page-link{ position: relative; }
+nav a span::after, .page-link:after{
 	transition: width 200ms ease;
 	content: '';
 	width: 0;
@@ -81,10 +70,11 @@ nav a span::after{
 	left: 0;
 	border-radius: 2px;;
 	background: linear-gradient(0deg, orange 0%, orangered 100%);
+	background: -o-linear-gradient(0deg, orange 0%, orangered 100%);
 	background: -moz-linear-gradient(0deg, orange 0%, orangered 100%);
 	background: -webkit-linear-gradient(0deg, orange 0%, orangered 100%);
 }
-nav a:hover span::after{
+nav a:hover span::after, .page-link:hover::after{
 	width: 100%;
 }
 /* MOBILE NAV BUTTON */
@@ -165,11 +155,6 @@ path{
 	padding-right: 2rem;
 	width: 13rem;
 }
-/* @supports (width: 15ch){
-	.social-butt:hover .tag{
-		width: 15ch;
-	}
-} */
 .svg-icon{
 	height: 30px;
 	width: auto;
@@ -215,14 +200,14 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
 	height: 100%;
 	border: solid 1px black;
 }
-.main-quote{
+/* .main-quote{
 	font-family: serif;
 	position: relative;
 	z-index: 1;
 	font-size: 2rem;
 }
 .main-quote:before{
-	content: '\201C'; /*\201C*/
+	content: '\201C';
 	color: #336699;
 	position: relative;
 	top: 0.40em;
@@ -230,20 +215,25 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
 	font-size: 5.5em;
 	z-index: -1;
 	line-height: 0.8em;
-}
+} */
 .pin{
 	top: -2.5rem;
 	left: -2.5rem;
 	box-shadow: -10px 10px 20px #0003, 10px -10px 20px #ecc940;
+	z-index: 5;
 }
-/* .paper{
+#more .tns-inner{
 	box-shadow: -1px 1px 3px #0004;
-} */
+	background-color: white;
+}
 .paperslider .tns-item{
 	opacity: 0;
 	transition: opacity 300ms ease;
 }
-.paperslider .tns-item.tns-slide-active:nth-child(1){
+.paperslider .tns-item.tns-slide-active{
+	opacity: 1;
+}
+.paperslider .tns-item.tns-slide-active > .tns-item{
 	opacity: 1;
 }
 /*Contact*/
