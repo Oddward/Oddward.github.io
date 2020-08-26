@@ -4,20 +4,20 @@ A personal website, built for practice, portfolio and beyond. Hosted via GitHub 
 
 ### Features
 
-- Responsive layout and fonts
-- Bootstrap components
-- Custom icon fonts
+- Responsive layout
+- Tiny Slider slideshows
 - CSS3 animations
+- SVG path animation
 - Modern contact form with options (will expand on this on dev.to)
 - Optimizations
 
 ### Frameworks used
 
-- Bootstrap 4.3
+- TailwindCSS
 
 ### Credits
 
-- Icofonts
 - Devicons
 - Google Fonts
 - Icons8
+- fontawesome 5
