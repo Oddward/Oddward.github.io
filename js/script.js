@@ -1,4 +1,4 @@
-// CREATE CHECK FOR READY STATE
+/* CREATE CHECK FOR READY STATE */
 function ready(fn){
 	if (document.readyState === 'complete' || document.readyState === 'interactive') {
 		setTimeout(fn, 1);
@@ -8,7 +8,7 @@ function ready(fn){
 }
 ready(function() {
 	console.log('hello');
-	//COPY butt - vanilla js
+	/* COPY butt - vanilla js */
 	let copyTxt = document.getElementById('copyE');
 	let txt = document.getElementById('toCopy');
 	copyTxt.onclick = function(){
@@ -22,14 +22,17 @@ ready(function() {
 		}
 	}
 
-	// Menu butt
+	/* Menu butt */
+	let menuIcon = document.getElementById('menu-icon');
+	let navBarStuff = document.getElementById('navbarStuff');
+
 	document.getElementById('menu-butt').onclick = function() {
-		toggleRes = document.getElementById('menu-icon').classList.toggle('opened');
-		document.getElementById('navbarStuff').classList.toggle('hidden', toggleRes);
-		console.log(document.getElementById('navbarStuff').classList.toggle('hidden'));
+		toggleRes = menuIcon.classList.toggle('opened');
+		navBarStuff.classList.toggle('hidden', toggleRes);
+		console.log(navBarStuff.classList.toggle('hidden'));
 	}
 
-	//Form subject
+	/* Form subject */
 	var namedsub;
 	var prefix = 'Via github pages';
 	var name;
@@ -55,5 +58,6 @@ ready(function() {
 		document.getElementById('form-subject').setAttribute('value', namedsub);
 		document.getElementById('subtext').textContent = namedsub;
 	}
-    // window.instgrm.Embeds.process();
+
+    window.instgrm.Embeds.process();
 })
