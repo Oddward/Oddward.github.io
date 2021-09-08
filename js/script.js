@@ -59,5 +59,5 @@ ready(function() {
 		document.getElementById('subtext').textContent = namedsub;
 	}
 
-    window.instgrm.Embeds.process();
+    // window.instgrm.Embeds.process();
 })
