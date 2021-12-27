@@ -1,0 +1,16 @@
+<div class="relative mb-24">
+    <div class="pin w-20 h-20 rounded-full bg-yellow-500 text-gray-800 absolute flex justify-around items-center" style="top: -40px;left: -30px;"></div>
+
+    <div class="paperslider paper bg-white py-10 text-gray-700 text-xl w-75">
+        <div class="inline-block w-full px-8 md:px-12">
+            <a href={{ include.url }}>
+                <h1 class="font-black font-display text-gray-900 text-3xl my-3 hover:underline">{{ include.title }}</h1>
+            </a>
+            <p class="italic bold">
+                {{ include.description }}
+            </p>
+            
+            <a href="{{ include.url }}" class="inline-block mt-5 text-gray-900 hover:underline">Read more ></a>
+        </div>
+    </div>
+</div>

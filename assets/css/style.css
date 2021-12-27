@@ -59,8 +59,8 @@ section{
 	background-size: contain;
 	background-repeat: no-repeat;
 }
-nav a span, .page-link{ position: relative; }
-nav a span::after, .page-link:after{
+nav div a span, .page-link{ position: relative; }
+nav div a span::after, .page-link:after{
 	transition: width 200ms ease;
 	content: '';
 	width: 0;
@@ -74,7 +74,7 @@ nav a span::after, .page-link:after{
 	background: -moz-linear-gradient(0deg, orange 0%, orangered 100%);
 	background: -webkit-linear-gradient(0deg, orange 0%, orangered 100%);
 }
-nav a:hover span::after, .page-link:hover::after{
+nav div a:hover span::after, .page-link:hover::after{
 	width: 100%;
 }
 /* MOBILE NAV BUTTON */

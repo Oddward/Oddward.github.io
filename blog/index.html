@@ -1,0 +1,22 @@
+---
+layout: blog
+excerpt: {{ post.excerpt }}
+url: {{ post.url }}
+titleVar: {{ post.title }}
+title: OddWord Blog
+---
+
+<section class="row bg-yellow-500 no-gutters text-left text-white pb-20">
+    <div id="feed" class="w-100">
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <!-- <a href="{{ post.url }}">{{ post.title }}</a> -->
+                    {% include feed_item.html title=post.title description=post.excerpt url=post.url %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div id="side-links" class=""></div>
+</section>
