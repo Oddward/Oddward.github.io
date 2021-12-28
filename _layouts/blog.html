@@ -1,49 +1,53 @@
-<!DOCTYPE html>
-<html lang='en'>
+---
+layout: default
+---
 
-{% include head.html %}
+{% include blog_header.html %}
 
-<body>
-	{% include nav.html %}
-	<!-- fab -->
-	<!-- <button id="fab-navbar-toggler" class="" type="button" data-toggle="collapse" data-target="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button> -->
-    {% include blog_header.html %}
-
-    <section id="results" class="row bg-yellow-500 no-gutters text-left text-white pb-20">
-        <div class="sticky top-0 w-full h-24 bg-yellow-500 z-10"></div>
-        <div class="container flex flex-row pt-10 mx-auto pl-6 pr-3 lg:pl-24 lg:pr-10">
-            <div class="w-full mr-12">
-                {{ content }}
+<section id="results" class="row bg-yellow-500 no-gutters text-left text-white pb-20">
+    <div class="sticky top-0 w-full h-24 bg-yellow-500 z-10"></div>
+    <div class="container flex flex-row pt-10 mx-auto pl-6 pr-3 lg:pl-24 lg:pr-10">
+        <div class="w-full mr-12">
+            {{ content }}
+        </div>
+        
+        <div id="side-links" class="w-24">
+            {% if site.related_posts %}
+            <p class="font-bold text-2xl">More.</p>
+            <div class="my-2">
+                <ul>
+                {% for post in site.related_posts %}
+                    <li>
+                        <a href="{{ post.url }}" class="text-gray-900 font-bold hover:underline">{{ post.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
             </div>
-            
-            <div id="side-links" class="w-24">
-                <p class="font-bold text-2xl">More.</p>
-                <div class="my-2">
-                    {% for post in site.posts %}
-                    <a href="{{ post.url }}" class="text-gray-900 font-bold hover:underline">{{ post.title }}</a>
-                    {% endfor %}
-                </div>
+            {% endif %}
 
-                <p class="font-bold text-2xl">Tags.</p>
-                <div class="my-2">
-                    {% for tag in site.tags %}
-                    <a href="/blog/tag/{{ tag[0] }}" class="text-gray-900 font-bold hover:underline">{{ tag[0] }}</a>
-                    {% endfor %}
-                </div>
+            <p class="font-bold text-2xl">Tags.</p>
+            <div class="my-2">
+                <ul>
+                {% for tag in site.tags %}
+                    <li>
+                        <a href="{{ site.url }}/{{ tag[0] }}/index" class="text-gray-900 font-bold hover:underline">{{ tag[0] }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
 
-                <p class="font-bold text-2xl">Friends.</p>
+            <p class="font-bold text-2xl">Friends.</p>
+            <div class="my-2">
+                <ul>
+                {% for friend in site.friends %}
+                    <li>
+                        <a href="{{ friend.href }}" class="text-gray-900 font-bold hover:underline">{{ friend.title }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    {% include contact.html %}
-	
-    {% include footer.html %}
-
-	<!-- Instagram script to load embed -->
-	<!-- <script async src="https://instagram.com/static/bundles/es6/EmbedSDK.js/47c7ec92d91e.js"></script> -->
-    <script src="../plugins/tiny-slider.js"></script>
-</body>
-</html>
+{% include contact.html %}

@@ -1,0 +1,63 @@
+---
+layout: blog
+---
+
+<main class="relative mb-24 mt-2">
+    <div class="pin w-20 h-20 rounded-full bg-yellow-500 text-gray-800 absolute flex justify-around items-center" style="top: -40px;left: -30px;"></div>
+
+    <div class="paperslider paper bg-white py-10 text-gray-700 text-xl w-75">
+        <div class="inline-block w-full px-8 md:px-12">
+            <h1 class="font-black font-display text-gray-900 text-4xl md:text-5xl mt-3 hover:text-orange-grad">{{ page.title }}</h1>
+
+            <div class="flex flex-row items-center gap-2">
+                <p class="inline-block text-base text-gray-500">{{ page.date | date_to_string }}</p>
+                <p class="inline-block text-sm text-gray-500">//</p>
+                <div class="text-base">
+                    {% for tag in page.tags %}
+                    <a href="{{ site.url }}/blog/{{ tag }}?=posts" class="inline-block text-gray-500 hover:underline mr-3"># {{ tag }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <article class="font-body my-10">
+                {{ content }}
+            </article>
+            
+            <div id="divider" class="flex flex-row justify-center items-center content-center gap-5 my-5 mx-5">
+                <!-- <div class="inline h-1 w-full bg-gray-500 self-align-middle"></div> -->
+                <hr class="w-full h-1 text-gray-300"/>
+                <img src="{{ site.url }}/assets/img/3_backticks_regular_pgrad.svg" alt="" width="80px"  class="inline-block">
+                <!-- <div class="inline h-1 w-full bg-gray-500 self-align-middle"></div> -->
+                <hr class="w-full h-1 text-gray-300"/>
+            </div>
+
+            <div id="bio">
+                <div class="flex flex-row items-center content-center">
+                    <img id="bio-pic" alt="Mugtaba's bio pic" src="{{ site.url }}/assets/img/pfp1.jpg" class="w-10 h-10 md:w-12 md:h-12 rounded-full my-3 mr-3 inline-block" />
+                    <p class="inline-block text-base text-gray-500">{{ site.author }}</p>
+                </div>
+                <p class="font-body italic leading-tight"><small>{{ site.bio }}</small></p>
+                <!-- SOCIALS -->
+                <div class="flex flex-row gap-2 mt-2">
+                    {% assign socials = site.data.socials %}
+                    {% for entry in socials %}
+                        {% assign key = entry | first %}
+                        {% if socials[key].id %}
+                            <a href="{{ socials[key].href }}{{ socials[key].id }}"><i class="{{ socials[key].fa-icon }} w-4 h-4 text-gray-500 hover:text-gray-900"></i></a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<style>
+    .drop-cap:first-letter{
+        font-size: 6rem;
+        font-weight: bold;
+        position: relative;
+        float: left;
+        line-height: .85;
+    }
+</style>

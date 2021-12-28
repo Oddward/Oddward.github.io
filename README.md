@@ -43,9 +43,13 @@ bundle install
 ```
 
 ### Build static site
-**Windows:** from root directory
+**Windows (with bundle):** from root directory
 ```terminal
 bundle exec jekyll serve
+```
+**Otherwise:**
+```terminal
+jekyll serve
 ```
 *Builds based on settings in `_config.yml` into `_site/` directory*
 
@@ -53,8 +57,8 @@ bundle exec jekyll serve
 
 ### update stylesheet
 
-1. edit `style.css`
+1. edit custom stylesheet `assets/css/style.css`
 2. generate tailwind compiled output
 ```terminal
-npx tailwindcss build css/style.css -o dist/output.css
+npx tailwindcss build assets/css/style.css -o dist/output.css
 ```

@@ -49,7 +49,7 @@ section{
 	-webkit-box-decoration-break: clone;
 }
 .logomark{
-	font-family: 'my-Raleway-logomark', Fallback, sans-serif;
+	font-family: Fallback, sans-serif;
 	font-size: 1.7em;
 	transition: text-shadow 500ms ease;
 	display: inline-block;

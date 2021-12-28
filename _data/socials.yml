@@ -1,0 +1,41 @@
+twitter:
+  id: 'oddward_io'
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fa fa-twitter'
+
+github:
+  id: 'Oddward'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa fa-github'
+
+instagram:
+  id: 'mugtaba.g'
+  href: 'https://instagram.com/'
+  title: 'Personal Instagram'
+  fa-icon: 'fa fa-instagram'
+
+instagramdev:
+  id: 'oddward.io'
+  href: 'https://instagram.com/'
+  title: 'Dev Instagram'
+  fa-icon: 'fa fa-instagram'
+
+codepen:
+  id: 'oddward'
+  href: 'https://codepen.io/'
+  title: 'CodePen'
+  fa-icon: 'fa fa-codepen'
+
+linkedin:
+  id: 'mugtabagaroot'
+  href: 'https://linkedin.com/in/'
+  title: 'Dev Instagram'
+  fa-icon: 'fa fa-linkedin'
+
+dev:
+  id: 'oddward'
+  href: 'https://dev.to/'
+  title: 'Dev'
+  fa-icon: 'fab fa-dev'

@@ -6088,7 +6088,7 @@ video {
 }
 
 .font-display {
-  font-family: Montserrat, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 .font-body {
@@ -19193,7 +19193,7 @@ section{
 }
 
 .logomark{
-  font-family: 'my-Raleway-logomark', Fallback, sans-serif;
+  font-family: Fallback, sans-serif;
   font-size: 1.7em;
   transition: text-shadow 500ms ease;
   display: inline-block;
@@ -24876,7 +24876,7 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
   }
 
   .sm\:font-display {
-    font-family: Montserrat, sans-serif;
+    font-family: Poppins, sans-serif;
   }
 
   .sm\:font-body {
@@ -43385,7 +43385,7 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
   }
 
   .md\:font-display {
-    font-family: Montserrat, sans-serif;
+    font-family: Poppins, sans-serif;
   }
 
   .md\:font-body {
@@ -61894,7 +61894,7 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
   }
 
   .lg\:font-display {
-    font-family: Montserrat, sans-serif;
+    font-family: Poppins, sans-serif;
   }
 
   .lg\:font-body {
@@ -80403,7 +80403,7 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
   }
 
   .xl\:font-display {
-    font-family: Montserrat, sans-serif;
+    font-family: Poppins, sans-serif;
   }
 
   .xl\:font-body {

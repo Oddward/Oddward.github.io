@@ -4,7 +4,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      display: ['Montserrat', 'sans-serif'],
+      display: ['Poppins', 'sans-serif'],
       body: ['Raleway', 'sans-serif'],
     },
     extend: {
