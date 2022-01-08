@@ -4,50 +4,12 @@ layout: default
 
 {% include blog_header.html %}
 
-<section id="results" class="row bg-yellow-500 no-gutters text-left text-white pb-20">
-    <div class="sticky top-0 w-full h-24 bg-yellow-500 z-10"></div>
-    <div class="container flex flex-row pt-10 mx-auto pl-6 pr-3 lg:pl-24 lg:pr-10">
-        <div class="w-full mr-12">
-            {{ content }}
-        </div>
-        
-        <div id="side-links" class="w-24">
-            {% if site.related_posts %}
-            <p class="font-bold text-2xl">More.</p>
-            <div class="my-2">
-                <ul>
-                {% for post in site.related_posts %}
-                    <li>
-                        <a href="{{ post.url }}" class="text-gray-900 font-bold hover:underline">{{ post.title }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-
-            <p class="font-bold text-2xl">Tags.</p>
-            <div class="my-2">
-                <ul>
-                {% for tag in site.tags %}
-                    <li>
-                        <a href="{{ site.url }}/{{ tag[0] }}/index" class="text-gray-900 font-bold hover:underline">{{ tag[0] }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-
-            <p class="font-bold text-2xl">Friends.</p>
-            <div class="my-2">
-                <ul>
-                {% for friend in site.friends %}
-                    <li>
-                        <a href="{{ friend.href }}" class="text-gray-900 font-bold hover:underline">{{ friend.title }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-        </div>
+<section id="results" class="bg-gray-200 no-gutters relative text-left text-white border-solid border-gray-700" style="border-top-width: 1px;">
+    <div class="sticky top-0 w-full h-24 bg-gray-900 z-10"></div>
+    <div class="container pt-10 mx-auto px-6 lg:px-24">
+        {{ content }}
     </div>
+    <div class="top-0 w-full h-24 bg-gray-200 z-10"></div>
 </section>
 
 {% include contact.html %}

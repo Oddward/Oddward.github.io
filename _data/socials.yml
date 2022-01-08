@@ -39,3 +39,9 @@ dev:
   href: 'https://dev.to/'
   title: 'Dev'
   fa-icon: 'fab fa-dev'
+
+dribbble:
+  id: 'Oddward'
+  href: 'https://dribbble.com/'
+  title: 'Dev'
+  fa-icon: 'fab fa-dribbble'

@@ -2,19 +2,36 @@
 layout: blog
 ---
 
-<main class="relative mb-24 mt-2">
-    <div class="pin w-20 h-20 rounded-full bg-yellow-500 text-gray-800 absolute flex justify-around items-center" style="top: -40px;left: -30px;"></div>
+<style>
+    .drop-cap:first-letter {
+        font-size: 3rem;
+        font-weight: bold;
+        position: relative;
+        /* float: left; */
+        line-height: .85;
+    }
+    .highlight {
+        background-color: #333;
+    }
+</style>
 
-    <div class="paperslider paper bg-white py-10 text-gray-700 text-xl w-75">
-        <div class="inline-block w-full px-8 md:px-12">
-            <h1 class="font-black font-display text-gray-900 text-4xl md:text-5xl mt-3 hover:text-orange-grad">{{ page.title }}</h1>
+<main class="relative flex flex-col mt-24">
+    <div class="pin w-20 h-20 rounded-full bg-gray-200 text-gray-800 absolute" style="top: -40px;left: calc(50% - 30px);"></div>
 
-            <div class="flex flex-row items-center gap-2">
-                <p class="inline-block text-base text-gray-500">{{ page.date | date_to_string }}</p>
-                <p class="inline-block text-sm text-gray-500">//</p>
+    <div class="paper shadow-sm bg-white py-10 px-8 md:px-32 text-gray-700 text-xl w-75">
+        <!-- <div class="inline-block w-full px-8 md:px-32"> -->
+
+            <header class="flex items-center mt-6">
+                <div id="img-box" class="flex-shrink-0 w-24 mr-3 md:w-40 md:min-h-40 md:mr-10">{% include logo_animated.html %}</div>
+                <h1 class="font-black font-display text-gray-900 text-4xl md:text-5xl hover:text-orange-grad">{{ page.title }}</h1>
+            </header>
+
+            <div class="flex justify-center items-center gap-6 text-gray-500 mt-10">
+                <p class="inline-block text-base">{{ page.date | date_to_string }}</p>
+                <p class="inline-block text-sm">//</p>
                 <div class="text-base">
                     {% for tag in page.tags %}
-                    <a href="{{ site.url }}/blog/{{ tag }}?=posts" class="inline-block text-gray-500 hover:underline mr-3"># {{ tag }}</a>
+                    <a href="{{ site.url }}/blog/{{ tag }}?=posts" class="inline-block hover:underline mr-3"># {{ tag }} </a>
                     {% endfor %}
                 </div>
             </div>
@@ -23,7 +40,7 @@ layout: blog
                 {{ content }}
             </article>
             
-            <div id="divider" class="flex flex-row justify-center items-center content-center gap-5 my-5 mx-5">
+            <div id="divider" class="flex flex-row justify-center items-center content-center gap-5 my-10 mx-5">
                 <!-- <div class="inline h-1 w-full bg-gray-500 self-align-middle"></div> -->
                 <hr class="w-full h-1 text-gray-300"/>
                 <img src="{{ site.url }}/assets/img/3_backticks_regular_pgrad.svg" alt="" width="80px"  class="inline-block">
@@ -48,16 +65,19 @@ layout: blog
                     {% endfor %}
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
 </main>
 
-<style>
-    .drop-cap:first-letter{
-        font-size: 6rem;
-        font-weight: bold;
-        position: relative;
-        float: left;
-        line-height: .85;
-    }
-</style>
+<div id="related-links" class="my-12">
+    <p class="font-body text-2xl text-gray-900 text-center my-6">Related posts</p>
+
+    <ul class="flex justify-center">
+        {% for entry in site.related_posts limit: 3 %}
+        <li style="list-style: none;" class="card inline-block w-1/3 p-3 mx-3 rounded-sm bg-white hover:shadow-sm">
+                <a href="{{ entry.url }}" class="text-gray-900 text-2xl font-display font-bold hover:underline">{{ entry.title }}</a>
+                <p class="text-gray-500">{% for tag in entry.tags %}# {{ tag }} {% endfor %}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -27,7 +27,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://Oddward.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 author: "Mugtaba G"
-bio: "Mugtaba is an African raised in Asia, a melting pot of cultures and interests with most of them revolving around visual arts, natural sciences and understanding people. Usually found consuming tonnes of media (especially animation), practicing web development or graphic design, or hanging out on a discord chat."
+bio: "Mugtaba is an African raised in Asia, a melting pot of cultures and interests with most of them revolving around visual arts, natural sciences and understanding people. Usually found consuming tonnes of media (especially animation), practicing web development and graphic design, or hanging out on a discord chat."
 
 # Build settings
 # theme: minima
@@ -35,7 +35,8 @@ plugins:
   - jekyll-feed
 
 page_exerpts: true
-permalink: /:categories/:short_year/:short_month/:title
+permalink: /blog/post/:short_year/:short_month/:title
+highlighter: rouge
 
 # Friends
 friends: [
@@ -56,17 +57,18 @@ friends: [
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  # - vendor/bundle/
+  # - vendor/cache/
+  # - vendor/gems/
+  # - vendor/ruby/
+
 include:
   - _pages
-  # - node_modules/tiny-slider/
+  - node_modules/swiper/

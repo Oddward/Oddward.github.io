@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Migrating your GitHub Pages site to Jekyll"
 date:   2021-12-10 18:51:01 +0200
 simpledate: "2021.12.10"
 categories: post
@@ -16,11 +16,13 @@ tags: web-dev
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
+<code>
 def print_hi(name)
   puts "Hi, #{name}"
 end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
+</code>
 {% endhighlight %}
 
 ### Even more
