@@ -1,47 +1,55 @@
 twitter:
   id: 'oddward_io'
   href: 'https://www.twitter.com/'
-  title: 'Twitter'
+  title: 'Twitter profile'
   fa-icon: 'fa fa-twitter'
-
-github:
-  id: 'Oddward'
-  href: 'https://github.com/'
-  title: 'GitHub'
-  fa-icon: 'fa fa-github'
+  bg-color: 'bg-[#1da1f2]'
 
 instagram:
   id: 'mugtaba.g'
   href: 'https://instagram.com/'
-  title: 'Personal Instagram'
+  title: 'Main Instagram'
   fa-icon: 'fa fa-instagram'
+  bg-color: 'bg-insta-onhover'
 
 instagramdev:
   id: 'oddward.io'
   href: 'https://instagram.com/'
   title: 'Dev Instagram'
   fa-icon: 'fa fa-instagram'
+  bg-color: 'bg-insta-onhover'
+
+github:
+  id: 'Oddward'
+  href: 'https://github.com/'
+  title: 'GitHub repositories'
+  fa-icon: 'fa fa-github'
+  bg-color: 'bg-black'
 
 codepen:
   id: 'oddward'
   href: 'https://codepen.io/'
-  title: 'CodePen'
+  title: 'CodePen playground'
   fa-icon: 'fa fa-codepen'
+  bg-color: 'bg-black'
 
 linkedin:
   id: 'mugtabagaroot'
   href: 'https://linkedin.com/in/'
-  title: 'Dev Instagram'
+  title: 'Linkedin Profile'
   fa-icon: 'fa fa-linkedin'
+  bg-color: 'bg-[#0077B5]'
 
 dev:
   id: 'oddward'
   href: 'https://dev.to/'
-  title: 'Dev'
+  title: 'Dev profile'
   fa-icon: 'fab fa-dev'
+  bg-color: 'bg-black'
 
 dribbble:
   id: 'Oddward'
   href: 'https://dribbble.com/'
-  title: 'Dev'
+  title: 'Dribbble portfolio'
   fa-icon: 'fab fa-dribbble'
+  bg-color: 'bg-[#ea4c89]'

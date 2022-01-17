@@ -8,6 +8,7 @@ permalink: /blog
 ---
 
 <!-- <section class="row bg-gray-900 no-gutters text-left text-white pb-20 border-t-1 border-white"> -->
+<main class="relative flex flex-row mt-12">
     <div class="w-full mr-12">
         <div id="feed" class="w-100 pt-10">
             <ul>
@@ -21,37 +22,37 @@ permalink: /blog
         </div>
     </div>
 
-    <div id="related-links" class="w-24 md:w-48">
+    <div id="related-links" class="w-24 md:w-48 font-bold">
         <!-- {% if site.related_posts %}
             <p class="font-bold text-2xl">More.</p>
             <div class="my-2">
                 <ul>
                 {% for post in site.related_posts %}
                     <li>
-                        <a href="{{ post.url }}" class="text-gray-900 font-bold hover:underline">{{ post.title }}</a>
+                        <a href="{{ post.url }}" class="font-bold hover:underline">{{ post.title }}</a>
                     </li>
                 {% endfor %}
                 </ul>
             </div>
         {% endif %} -->
 
-        <p class="font-bold text-2xl text-orange-grad">Tags.</p>
+        <p class="text-2xl text-orange-grad">Tags.</p>
         <div class="my-2">
             <ul>
             {% for tag in site.tags %}
                 <li>
-                    <a href="{{ site.url }}/{{ tag[0] }}/index" class="pretty-link text-gray-700 font-bold hover:underline">{{ tag[0] }}</a>
+                    <a href="{{ site.url }}/{{ tag[0] }}/index" class="pretty-link italic hover:underline">{{ tag[0] }}</a>
                 </li>
             {% endfor %}
             </ul>
         </div>
 
-        <p class="font-bold text-2xl text-orange-grad">Friends.</p>
+        <p class="text-2xl text-orange-grad">Friends.</p>
         <div class="my-2">
             <ul>
             {% for friend in site.friends %}
                 <li>
-                    <a href="{{ friend.href }}" class="pretty-link text-gray-700 font-bold hover:underline">{{ friend.title }}</a>
+                    <a href="{{ friend.href }}" class="pretty-link italic hover:underline">{{ friend.title }}</a>
                 </li>
             {% endfor %}
             </ul>
@@ -60,3 +61,4 @@ permalink: /blog
 
     <!-- <div id="side-links" class=""></div> -->
 <!-- </section> -->
+</main>

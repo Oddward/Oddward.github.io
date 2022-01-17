@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 domain: "Oddward.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://Oddward.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "https://github.com/oddward/oddward.github.io/tree/jekyll"
 
 author: "Mugtaba G"
 bio: "Mugtaba is an African raised in Asia, a melting pot of cultures and interests with most of them revolving around visual arts, natural sciences and understanding people. Usually found consuming tonnes of media (especially animation), practicing web development and graphic design, or hanging out on a discord chat."
@@ -45,7 +46,7 @@ friends: [
     #     href: "http://smith.sonian/"
     # },{
         title: "Triple A",
-        href: "http://triplea.domain.com/"
+        href: "http://ahmadaa1995.wixsite.com/triplea"
     }
 ]
 

@@ -1,36 +1,37 @@
 
-<nav class="fixed inset-x-0 top-0 px-6 flex justify-between z-40">
+<nav class="fixed flex justify-between inset-x-0 top-0 px-6 z-40">
     <a href="/" class="flex items-center flex-shrink-0 text-white mr-6 mb-4">
         <span class="logomark"> </span>
-        <!-- MUGTABA<b class="alex">G</b> -->
     </a>
-    <button id="menu-butt" class="flex sm:hidden items-center px-3 py-2 mt-4 border rounded border-black border-opacity-25 hover:border-opacity-50 fixed z-40" onclick="borgar(this)">
-        <svg id="menu-icon" class="h-8 w-8" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+
+    <button id="menu-butt" class="flex sm:hidden items-center border rounded-md border-black border-opacity-25 hover:border-opacity-50 opacity-primary fixed z-40 px-3 py-2 mt-4" onclick="borgar(this)">
+        <svg id="menu-icon" class="h-8 w-8 fill-white" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
             <title>Menu</title>
             <path stroke-width="3" d="M8 9l24 0"/>
-            <path stroke-width="3"  d="M0 9m0 10l40 0"/>
-            <path stroke-width="3"  d="M8 9m0 20l24 0"/>
+            <path stroke-width="3" d="M0 9m0 10l40 0"/>
+            <path stroke-width="3" d="M8 9m0 20l24 0"/>
         </svg>
     </button>
+
     <div id="navbarStuff" class="fixed z-30 text-white flex-grow flex md:flex sm:w-auto bg-black bg-opacity-90 sm:bg-transparent h-screen flex-col justify-end align-middle top-0 left-0 sm:w-full md:flex-row sm:relative sm:h-auto hidden"> <!--w-screen-->
         <!-- <a href="#hero" class="flex sm:inline-block justify-center align-middle text-2xl py-8 md:px-5">
             <span>Top</span></a> -->
 
-        {% if page.title == "Home | Mugtaba G" %}
+        {% if page.title == "Home // Mugtaba G" %}
             <a href="#summary" class="flex sm:inline-block justify-center align-middle text-2xl py-8 md:px-5">
             <span>Skills</span></a>
             <a href="#projects" class="flex sm:inline-block justify-center align-middle text-2xl py-8 md:px-5">
             <span>Stuff</span></a>
         {% endif %}
 
-        {% if page.title == "About | Mugtaba G" %}
-            <a href="/" class="flex sm:inline-block justify-center align-middle text-2xl py-8 md:px-5">
-            <span>Home</span></a>
+        {% if page.title == "About // Mugtaba G" %}
+            <a href="#hero" class="flex sm:inline-block justify-center align-middle text-2xl py-8 md:px-5">
+            <span>Intro</span></a>
             <a href="#more" class="flex sm:inline-block justify-center align-middle text-2xl py-8 md:px-5">
             <span>More</span></a>
         {% endif %}
 
-        {% if page.title == "OddWord Blog" %}
+        {% if page.url contains "blog" %}
             <a href="/blog" class="flex sm:inline-block justify-center align-middle text-2xl py-8 md:px-5">
             <span>Feed</span></a>
         {% endif %}
@@ -39,7 +40,7 @@
             <span>Contact</span></a>
 
         <!-- {% if page.title != "OddWord Blog" %} -->
-            <a href="/blog" role="button" class="flex sm:inline-block text-xl py-2 px-6 text-center font-bold my-6 mx-3 rounded-full border-2 border-white hover:bg-white text-white hover:text-gray-900 leading-relaxed"><p>Blog</p></a>
+            <a href="/blog" role="button" class="flex sm:inline-block text-xl py-2 px-6 text-center font-bold my-6 mx-3 rounded-full border-2 border-white hover:bg-white hover:text-gray-900 leading-relaxed"><p>Blog</p></a>
         <!-- {% endif %} -->
     </div>
 </nav>
