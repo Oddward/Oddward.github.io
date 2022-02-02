@@ -62,7 +62,36 @@ section{
 	@apply text-2xl
 }
 .project-card {
-	@apply bg-white rounded-sm m-3
+	width: 400px;
+	@apply bg-white flex flex-col items-center rounded-sm my-5
+}
+.project-card img {
+	width: 400px;
+	height: auto;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+			clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+	-webkit-box-shadow: -4px 0 4px 4px rgba(0, 0, 0, 0.2) inset;
+			box-shadow: -4px 0 4px 4px rgba(0, 0, 0, 0.2) inset;
+}
+@media (min-width: 768px) {
+	.project-card.tall-thumb img {
+		-webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+				clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+	}
+	.project-card.tall-thumb { 
+		flex-direction: row;
+		width: 80%;
+	}
+}
+@media (min-width: 1024px) {
+	.project-card.wide-thumb img {
+		-webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+				clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+	}
+	.project-card.wide-thumb { 
+		flex-direction: row;
+		width: 80%;
+	}
 }
 .project-card p {
 	@apply text-black opacity-primary text-xl m-5
