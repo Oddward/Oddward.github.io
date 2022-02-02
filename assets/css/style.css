@@ -47,7 +47,7 @@ section{
 }
 .pin {
 	top: -40px;
-	@apply absolute w-20 h-20 rounded-full opacity-secondary backdrop-blur-sm shadow-sm bg-gray-500
+	@apply absolute w-20 h-20 rounded-full opacity-secondary backdrop-blur-md shadow-sm bg-gray-500
 }
 #post p {
 	@apply leading-loose
@@ -60,6 +60,12 @@ section{
 }
 #post h3 {
 	@apply text-2xl
+}
+.project-card {
+	@apply bg-white rounded-sm m-3
+}
+.project-card p {
+	@apply text-black opacity-primary text-xl m-5
 }
 /* Extra Colour Classes */
 .bg-linkedin{

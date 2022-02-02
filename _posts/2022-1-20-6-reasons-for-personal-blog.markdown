@@ -3,8 +3,8 @@ layout: post
 title:  "6 Reasons to have a Personal Blog"
 date:   2021-12-10 18:51:01 +0200
 excerpt_separator: <!--cutoff-->
-thumb_url: /assets/img/pex-3243090.jpg
-categories: blog personal-dev
+thumb_url: {{ site.url + '/assets/img/pex-3243090.jpg' }}
+categories: personal-dev
 tags: personal-dev
 ---
 
@@ -32,7 +32,7 @@ A lot of us are for the most part content with just tweeting or posting images w
 
 ## 4. Archive your struggles
 
-This isn't like those times you're trying to go to sleep at 3am and your brain presents to you a fine selection of the most embarrassing moments from your highschool days. This is about documenting your biggest struggles, especially after finally figuring out a solution, and writing it down so that you can refer back to it later or that someone going through the same thing can find a solution. It's not always stackoverflow that answers a developer's prayers, a lot of answers come in the form of personal blog posts (which are sometimes linked in a stackoverflow answer)
+This isn't like those times you're trying to go to sleep at 3am and your brain presents to you a fine selection of the most embarrassing moments from your highschool days. This is about documenting your biggest struggles, especially after finally figuring out a solution, and writing it down so that you can refer back to it later or that someone going through the same thing can find that solution. It's not always stackoverflow that answers a developer's prayers, a lot of answers come in the form of personal blog posts (which are sometimes linked in a stackoverflow answer)
 
 On social media we're incentivised to only show our good side, always comparing to other profiles, and for the most part avoiding exposing vulnerability. By documenting our struggles and victories we can appear more human and paint a more natural image of our growth (albeit still a simple image)
 
@@ -44,7 +44,7 @@ You could even cross post related content, like posting web dev tutorials on Dev
 
 ## 6. Train your creative brain
 
-Writing is a form of creative expression and it's a timeless skill to learn and master. Whether you're writing tutorials or writing stories about your life, the more you do it the better you get at it, and combined with other platforms you can learn to communicate the same ideas in different formats and with different constraints until the constraints don't really matter anymore. It would be particularly useful if you're not used to writing a lot and having the large space of a blog post itself is a constraint
+Writing is a form of creative expression and it's a timeless skill to learn and master. Whether you're writing tutorials or writing stories about your life, the more you do it the better you get at it, and combined with other platforms you can learn to communicate the same ideas in different formats and with different constraints until the constraints don't really matter anymore. If you're not used to writing a lot the large space you get with a blog post itself can be a constraint
 
 As a wise man once said, _"You don't need creativity to deal with freedom, you need creativity to deal with constraints"_
 
@@ -59,5 +59,3 @@ Consider these points if you're interested at all in having a personal blog site
 - Generate lots of content ideas by extrapolating from your own articles
 - Train your writing skills as you express similar ideas in different formats, long & short
 
-
-_I'll try to share some stuff about making an (open source) blog, and maybe some writing or content tips?_
