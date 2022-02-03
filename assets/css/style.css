@@ -50,10 +50,10 @@ section{
 	@apply absolute w-20 h-20 rounded-full opacity-secondary backdrop-blur-md shadow-sm bg-gray-500
 }
 #post p {
-	@apply leading-loose
+	@apply leading-loose opacity-primary
 }
 #post h2, #post h3, #post h4 {
-	@apply font-display font-bold
+	@apply font-display font-bold mt-3 text-black opacity-primary
 }
 #post h2 { 
 	@apply text-3xl

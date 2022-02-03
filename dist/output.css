@@ -673,14 +673,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1.5rem;
 }
 
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
-}
-
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mr-6 {
@@ -781,10 +781,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
 }
 
 .block {
@@ -1522,8 +1518,12 @@ section{
 }
 
 #post h2, #post h3, #post h4 {
+  margin-top: 0.75rem;
   font-family: Poppins, sans-serif;
   font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  opacity: 0.87;
 }
 
 #post h2 {
@@ -2155,5 +2155,10 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
 
   .xl\:mb-40 {
     margin-bottom: 10rem;
+  }
+
+  .xl\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }

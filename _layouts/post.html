@@ -29,16 +29,16 @@ post-img: {{ page.thumb_url }}
     } */
 </style>
 
-<main class="relative flex flex-col mt-24">
-    <div class="pin bg-slate-900 to-slate-700" style="left: calc(50% - 30px);"></div>
+<main class="relative flex flex-col">
+    <!-- <div class="pin bg-slate-900 to-slate-700" style="left: calc(50% - 30px);"></div> -->
 
-    <div class="paper md:px-12 lg:px-32 lg:mx-12">
+    <div class="paper md:px-12 lg:px-32 lg:mx-12 xl:px-40">
         <article class="">
 
-            <header class="flex ">
-                <!-- place thumb img design? -->
-                <h1 class="font-black font-display text-gray-900 text-4xl md:text-5xl hover:text-orange-grad mt-6">{{ page.title }}</h1>
-            </header>
+            <!-- <header class="flex "> -->
+            <!-- place thumb img design? -->
+            <h1 class="font-black font-display text-center text-4xl md:text-5xl text-orange-grad my-12">{{ page.title }}</h1>
+            <!-- </header> -->
 
             <div class="flex justify-center items-center gap-6 text-base mt-10 xl:column-2">
                 <div class="text-base">
@@ -85,7 +85,7 @@ post-img: {{ page.thumb_url }}
     </div>
 </main>
 
-<div id="related-links" class="my-12">
+<div id="related-links" class="my-12 md:my-20">
     <p class="font-body text-2xl opacity-secondary text-center my-6">Related posts</p>
 
     <ul class="flex flex-col lg:flex-row justify-center w-full text-black">
