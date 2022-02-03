@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en' class="relative">
+
+{% include head.html %}
+
+<body>
+	{% include nav.html %}
+	<!-- fab -->
+	<!-- <button id="fab-navbar-toggler" class="" type="button" data-toggle="collapse" data-target="#navbarStuff" aria-controls="navbarStuff" aria-expanded="false" aria-label="Toggle Navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button> -->
+
+	{{ content }}
+	
+    {% include footer.html %}
+
+	<!-- Instagram script to load embed -->
+	<!-- <script async src="https://instagram.com/static/bundles/es6/EmbedSDK.js/47c7ec92d91e.js"></script> -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- <script src="{{ site.url }}/node_modules/swiper/swiper-bundle.min.js"></script> -->
+	<script src="{{ site.url }}/assets/js/swiperInit.js"></script>
+</body>
+</html>

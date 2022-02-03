@@ -1,0 +1,16 @@
+<div class="relative mb-24">
+    <!-- <div class="pin bg-slate-900 to-slate-700 backdrop-blur-md" style="top: -40px;left: -30px;"></div> -->
+
+    <div class="paperslider paper bg-white rounded-sm py-10 text-gray-700 text-xl w-75">
+        <div class="inline-block w-full px-8 md:px-12">
+            <a href={{ include.url }}>
+                <h1 class="pretty-link font-black font-display text-gray-900 text-3xl my-3 hover:underline">{{ include.title }}</h1>
+            </a>
+            <p class="italic font-light">
+                {{ include.description }}
+            </p>
+            
+            <a href="{{ include.url }}" class="inline-block mt-5 font-bold italic text-gray-500 hover:underline">Read more</a>
+        </div>
+    </div>
+</div>

@@ -1,11 +1,11 @@
 module.exports = {
-  purge: [
-    '*.html',
+  content: [
+    './_site/**/*.html',
   ],
   theme: {
     fontFamily: {
-      display: ['Montserrat', 'sans-serif'],
-      body: ['Raleway', 'sans-serif'],
+      display: ['Poppins', 'sans-serif'],
+      body: ['Nunito Sans', 'sans-serif'],
     },
     extend: {
       colors: {
@@ -15,6 +15,9 @@ module.exports = {
       },
       opacity: {
         '90': '0.90',
+        'primary': '0.87',
+        'secondary': '0.60',
+        'mute': '0.38'
       }
     },
   },

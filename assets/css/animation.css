@@ -1,0 +1,54 @@
+.steam-tick {
+    position: absolute;
+    -webkit-animation: tick 2500ms ease infinite;
+            animation: tick 2500ms ease infinite;
+}
+#tick1 {
+    -webkit-animation-delay: 300ms;
+            animation-delay: 300ms;
+}
+#tick2 {
+    -webkit-animation-delay: 0ms;
+            animation-delay: 0ms;
+}
+#tick3 {
+    -webkit-animation-delay: 600ms;
+            animation-delay: 600ms;
+}
+/* #logo-animated:hover .steam-tick {
+    -webkit-animation-duration: 2000ms;
+            animation-duration: 2000ms; */
+}
+/* #mug {
+    -webkit-filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.2));
+            filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.1)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.2));
+} */
+
+@-webkit-keyframes tick {
+    0% {
+        -webkit-transform: translate(5%, 5%);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(-5%, -5%);
+        opacity: 0;
+    }
+}
+@keyframes tick {
+    0% {
+        transform: translate(5%, 5%);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-5%, -5%);
+        opacity: 0;
+    }
+}

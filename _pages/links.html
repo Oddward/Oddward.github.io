@@ -1,0 +1,52 @@
+---
+title: Portal to other worlds
+description: External links hub for Mugtaba G // Social // Professional // Personal
+permalink: /links/
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+	{% include head.html %}
+<body>
+	<div class="bg-gray-900 text-gray-200">
+		<nav class="flex justify-center py-10">
+			<div id="img-box" class="flex-shrink-0 w-8 mr-3 md:w-12 md:mr-6">{% include logo_animated.html fillColour="white" %}</div>
+		</nav>
+
+		<main class="container px-10 md:px-24 lg:px-32 mx-auto">
+			<header class="flex justify-center items-center w-full mt-8">
+				<img id="bio-pic" alt="Mugtaba's bio pic" src="{{ site.url }}/assets/img/pfp1_alt.jpg" class="inline-block w-24 h-24 md:w-32 md:h-32 rounded-full mr-6" />
+				<p class="inline-block font-display font-black text-3xl text-gray-200">
+					<!-- {{ site.author }} -->
+					Oddward
+				</p>
+			</header>
+
+			<section id="links" class="flex flex-col justify-center gap-5 w-full py-12 md:py-24">
+				<h2 class="font-body text-xl text-gray-500 mt-3 order-1">Socials</h2>
+				<h2 class="font-body text-xl text-gray-500 mt-3 order-4">Professional</h2>
+
+				<a href="{{ site.url }}/blog" class="flex justify-center items-center gap-5 border-2 border-gray-300 p-6 rounded-xl hover:bg-gray-200 hover:text-gray-900 order-first">
+					<!-- <i class="{{ socials[key].fa-icon }} w-8 h-8"></i> -->
+					<span class="font-body text-xl">Blog <small>( ͡• ͜ʖ ͡• )</small></span>
+				</a>
+
+				{% assign socials = site.data.socials %}
+				{% for entry in socials %}
+					{% assign key = entry | first %}
+					{% if socials[key].id %}
+						<a href="{{ socials[key].href }}{{ socials[key].id }}" class="flex justify-center items-center gap-5 border-2 border-gray-300 p-6 rounded-xl {% if socials[key].href != 'https://instagram.com/' %} hover:{% endif %}{{ socials[key].bg-color }} text-xl order-{{ forloop.index }}">
+							<i class="{{ socials[key].fa-icon }} "></i>
+							<span class="font-body">{{ socials[key].title }}</span>
+						</a>
+					{% endif %}
+				{% endfor %}
+			</section>
+		</main>
+
+		<footer class="text-center text-base p-3">
+			<a href="{{ site.repository }}/links.html" class="pretty-link opacity-mute"><small>Hosted on GitHub</small></a>
+		</footer>
+	</div>
+</body>
+</html>
