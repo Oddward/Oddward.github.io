@@ -40,7 +40,7 @@ post-img: {{ page.thumb_url }}
             <h1 class="font-black font-display text-center text-4xl md:text-5xl text-orange-grad my-12">{{ page.title }}</h1>
             <!-- </header> -->
 
-            <div class="flex justify-center items-center gap-6 text-base mt-10 xl:column-2">
+            <div class="flex justify-center items-center gap-6 text-base my-16 xl:column-2">
                 <div class="text-base">
                 {% for tag in page.tags %}
                     <a href="{{ site.url }}/blog/{{ tag }}?=posts" class="inline-block opacity-secondary hover:underline mr-3">{{ tag }} </a>

@@ -3,45 +3,35 @@ layout: blog
 excerpt: {{ post.excerpt }}
 url: {{ post.url }}
 titleVar: {{ post.title }}
-title: OddWord Blog
-permalink: /blog
+title: personal-dev posts // OddWord Blog
+permalink: /blog/personal-dev
 ---
 
-<!-- <section class="row bg-gray-900 no-gutters text-left text-white pb-20 border-t-1 border-white"> -->
 <main class="relative flex flex-row mt-12">
     <div class="w-full mr-12">
+        <h1 class="text-2xl"># personal-dev</h1>
         <div id="feed" class="w-100 pt-10">
             <ul>
                 {% for post in site.posts %}
+                {% if post.tags contains 'personal-dev' %}
                     <li>
                         <!-- <a href="{{ post.url }}">{{ post.title }}</a> -->
                         {% include feed_item.html title=post.title description=post.excerpt url=post.url %}
                     </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
     </div>
 
     <div id="related-links" class="w-24 md:w-48 font-bold">
-        <!-- {% if site.related_posts %}
-            <p class="font-bold text-2xl">More.</p>
-            <div class="my-2">
-                <ul>
-                {% for post in site.related_posts %}
-                    <li>
-                        <a href="{{ post.url }}" class="font-bold hover:underline">{{ post.title }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-        {% endif %} -->
 
         <p class="text-2xl text-orange-grad">Tags.</p>
         <div class="mt-2 mb-4">
             <ul>
             {% for tag in site.tags %}
                 <li>
-                    <a href="{{ site.url }}/blog/{{ tag[0] }}" class="pretty-link italic hover:underline">{{ tag[0] }}</a>
+                    <a href="{{ site.url }}/{{ tag[0] }}/index" class="pretty-link italic hover:underline">{{ tag[0] }}</a>
                 </li>
             {% endfor %}
             </ul>
@@ -58,7 +48,4 @@ permalink: /blog
             </ul>
         </div>
     </div>
-
-    <!-- <div id="side-links" class=""></div> -->
-<!-- </section> -->
 </main>

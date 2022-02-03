@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "6 Reasons to have a Personal Blog"
-date:   2021-12-10 18:51:01 +0200
+date:   2022-1-20 18:51:01 +0200
 excerpt_separator: <!--cutoff-->
 thumb_url: {{ site.url + '/assets/img/pex-3243090.jpg' }}
 categories: personal-dev

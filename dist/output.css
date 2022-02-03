@@ -678,6 +678,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -1515,6 +1520,7 @@ section{
 
 #post p {
   line-height: 2;
+  opacity: 0.87;
 }
 
 #post h2, #post h3, #post h4 {
@@ -1990,6 +1996,11 @@ a.social-butt, a.social-butt:hover, a.social-butt:active, a.social-butt:visited{
   .md\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+  }
+
+  .md\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .md\:mr-6 {
