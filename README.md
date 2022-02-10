@@ -59,6 +59,10 @@ jekyll serve
 
 1. edit custom stylesheet `assets/css/style.css`
 2. generate tailwind compiled output
-```terminal
-npx tailwindcss build assets/css/style.css -o dist/output.css
-```
+    ```terminal
+    npx tailwindcss build assets/css/style.css -o dist/output.css
+    ```
+    or (tailwindcss 3.x)
+    ```terminal
+    npx tailwindcss -i assets/css/style.css -o dist/output.css
+    ```
