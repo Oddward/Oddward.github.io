@@ -37,7 +37,7 @@ post-img: {{ page.thumb_url }}
 
             <!-- <header class="flex "> -->
             <!-- place thumb img design? -->
-            <h1 class="font-black font-display text-center text-4xl md:text-5xl text-orange-grad my-12 py-3">{{ page.title }}</h1>
+            <h1 class="font-black font-display text-center text-4xl md:text-5xl text-orange-grad mb-12 mt-8 py-3">{{ page.title }}</h1>
             <!-- </header> -->
 
             <div class="flex justify-center items-center gap-6 text-base my-16 xl:column-2">
@@ -47,7 +47,7 @@ post-img: {{ page.thumb_url }}
                 {% endfor %}
                 </div>
                 <div id="img-box" class="w-12 mr-3 md:w-18 md:min-h-18">
-                    {% include logo_animated.html fillColour="#333" %}
+                    {% include logo_animated.html fillColour="#fff" %}
                 </div>
                 <time datetime="{{ page.date }}" class="inline-block opacity-secondary">{{ page.date | date_to_string }}</p>
             </div>

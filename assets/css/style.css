@@ -53,7 +53,7 @@ section{
 	@apply leading-loose opacity-primary
 }
 #post h2, #post h3, #post h4 {
-	@apply font-display font-bold mt-3 text-black opacity-primary
+	@apply font-display font-bold mt-6 mb-3 text-white opacity-primary
 }
 #post h2 { 
 	@apply text-3xl
