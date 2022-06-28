@@ -5,7 +5,6 @@ A personal website, built for practice, portfolio and beyond. Hosted on GitHub p
 ### Features
 
 - Responsive layout
-- carousel
 - CSS3 animations
 - SVG path animation
 - Modern contact form with options
@@ -15,7 +14,7 @@ A personal website, built for practice, portfolio and beyond. Hosted on GitHub p
 ### Frameworks/techs used
 
 - TailwindCSS
-- Tiny Slider
+- Swiper
 - Jekyll
 
 ### Credits
@@ -59,10 +58,7 @@ jekyll serve
 
 1. edit custom stylesheet `assets/css/style.css`
 2. generate tailwind compiled output
-    ```terminal
-    npx tailwindcss build assets/css/style.css -o dist/output.css
-    ```
-    or (tailwindcss 3.x)
+
     ```terminal
     npx tailwindcss -i assets/css/style.css -o dist/output.css
     ```

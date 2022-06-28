@@ -1,7 +1,7 @@
 <!-- CONTACT SECTION -->
-<section id="contact" class="bg-slate-900 font-body pb-6">
+<section id="contact" class="relative bg-slate-900 font-body pb-6">
     <div class="sticky top-0 w-full h-24 bg-slate-900 z-10"></div>
-    <div class="block mx-4 md:mx-24 lg:mx-32 pt-16 text-gray-100">
+    <div class="container mx-auto px-10 md:px-24 pt-16 text-gray-100">
         <!-- <h1 class="transparent">Get in touch.</h1> -->
         <img src="https://res.cloudinary.com/dvh3tbhmd/image/upload/w_400,c_fill,ar_1:1,g_auto/v1594598066/get_in_touch.svg" role="heading" alt="Get in Touch. (heading)" class="w-full h-auto" style="max-width: 500px;">
             
@@ -32,8 +32,8 @@
                     <div class="">
                             <!-- form start -->
                         <form id="contact-form" name="input" action="https://formspree.io/mugtaba.ga.su@gmail.com" method="POST" class="justify-around mx-auto" style="max-width:700px;">
-                            <div class="grid md:grid-cols-2">
-                                <div class="text-left flex flex-col justify-start px-4">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="text-left flex flex-col justify-start">
                                     <div class="form-group mt-8">
                                         <label for="sender">Name:</label><br>
                                         <input type="text" class="form-textbox hover:bg-gray-100 w-full" id="sender" placeholder="Enter your name" aria-describedby="emailHelp" name="name">
@@ -53,7 +53,7 @@
                                     </div>
                                 </div>
                             
-                                <div class="text-left px-4 mt-8">
+                                <div class="text-left mt-8">
                                     <div class="form-group">
                                         <label for="mail-msg">Message:*</label><br>
                                         <textarea name="message" id="#mail-msg" class="form-textbox hover:bg-gray-100 w-full" cols="30" rows="10" placeholder="Please enter your message here" required></textarea>
